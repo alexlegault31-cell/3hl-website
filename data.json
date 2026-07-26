@@ -1,0 +1,2395 @@
+{
+  "season": {
+    "name": "3HL Season 2",
+    "number": 2
+  },
+  "teams": [
+    {
+      "id": 10,
+      "name": "Dallas Stars",
+      "abbr": "ARS",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 13,
+      "name": "Ottawa Senators",
+      "abbr": "ORS",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 14,
+      "name": "Edmonton Oilers",
+      "abbr": "ERS",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 15,
+      "name": "Carolina Hurricanes",
+      "abbr": "NES",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 16,
+      "name": "Buffalo Sabres",
+      "abbr": "RES",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 17,
+      "name": "Manitoba Moose",
+      "abbr": "OSE",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 12,
+      "name": "Winnipeg Jets",
+      "abbr": "ETS",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 9,
+      "name": "Montreal Canadiens",
+      "abbr": "ENS",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 18,
+      "name": "Calgary Flames",
+      "abbr": "MES",
+      "color": "#58A6FF"
+    },
+    {
+      "id": 19,
+      "name": "Pittsburgh Penguins",
+      "abbr": "INS",
+      "color": "#58A6FF"
+    }
+  ],
+  "standings": [
+    {
+      "teamId": 10,
+      "rank": 1,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 13,
+      "rank": 2,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 14,
+      "rank": 3,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 15,
+      "rank": 4,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 16,
+      "rank": 5,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 17,
+      "rank": 6,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 12,
+      "rank": 7,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 9,
+      "rank": 8,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 18,
+      "rank": 9,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 19,
+      "rank": 10,
+      "prevRank": null,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    }
+  ],
+  "schedule": [
+    {
+      "num": 1,
+      "week": 1,
+      "slot": "Wed 8:00 PM EST",
+      "home": 16,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 2,
+      "week": 1,
+      "slot": "Wed 8:00 PM EST",
+      "home": 18,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 3,
+      "week": 1,
+      "slot": "Wed 8:00 PM EST",
+      "home": 15,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 4,
+      "week": 1,
+      "slot": "Wed 8:00 PM EST",
+      "home": 10,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 5,
+      "week": 1,
+      "slot": "Wed 8:00 PM EST",
+      "home": 14,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 6,
+      "week": 1,
+      "slot": "Wed 8:30 PM EST",
+      "home": 19,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 7,
+      "week": 1,
+      "slot": "Wed 8:30 PM EST",
+      "home": 13,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 8,
+      "week": 1,
+      "slot": "Wed 8:30 PM EST",
+      "home": 9,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 9,
+      "week": 1,
+      "slot": "Wed 8:30 PM EST",
+      "home": 17,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 10,
+      "week": 1,
+      "slot": "Wed 8:30 PM EST",
+      "home": 14,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 11,
+      "week": 1,
+      "slot": "Wed 9:00 PM EST",
+      "home": 16,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 12,
+      "week": 1,
+      "slot": "Wed 9:00 PM EST",
+      "home": 19,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 13,
+      "week": 1,
+      "slot": "Wed 9:00 PM EST",
+      "home": 12,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 14,
+      "week": 1,
+      "slot": "Wed 9:00 PM EST",
+      "home": 18,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 15,
+      "week": 1,
+      "slot": "Wed 9:00 PM EST",
+      "home": 15,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 16,
+      "week": 1,
+      "slot": "Wed 9:30 PM EST",
+      "home": 9,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 17,
+      "week": 1,
+      "slot": "Wed 9:30 PM EST",
+      "home": 17,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 18,
+      "week": 1,
+      "slot": "Wed 9:30 PM EST",
+      "home": 14,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 19,
+      "week": 1,
+      "slot": "Wed 9:30 PM EST",
+      "home": 10,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 20,
+      "week": 1,
+      "slot": "Wed 9:30 PM EST",
+      "home": 15,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 21,
+      "week": 1,
+      "slot": "Thu 8:00 PM EST",
+      "home": 16,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 22,
+      "week": 1,
+      "slot": "Thu 8:00 PM EST",
+      "home": 9,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 23,
+      "week": 1,
+      "slot": "Thu 8:00 PM EST",
+      "home": 13,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 24,
+      "week": 1,
+      "slot": "Thu 8:00 PM EST",
+      "home": 19,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 25,
+      "week": 1,
+      "slot": "Thu 8:00 PM EST",
+      "home": 12,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 26,
+      "week": 1,
+      "slot": "Thu 8:30 PM EST",
+      "home": 14,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 27,
+      "week": 1,
+      "slot": "Thu 8:30 PM EST",
+      "home": 10,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 28,
+      "week": 1,
+      "slot": "Thu 8:30 PM EST",
+      "home": 15,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 29,
+      "week": 1,
+      "slot": "Thu 8:30 PM EST",
+      "home": 18,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 30,
+      "week": 1,
+      "slot": "Thu 8:30 PM EST",
+      "home": 12,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 31,
+      "week": 1,
+      "slot": "Thu 9:00 PM EST",
+      "home": 16,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 32,
+      "week": 1,
+      "slot": "Thu 9:00 PM EST",
+      "home": 14,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 33,
+      "week": 1,
+      "slot": "Thu 9:00 PM EST",
+      "home": 17,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 34,
+      "week": 1,
+      "slot": "Thu 9:00 PM EST",
+      "home": 9,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 35,
+      "week": 1,
+      "slot": "Thu 9:00 PM EST",
+      "home": 13,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 36,
+      "week": 1,
+      "slot": "Thu 9:30 PM EST",
+      "home": 15,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 37,
+      "week": 1,
+      "slot": "Thu 9:30 PM EST",
+      "home": 18,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 38,
+      "week": 1,
+      "slot": "Thu 9:30 PM EST",
+      "home": 12,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 39,
+      "week": 1,
+      "slot": "Thu 9:30 PM EST",
+      "home": 19,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 40,
+      "week": 1,
+      "slot": "Thu 9:30 PM EST",
+      "home": 13,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 41,
+      "week": 2,
+      "slot": "Tue 8:00 PM EST",
+      "home": 16,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 42,
+      "week": 2,
+      "slot": "Tue 8:00 PM EST",
+      "home": 15,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 43,
+      "week": 2,
+      "slot": "Tue 8:00 PM EST",
+      "home": 10,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 44,
+      "week": 2,
+      "slot": "Tue 8:00 PM EST",
+      "home": 14,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 45,
+      "week": 2,
+      "slot": "Tue 8:00 PM EST",
+      "home": 17,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 46,
+      "week": 2,
+      "slot": "Tue 8:30 PM EST",
+      "home": 12,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 47,
+      "week": 2,
+      "slot": "Tue 8:30 PM EST",
+      "home": 19,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 48,
+      "week": 2,
+      "slot": "Tue 8:30 PM EST",
+      "home": 13,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 49,
+      "week": 2,
+      "slot": "Tue 8:30 PM EST",
+      "home": 9,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 50,
+      "week": 2,
+      "slot": "Tue 8:30 PM EST",
+      "home": 17,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 51,
+      "week": 2,
+      "slot": "Tue 9:00 PM EST",
+      "home": 16,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 52,
+      "week": 2,
+      "slot": "Tue 9:00 PM EST",
+      "home": 12,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 53,
+      "week": 2,
+      "slot": "Tue 9:00 PM EST",
+      "home": 18,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 54,
+      "week": 2,
+      "slot": "Tue 9:00 PM EST",
+      "home": 15,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 55,
+      "week": 2,
+      "slot": "Tue 9:00 PM EST",
+      "home": 10,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 56,
+      "week": 2,
+      "slot": "Tue 9:30 PM EST",
+      "home": 13,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 57,
+      "week": 2,
+      "slot": "Tue 9:30 PM EST",
+      "home": 9,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 58,
+      "week": 2,
+      "slot": "Tue 9:30 PM EST",
+      "home": 17,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 59,
+      "week": 2,
+      "slot": "Tue 9:30 PM EST",
+      "home": 14,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 60,
+      "week": 2,
+      "slot": "Tue 9:30 PM EST",
+      "home": 10,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 61,
+      "week": 2,
+      "slot": "Wed 8:00 PM EST",
+      "home": 16,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 62,
+      "week": 2,
+      "slot": "Wed 8:00 PM EST",
+      "home": 13,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 63,
+      "week": 2,
+      "slot": "Wed 8:00 PM EST",
+      "home": 19,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 64,
+      "week": 2,
+      "slot": "Wed 8:00 PM EST",
+      "home": 12,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 65,
+      "week": 2,
+      "slot": "Wed 8:00 PM EST",
+      "home": 18,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 66,
+      "week": 2,
+      "slot": "Wed 8:30 PM EST",
+      "home": 17,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 67,
+      "week": 2,
+      "slot": "Wed 8:30 PM EST",
+      "home": 14,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 68,
+      "week": 2,
+      "slot": "Wed 8:30 PM EST",
+      "home": 10,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 69,
+      "week": 2,
+      "slot": "Wed 8:30 PM EST",
+      "home": 15,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 70,
+      "week": 2,
+      "slot": "Wed 8:30 PM EST",
+      "home": 18,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 71,
+      "week": 2,
+      "slot": "Wed 9:00 PM EST",
+      "home": 16,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 72,
+      "week": 2,
+      "slot": "Wed 9:00 PM EST",
+      "home": 17,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 73,
+      "week": 2,
+      "slot": "Wed 9:00 PM EST",
+      "home": 9,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 74,
+      "week": 2,
+      "slot": "Wed 9:00 PM EST",
+      "home": 13,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 75,
+      "week": 2,
+      "slot": "Wed 9:00 PM EST",
+      "home": 19,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 76,
+      "week": 2,
+      "slot": "Wed 9:30 PM EST",
+      "home": 10,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 77,
+      "week": 2,
+      "slot": "Wed 9:30 PM EST",
+      "home": 15,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 78,
+      "week": 2,
+      "slot": "Wed 9:30 PM EST",
+      "home": 18,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 79,
+      "week": 2,
+      "slot": "Wed 9:30 PM EST",
+      "home": 12,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 80,
+      "week": 2,
+      "slot": "Wed 9:30 PM EST",
+      "home": 19,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 81,
+      "week": 2,
+      "slot": "Thu 8:00 PM EST",
+      "home": 16,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 82,
+      "week": 2,
+      "slot": "Thu 8:00 PM EST",
+      "home": 10,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 83,
+      "week": 2,
+      "slot": "Thu 8:00 PM EST",
+      "home": 14,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 84,
+      "week": 2,
+      "slot": "Thu 8:00 PM EST",
+      "home": 17,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 85,
+      "week": 2,
+      "slot": "Thu 8:00 PM EST",
+      "home": 9,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 86,
+      "week": 2,
+      "slot": "Thu 8:30 PM EST",
+      "home": 18,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 87,
+      "week": 2,
+      "slot": "Thu 8:30 PM EST",
+      "home": 12,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 88,
+      "week": 2,
+      "slot": "Thu 8:30 PM EST",
+      "home": 19,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 89,
+      "week": 2,
+      "slot": "Thu 8:30 PM EST",
+      "home": 13,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 90,
+      "week": 2,
+      "slot": "Thu 8:30 PM EST",
+      "home": 9,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 91,
+      "week": 2,
+      "slot": "Thu 9:00 PM EST",
+      "home": 16,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 92,
+      "week": 2,
+      "slot": "Thu 9:00 PM EST",
+      "home": 18,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 93,
+      "week": 2,
+      "slot": "Thu 9:00 PM EST",
+      "home": 15,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 94,
+      "week": 2,
+      "slot": "Thu 9:00 PM EST",
+      "home": 10,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 95,
+      "week": 2,
+      "slot": "Thu 9:00 PM EST",
+      "home": 14,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 96,
+      "week": 2,
+      "slot": "Thu 9:30 PM EST",
+      "home": 19,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 97,
+      "week": 2,
+      "slot": "Thu 9:30 PM EST",
+      "home": 13,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 98,
+      "week": 2,
+      "slot": "Thu 9:30 PM EST",
+      "home": 9,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 99,
+      "week": 2,
+      "slot": "Thu 9:30 PM EST",
+      "home": 17,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 100,
+      "week": 2,
+      "slot": "Thu 9:30 PM EST",
+      "home": 14,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 101,
+      "week": 3,
+      "slot": "Tue 8:00 PM EST",
+      "home": 16,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 102,
+      "week": 3,
+      "slot": "Tue 8:00 PM EST",
+      "home": 19,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 103,
+      "week": 3,
+      "slot": "Tue 8:00 PM EST",
+      "home": 12,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 104,
+      "week": 3,
+      "slot": "Tue 8:00 PM EST",
+      "home": 18,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 105,
+      "week": 3,
+      "slot": "Tue 8:00 PM EST",
+      "home": 15,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 106,
+      "week": 3,
+      "slot": "Tue 8:30 PM EST",
+      "home": 9,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 107,
+      "week": 3,
+      "slot": "Tue 8:30 PM EST",
+      "home": 17,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 108,
+      "week": 3,
+      "slot": "Tue 8:30 PM EST",
+      "home": 14,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 109,
+      "week": 3,
+      "slot": "Tue 8:30 PM EST",
+      "home": 10,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 110,
+      "week": 3,
+      "slot": "Tue 8:30 PM EST",
+      "home": 15,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 111,
+      "week": 3,
+      "slot": "Tue 9:00 PM EST",
+      "home": 16,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 112,
+      "week": 3,
+      "slot": "Tue 9:00 PM EST",
+      "home": 9,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 113,
+      "week": 3,
+      "slot": "Tue 9:00 PM EST",
+      "home": 13,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 114,
+      "week": 3,
+      "slot": "Tue 9:00 PM EST",
+      "home": 19,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 115,
+      "week": 3,
+      "slot": "Tue 9:00 PM EST",
+      "home": 12,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 116,
+      "week": 3,
+      "slot": "Tue 9:30 PM EST",
+      "home": 14,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 117,
+      "week": 3,
+      "slot": "Tue 9:30 PM EST",
+      "home": 10,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 118,
+      "week": 3,
+      "slot": "Tue 9:30 PM EST",
+      "home": 15,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 119,
+      "week": 3,
+      "slot": "Tue 9:30 PM EST",
+      "home": 18,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 120,
+      "week": 3,
+      "slot": "Tue 9:30 PM EST",
+      "home": 12,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 121,
+      "week": 3,
+      "slot": "Wed 8:00 PM EST",
+      "home": 16,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 122,
+      "week": 3,
+      "slot": "Wed 8:00 PM EST",
+      "home": 14,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 123,
+      "week": 3,
+      "slot": "Wed 8:00 PM EST",
+      "home": 17,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 124,
+      "week": 3,
+      "slot": "Wed 8:00 PM EST",
+      "home": 9,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 125,
+      "week": 3,
+      "slot": "Wed 8:00 PM EST",
+      "home": 13,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 126,
+      "week": 3,
+      "slot": "Wed 8:30 PM EST",
+      "home": 15,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 127,
+      "week": 3,
+      "slot": "Wed 8:30 PM EST",
+      "home": 18,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 128,
+      "week": 3,
+      "slot": "Wed 8:30 PM EST",
+      "home": 12,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 129,
+      "week": 3,
+      "slot": "Wed 8:30 PM EST",
+      "home": 19,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 130,
+      "week": 3,
+      "slot": "Wed 8:30 PM EST",
+      "home": 13,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 131,
+      "week": 3,
+      "slot": "Wed 9:00 PM EST",
+      "home": 16,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 132,
+      "week": 3,
+      "slot": "Wed 9:00 PM EST",
+      "home": 15,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 133,
+      "week": 3,
+      "slot": "Wed 9:00 PM EST",
+      "home": 10,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 134,
+      "week": 3,
+      "slot": "Wed 9:00 PM EST",
+      "home": 14,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 135,
+      "week": 3,
+      "slot": "Wed 9:00 PM EST",
+      "home": 17,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 136,
+      "week": 3,
+      "slot": "Wed 9:30 PM EST",
+      "home": 12,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 137,
+      "week": 3,
+      "slot": "Wed 9:30 PM EST",
+      "home": 19,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 138,
+      "week": 3,
+      "slot": "Wed 9:30 PM EST",
+      "home": 13,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 139,
+      "week": 3,
+      "slot": "Wed 9:30 PM EST",
+      "home": 9,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 140,
+      "week": 3,
+      "slot": "Wed 9:30 PM EST",
+      "home": 17,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 141,
+      "week": 3,
+      "slot": "Thu 8:00 PM EST",
+      "home": 16,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 142,
+      "week": 3,
+      "slot": "Thu 8:00 PM EST",
+      "home": 12,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 143,
+      "week": 3,
+      "slot": "Thu 8:00 PM EST",
+      "home": 18,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 144,
+      "week": 3,
+      "slot": "Thu 8:00 PM EST",
+      "home": 15,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 145,
+      "week": 3,
+      "slot": "Thu 8:00 PM EST",
+      "home": 10,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 146,
+      "week": 3,
+      "slot": "Thu 8:30 PM EST",
+      "home": 13,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 147,
+      "week": 3,
+      "slot": "Thu 8:30 PM EST",
+      "home": 9,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 148,
+      "week": 3,
+      "slot": "Thu 8:30 PM EST",
+      "home": 17,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 149,
+      "week": 3,
+      "slot": "Thu 8:30 PM EST",
+      "home": 14,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 150,
+      "week": 3,
+      "slot": "Thu 8:30 PM EST",
+      "home": 10,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 151,
+      "week": 3,
+      "slot": "Thu 9:00 PM EST",
+      "home": 16,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 152,
+      "week": 3,
+      "slot": "Thu 9:00 PM EST",
+      "home": 13,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 153,
+      "week": 3,
+      "slot": "Thu 9:00 PM EST",
+      "home": 19,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 154,
+      "week": 3,
+      "slot": "Thu 9:00 PM EST",
+      "home": 12,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 155,
+      "week": 3,
+      "slot": "Thu 9:00 PM EST",
+      "home": 18,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 156,
+      "week": 3,
+      "slot": "Thu 9:30 PM EST",
+      "home": 17,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 157,
+      "week": 3,
+      "slot": "Thu 9:30 PM EST",
+      "home": 14,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 158,
+      "week": 3,
+      "slot": "Thu 9:30 PM EST",
+      "home": 10,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 159,
+      "week": 3,
+      "slot": "Thu 9:30 PM EST",
+      "home": 15,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 160,
+      "week": 3,
+      "slot": "Thu 9:30 PM EST",
+      "home": 18,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 161,
+      "week": 4,
+      "slot": "Tue 8:00 PM EST",
+      "home": 16,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 162,
+      "week": 4,
+      "slot": "Tue 8:00 PM EST",
+      "home": 17,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 163,
+      "week": 4,
+      "slot": "Tue 8:00 PM EST",
+      "home": 9,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 164,
+      "week": 4,
+      "slot": "Tue 8:00 PM EST",
+      "home": 13,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 165,
+      "week": 4,
+      "slot": "Tue 8:00 PM EST",
+      "home": 19,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 166,
+      "week": 4,
+      "slot": "Tue 8:30 PM EST",
+      "home": 10,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 167,
+      "week": 4,
+      "slot": "Tue 8:30 PM EST",
+      "home": 15,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 168,
+      "week": 4,
+      "slot": "Tue 8:30 PM EST",
+      "home": 18,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 169,
+      "week": 4,
+      "slot": "Tue 8:30 PM EST",
+      "home": 12,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 170,
+      "week": 4,
+      "slot": "Tue 8:30 PM EST",
+      "home": 19,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 171,
+      "week": 4,
+      "slot": "Tue 9:00 PM EST",
+      "home": 16,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 172,
+      "week": 4,
+      "slot": "Tue 9:00 PM EST",
+      "home": 10,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 173,
+      "week": 4,
+      "slot": "Tue 9:00 PM EST",
+      "home": 14,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 174,
+      "week": 4,
+      "slot": "Tue 9:00 PM EST",
+      "home": 17,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 175,
+      "week": 4,
+      "slot": "Tue 9:00 PM EST",
+      "home": 9,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 176,
+      "week": 4,
+      "slot": "Tue 9:30 PM EST",
+      "home": 18,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 177,
+      "week": 4,
+      "slot": "Tue 9:30 PM EST",
+      "home": 12,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 178,
+      "week": 4,
+      "slot": "Tue 9:30 PM EST",
+      "home": 19,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 179,
+      "week": 4,
+      "slot": "Tue 9:30 PM EST",
+      "home": 13,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 180,
+      "week": 4,
+      "slot": "Tue 9:30 PM EST",
+      "home": 9,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 181,
+      "week": 4,
+      "slot": "Wed 8:00 PM EST",
+      "home": 16,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 182,
+      "week": 4,
+      "slot": "Wed 8:00 PM EST",
+      "home": 18,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 183,
+      "week": 4,
+      "slot": "Wed 8:00 PM EST",
+      "home": 15,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 184,
+      "week": 4,
+      "slot": "Wed 8:00 PM EST",
+      "home": 10,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 185,
+      "week": 4,
+      "slot": "Wed 8:00 PM EST",
+      "home": 14,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 186,
+      "week": 4,
+      "slot": "Wed 8:30 PM EST",
+      "home": 19,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 187,
+      "week": 4,
+      "slot": "Wed 8:30 PM EST",
+      "home": 13,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 188,
+      "week": 4,
+      "slot": "Wed 8:30 PM EST",
+      "home": 9,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 189,
+      "week": 4,
+      "slot": "Wed 8:30 PM EST",
+      "home": 17,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 190,
+      "week": 4,
+      "slot": "Wed 8:30 PM EST",
+      "home": 14,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 191,
+      "week": 4,
+      "slot": "Wed 9:00 PM EST",
+      "home": 16,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 192,
+      "week": 4,
+      "slot": "Wed 9:00 PM EST",
+      "home": 19,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 193,
+      "week": 4,
+      "slot": "Wed 9:00 PM EST",
+      "home": 12,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 194,
+      "week": 4,
+      "slot": "Wed 9:00 PM EST",
+      "home": 18,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 195,
+      "week": 4,
+      "slot": "Wed 9:00 PM EST",
+      "home": 15,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 196,
+      "week": 4,
+      "slot": "Wed 9:30 PM EST",
+      "home": 9,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 197,
+      "week": 4,
+      "slot": "Wed 9:30 PM EST",
+      "home": 17,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 198,
+      "week": 4,
+      "slot": "Wed 9:30 PM EST",
+      "home": 14,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 199,
+      "week": 4,
+      "slot": "Wed 9:30 PM EST",
+      "home": 10,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 200,
+      "week": 4,
+      "slot": "Wed 9:30 PM EST",
+      "home": 15,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 201,
+      "week": 4,
+      "slot": "Thu 8:00 PM EST",
+      "home": 16,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 202,
+      "week": 4,
+      "slot": "Thu 8:00 PM EST",
+      "home": 9,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 203,
+      "week": 4,
+      "slot": "Thu 8:00 PM EST",
+      "home": 13,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 204,
+      "week": 4,
+      "slot": "Thu 8:00 PM EST",
+      "home": 19,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 205,
+      "week": 4,
+      "slot": "Thu 8:00 PM EST",
+      "home": 12,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 206,
+      "week": 4,
+      "slot": "Thu 8:30 PM EST",
+      "home": 14,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 207,
+      "week": 4,
+      "slot": "Thu 8:30 PM EST",
+      "home": 10,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 208,
+      "week": 4,
+      "slot": "Thu 8:30 PM EST",
+      "home": 15,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 209,
+      "week": 4,
+      "slot": "Thu 8:30 PM EST",
+      "home": 18,
+      "away": 13,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 210,
+      "week": 4,
+      "slot": "Thu 8:30 PM EST",
+      "home": 12,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 211,
+      "week": 4,
+      "slot": "Thu 9:00 PM EST",
+      "home": 16,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 212,
+      "week": 4,
+      "slot": "Thu 9:00 PM EST",
+      "home": 14,
+      "away": 15,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 213,
+      "week": 4,
+      "slot": "Thu 9:00 PM EST",
+      "home": 17,
+      "away": 18,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 214,
+      "week": 4,
+      "slot": "Thu 9:00 PM EST",
+      "home": 9,
+      "away": 12,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 215,
+      "week": 4,
+      "slot": "Thu 9:00 PM EST",
+      "home": 13,
+      "away": 19,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 216,
+      "week": 4,
+      "slot": "Thu 9:30 PM EST",
+      "home": 15,
+      "away": 16,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 217,
+      "week": 4,
+      "slot": "Thu 9:30 PM EST",
+      "home": 18,
+      "away": 10,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 218,
+      "week": 4,
+      "slot": "Thu 9:30 PM EST",
+      "home": 12,
+      "away": 14,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 219,
+      "week": 4,
+      "slot": "Thu 9:30 PM EST",
+      "home": 19,
+      "away": 17,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "num": 220,
+      "week": 4,
+      "slot": "Thu 9:30 PM EST",
+      "home": 13,
+      "away": 9,
+      "played": false,
+      "homeScore": null,
+      "awayScore": null
+    }
+  ],
+  "players": [],
+  "gameResults": [],
+  "bracket": []
+}
