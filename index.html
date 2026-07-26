@@ -186,7 +186,7 @@
 
 <div class="nav-outer">
   <div class="nav-inner">
-    <div class="logo">NEHL</div>
+    <div id="league-brand" class="logo" style="display:flex; align-items:center; gap:10px;">NEHL</div>
     <span id="data-status" style="font-size: 11px; color: var(--muted); font-family: var(--mono-font);">Loading…</span>
     <nav class="tabs" id="tabs"></nav>
   </div>
@@ -215,6 +215,11 @@
 <div id="tab-schedule" class="tab-panel">
   <div class="wrap">
     <h2 class="section-title">Schedule</h2>
+    <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom: 12px;">
+      <select id="team-filter" style="padding:6px 12px; background: var(--panel); border:1px solid var(--border); border-radius:4px; color: var(--frost); font-size:13px;">
+        <option value="all">All Teams</option>
+      </select>
+    </div>
     <div class="pill-row" id="week-pills"></div>
     <div class="week-grid" id="week-grid"></div>
   </div>
@@ -382,6 +387,9 @@ let BRACKET = [
 /* ============================== HELPERS ============================== */
 const teamById = (id) => TEAMS.find((t) => t.id === id);
 function initialsHTML(team, size) {
+  if (team.logoUrl) {
+    return `<img src="${team.logoUrl}" alt="${escapeHTML(team.name || team.abbr)} logo" style="width:${size}px;height:${size}px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#0B1220;" />`;
+  }
   return `<div class="initials" style="width:${size}px;height:${size}px;background:${team.color};font-size:${size * 0.34}px;">${team.abbr}</div>`;
 }
 function trendHTML(rank, prevRank) {
@@ -420,9 +428,11 @@ function renderTicker() {
 
 /* ============================== RENDER: STANDINGS ============================== */
 function renderHero() {
+  if (!STANDINGS.length) {
+    document.getElementById("hero-card").innerHTML = "";
+    return;
+  }
   const leader = STANDINGS[0], team = teamById(leader.teamId);
-  const chaser = STANDINGS[1], chaserTeam = teamById(chaser.teamId);
-  const gap = leader.pts - chaser.pts;
   document.getElementById("hero-card").innerHTML = `
     <div style="background:linear-gradient(120deg, ${team.color}22, #131B2E 55%); border:1px solid ${team.color}55; border-radius:4px; padding:28px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
       <div class="hero-left">
@@ -432,10 +442,6 @@ function renderHero() {
           <div class="hero-team-name">${team.name}</div>
           <div class="hero-record">${leader.w}-${leader.l}-${leader.otl} · ${leader.pts} PTS · ${leader.streak}</div>
         </div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-gap-label">LEADING <span style="color:#FBBF24; font-weight:700;">${chaserTeam.abbr}</span> BY</div>
-        <div class="hero-gap-num">${gap} PTS</div>
       </div>
     </div>`;
 }
@@ -461,6 +467,16 @@ function renderStandings() {
 
 /* ============================== RENDER: SCHEDULE ============================== */
 let weekFilter = "all";
+let teamFilter = "all";
+function renderTeamFilter() {
+  const select = document.getElementById("team-filter");
+  select.innerHTML = `<option value="all">All Teams</option>` + TEAMS.map((t) => `<option value="${t.id}">${t.name}</option>`).join("");
+  select.value = teamFilter;
+  select.onchange = () => {
+    teamFilter = select.value === "all" ? "all" : Number(select.value);
+    renderWeekGrid();
+  };
+}
 function renderSchedulePills() {
   const weeks = [...new Set(SCHEDULE.map((g) => g.week))];
   const pills = [{ key: "all", label: "All Weeks" }, ...weeks.map((w) => ({ key: w, label: `Week ${w}` }))];
@@ -474,8 +490,15 @@ function renderSchedulePills() {
 }
 function renderWeekGrid() {
   const weeks = [...new Set(SCHEDULE.map((g) => g.week))];
-  const filtered = weekFilter === "all" ? SCHEDULE : SCHEDULE.filter((g) => g.week === weekFilter);
+  let filtered = weekFilter === "all" ? SCHEDULE : SCHEDULE.filter((g) => g.week === weekFilter);
+  if (teamFilter !== "all") {
+    filtered = filtered.filter((g) => g.home === teamFilter || g.away === teamFilter);
+  }
   const grouped = weeks.map((w) => ({ week: w, games: filtered.filter((g) => g.week === w) })).filter((x) => x.games.length);
+  if (!grouped.length) {
+    document.getElementById("week-grid").innerHTML = `<div class="card" style="padding:24px; text-align:center; color: var(--muted);">No games match this filter.</div>`;
+    return;
+  }
   document.getElementById("week-grid").innerHTML = grouped.map(({ week, games }) => `
     <div class="card" style="overflow:hidden;">
       <div class="week-head">WEEK ${week}</div>
@@ -708,6 +731,14 @@ async function loadRealDataIfAvailable() {
     BRACKET = data.bracket && data.bracket.length ? data.bracket : BRACKET;
     statusEl.textContent = `Live · ${data.season.name}`;
     statusEl.style.color = "#22C55E";
+
+    if (data.league) {
+      const brandEl = document.getElementById("league-brand");
+      const logoHTML = data.league.logoUrl
+        ? `<img src="${data.league.logoUrl}" alt="" style="width:28px;height:28px;border-radius:50%;object-fit:cover;" />`
+        : "";
+      brandEl.innerHTML = `${logoHTML}<span>${escapeHTML(data.league.name || "")}</span>`;
+    }
   } catch (e) {
     // No data.json yet (not deployed with real data), or the site is
     // being opened directly from a local file (fetch can't run over
@@ -723,6 +754,7 @@ async function init() {
   renderTicker();
   renderHero();
   renderStandings();
+  renderTeamFilter();
   renderSchedulePills();
   renderWeekGrid();
   renderResultsList();
