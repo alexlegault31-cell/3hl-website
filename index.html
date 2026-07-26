@@ -299,18 +299,25 @@ function buildSchedule() {
 }
 let SCHEDULE = buildSchedule();
 let PLAYERS = [
-  { id: 1, name: "Und3rSh0t4487", teamId: 1, pos: "C", goalie: false, gp: 24, g: 22, a: 19, p: 41, pim: 12, hits: 88 },
-  { id: 2, name: "crunchyMustard69", teamId: 5, pos: "LW", goalie: false, gp: 23, g: 19, a: 21, p: 40, pim: 8, hits: 61 },
+  { id: 1, name: "Und3rSh0t4487", teamId: 1, pos: "C", goalie: false, gp: 24, g: 22, a: 19, p: 41, pim: 12, hits: 88, fow: 210, fol: 140, ta: 30, int: 25, bs: 18 },
+  { id: 2, name: "crunchyMustard69", teamId: 5, pos: "LW", goalie: false, gp: 23, g: 19, a: 21, p: 40, pim: 8, hits: 61, fow: 40, fol: 55, ta: 22, int: 19, bs: 14 },
   { id: 3, name: "xXHAYDENXx70", teamId: 1, pos: "G", goalie: true, gp: 18, w: 14, l: 3, otl: 1, gaa: 2.18, svp: 0.919, so: 2 },
-  { id: 4, name: "IceColdKilla", teamId: 4, pos: "D", goalie: false, gp: 24, g: 6, a: 24, p: 30, pim: 30, hits: 140 },
-  { id: 5, name: "SnipeShow22", teamId: 2, pos: "RW", goalie: false, gp: 22, g: 24, a: 11, p: 35, pim: 6, hits: 40 },
+  { id: 4, name: "IceColdKilla", teamId: 4, pos: "D", goalie: false, gp: 24, g: 6, a: 24, p: 30, pim: 30, hits: 140, fow: 5, fol: 8, ta: 40, int: 35, bs: 62 },
+  { id: 5, name: "SnipeShow22", teamId: 2, pos: "RW", goalie: false, gp: 22, g: 24, a: 11, p: 35, pim: 6, hits: 40, fow: 60, fol: 70, ta: 18, int: 16, bs: 10 },
   { id: 6, name: "GlassSaves88", teamId: 5, pos: "G", goalie: true, gp: 20, w: 15, l: 4, otl: 0, gaa: 2.41, svp: 0.911, so: 1 },
-  { id: 7, name: "TapeToTape", teamId: 3, pos: "C", goalie: false, gp: 22, g: 14, a: 20, p: 34, pim: 14, hits: 55 },
-  { id: 8, name: "Beauty_Dangle", teamId: 4, pos: "LW", goalie: false, gp: 24, g: 20, a: 15, p: 35, pim: 10, hits: 72 },
+  { id: 7, name: "TapeToTape", teamId: 3, pos: "C", goalie: false, gp: 22, g: 14, a: 20, p: 34, pim: 14, hits: 55, fow: 180, fol: 120, ta: 26, int: 21, bs: 16 },
+  { id: 8, name: "Beauty_Dangle", teamId: 4, pos: "LW", goalie: false, gp: 24, g: 20, a: 15, p: 35, pim: 10, hits: 72, fow: 30, fol: 45, ta: 20, int: 14, bs: 12 },
 ];
 const LEADER_CATS = [
   { key: "p", label: "Points" }, { key: "g", label: "Goals" }, { key: "a", label: "Assists" },
   { key: "hits", label: "Hits" }, { key: "pim", label: "PIM" },
+  { key: "faceoffPct", label: "Faceoff %", compute: (p) => (p.fow + p.fol) ? Math.round((p.fow / (p.fow + p.fol)) * 100) : 0, suffix: "%" },
+  { key: "ta", label: "Takeaways" }, { key: "int", label: "Interceptions" }, { key: "bs", label: "Blocked Shots" },
+];
+const GOALIE_CATS = [
+  { key: "svp", label: "Save %", format: (v) => v.toFixed(3), sortAsc: false },
+  { key: "gaa", label: "GAA", format: (v) => v.toFixed(2), sortAsc: true },
+  { key: "so", label: "Shutouts", format: (v) => v, sortAsc: false },
 ];
 
 /* Game recap data -- generated rather than hand-typed, since a full
@@ -618,7 +625,8 @@ function renderResultDetail() {
 /* ============================== RENDER: STATS ============================== */
 function renderStats() {
   const skaterCards = LEADER_CATS.map((cat) => {
-    const ranked = PLAYERS.filter((p) => !p.goalie).sort((a, b) => b[cat.key] - a[cat.key]).slice(0, 5);
+    const getVal = (p) => (cat.compute ? cat.compute(p) : p[cat.key]);
+    const ranked = PLAYERS.filter((p) => !p.goalie).sort((a, b) => getVal(b) - getVal(a)).slice(0, 5);
     return `<div class="card" style="padding:18px;">
       <div class="stat-card-title">${cat.label.toUpperCase()}</div>
       ${ranked.map((p, i) => {
@@ -627,25 +635,29 @@ function renderStats() {
           <span class="stat-rank ${i < 3 ? "top3" : ""}">${i + 1}</span>
           ${initialsHTML(team, 22)}
           <span class="stat-name">${p.name}</span>
-          <span class="stat-val">${p[cat.key]}</span>
+          <span class="stat-val">${getVal(p)}${cat.suffix || ""}</span>
         </div>`;
       }).join("")}
     </div>`;
   }).join("");
-  const goalieRanked = PLAYERS.filter((p) => p.goalie).sort((a, b) => b.svp - a.svp);
-  const goalieCard = `<div class="card" style="padding:18px;">
-    <div class="stat-card-title">SAVE %</div>
-    ${goalieRanked.map((p, i) => {
-      const team = teamById(p.teamId);
-      return `<div class="stat-row">
-        <span class="stat-rank ${i < 3 ? "top3" : ""}">${i + 1}</span>
-        ${initialsHTML(team, 22)}
-        <span class="stat-name">${p.name}</span>
-        <span class="stat-val">${p.svp.toFixed(3)}</span>
-      </div>`;
-    }).join("")}
-  </div>`;
-  document.getElementById("stats-grid").innerHTML = skaterCards + goalieCard;
+
+  const goalieCards = GOALIE_CATS.map((cat) => {
+    const ranked = PLAYERS.filter((p) => p.goalie).sort((a, b) => cat.sortAsc ? a[cat.key] - b[cat.key] : b[cat.key] - a[cat.key]);
+    return `<div class="card" style="padding:18px;">
+      <div class="stat-card-title">${cat.label.toUpperCase()}</div>
+      ${ranked.map((p, i) => {
+        const team = teamById(p.teamId);
+        return `<div class="stat-row">
+          <span class="stat-rank ${i < 3 ? "top3" : ""}">${i + 1}</span>
+          ${initialsHTML(team, 22)}
+          <span class="stat-name">${p.name}</span>
+          <span class="stat-val">${cat.format(p[cat.key])}</span>
+        </div>`;
+      }).join("")}
+    </div>`;
+  }).join("");
+
+  document.getElementById("stats-grid").innerHTML = skaterCards + goalieCards;
 }
 
 /* ============================== RENDER: PLAYOFFS ============================== */
