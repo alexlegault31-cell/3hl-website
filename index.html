@@ -658,6 +658,10 @@ function matchRowHTML(teamId, wins, isWinner) {
   </div>`;
 }
 function renderBracket() {
+  if (!BRACKET.length) {
+    document.getElementById("bracket").innerHTML = `<div class="card" style="padding:32px; text-align:center; color: var(--muted); width:100%;">Playoffs haven't started yet.</div>`;
+    return;
+  }
   document.getElementById("bracket").innerHTML = BRACKET.map((round) => `
     <div class="round-col">
       <div class="round-label">${round.round.toUpperCase()}</div>
@@ -728,7 +732,7 @@ async function loadRealDataIfAvailable() {
     SCHEDULE = data.schedule;
     PLAYERS = data.players;
     GAME_RESULTS = data.gameResults;
-    BRACKET = data.bracket && data.bracket.length ? data.bracket : BRACKET;
+    BRACKET = data.bracket !== undefined ? data.bracket : BRACKET;
     statusEl.textContent = `Live · ${data.season.name}`;
     statusEl.style.color = "#22C55E";
 
