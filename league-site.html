@@ -187,6 +187,7 @@
 <div class="nav-outer">
   <div class="nav-inner">
     <div class="logo">NEHL</div>
+    <span id="data-status" style="font-size: 11px; color: var(--muted); font-family: var(--mono-font);">Loading…</span>
     <nav class="tabs" id="tabs"></nav>
   </div>
 </div>
@@ -254,7 +255,7 @@
 
 <script>
 /* ============================== MOCK DATA ============================== */
-const TEAMS = [
+let TEAMS = [
   { id: 1, name: "NEHL Denmark", abbr: "DEN", color: "#EF4444" },
   { id: 2, name: "NEHL Sweden", abbr: "SWE", color: "#F97316" },
   { id: 3, name: "NEHL Finland", abbr: "FIN", color: "#22C55E" },
@@ -264,7 +265,7 @@ const TEAMS = [
   { id: 7, name: "NEHL Italy", abbr: "ITA", color: "#A855F7" },
   { id: 8, name: "NEHL Japan", abbr: "JPN", color: "#EC4899" },
 ];
-const STANDINGS = [
+let STANDINGS = [
   { teamId: 1, rank: 1, prevRank: 2, w: 18, l: 4, otl: 2, pts: 38, gf: 92, ga: 58, streak: "W4" },
   { teamId: 5, rank: 2, prevRank: 1, w: 17, l: 5, otl: 1, pts: 35, gf: 88, ga: 61, streak: "L1" },
   { teamId: 4, rank: 3, prevRank: 3, w: 15, l: 7, otl: 2, pts: 32, gf: 79, ga: 66, streak: "W2" },
@@ -291,8 +292,8 @@ function buildSchedule() {
   }
   return games;
 }
-const SCHEDULE = buildSchedule();
-const PLAYERS = [
+let SCHEDULE = buildSchedule();
+let PLAYERS = [
   { id: 1, name: "Und3rSh0t4487", teamId: 1, pos: "C", goalie: false, gp: 24, g: 22, a: 19, p: 41, pim: 12, hits: 88 },
   { id: 2, name: "crunchyMustard69", teamId: 5, pos: "LW", goalie: false, gp: 23, g: 19, a: 21, p: 40, pim: 8, hits: 61 },
   { id: 3, name: "xXHAYDENXx70", teamId: 1, pos: "G", goalie: true, gp: 18, w: 14, l: 3, otl: 1, gaa: 2.18, svp: 0.919, so: 2 },
@@ -348,7 +349,7 @@ function makeTeamStats(won) {
   };
 }
 
-const GAME_RESULTS = SCHEDULE.filter((g) => g.played).map((g, idx) => {
+let GAME_RESULTS = SCHEDULE.filter((g) => g.played).map((g, idx) => {
   const homeWon = g.homeScore >= g.awayScore;
   const mode6v6 = idx % 3 !== 0; // most games 6v6, every third game 4v4
   const skaterCount = mode6v6 ? 5 : 3;
@@ -364,7 +365,7 @@ const GAME_RESULTS = SCHEDULE.filter((g) => g.played).map((g, idx) => {
   };
 }).reverse();
 
-const BRACKET = [
+let BRACKET = [
   { round: "Quarterfinals", matches: [
     { a: 1, b: 8, winsA: 3, winsB: 1, done: true },
     { a: 4, b: 5, winsA: 2, winsB: 3, done: true },
@@ -691,20 +692,49 @@ function renderPlayerDetail() {
 }
 
 /* ============================== INIT ============================== */
-renderTabs();
-renderTicker();
-renderHero();
-renderStandings();
-renderSchedulePills();
-renderWeekGrid();
-renderResultsList();
-renderResultDetail();
-renderStats();
-renderBracket();
-renderPlayersGrid("");
-renderPlayerDetail();
-document.getElementById("player-search").addEventListener("input", (e) => renderPlayersGrid(e.target.value));
-showTab("standings");
+async function loadRealDataIfAvailable() {
+  const statusEl = document.getElementById("data-status");
+  try {
+    const resp = await fetch("./data.json", { cache: "no-store" });
+    if (!resp.ok) throw new Error("no data.json yet");
+    const data = await resp.json();
+    if (!data || !data.teams || !data.teams.length) throw new Error("empty export");
+
+    TEAMS = data.teams;
+    STANDINGS = data.standings;
+    SCHEDULE = data.schedule;
+    PLAYERS = data.players;
+    GAME_RESULTS = data.gameResults;
+    BRACKET = data.bracket && data.bracket.length ? data.bracket : BRACKET;
+    statusEl.textContent = `Live · ${data.season.name}`;
+    statusEl.style.color = "#22C55E";
+  } catch (e) {
+    // No data.json yet (not deployed with real data), or the site is
+    // being opened directly from a local file (fetch can't run over
+    // file://) -- either way, fall back to preview data so the page
+    // still shows something sensible instead of breaking.
+    statusEl.textContent = "Preview data — not yet connected";
+  }
+}
+
+async function init() {
+  await loadRealDataIfAvailable();
+  renderTabs();
+  renderTicker();
+  renderHero();
+  renderStandings();
+  renderSchedulePills();
+  renderWeekGrid();
+  renderResultsList();
+  renderResultDetail();
+  renderStats();
+  renderBracket();
+  renderPlayersGrid("");
+  renderPlayerDetail();
+  document.getElementById("player-search").addEventListener("input", (e) => renderPlayersGrid(e.target.value));
+  showTab("standings");
+}
+init();
 </script>
 </body>
 </html>
