@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NEHL — League Site</title>
+<style>
+  :root {
+    --navy: #0B1220;
+    --panel: #131B2E;
+    --border: #1E293B;
+    --frost: #F1F5F9;
+    --muted: #64748B;
+    --secondary: #94A3B8;
+    --ice: #38BDF8;
+    --amber: #FBBF24;
+    --green: #22C55E;
+    --red: #EF4444;
+    --display-font: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono-font: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--navy); color: var(--frost);
+    font-family: var(--body-font); min-height: 100vh;
+  }
+  a, button { font-family: inherit; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+  /* Nav */
+  .nav-outer {
+    border-bottom: 1px solid var(--border); position: sticky; top: 0;
+    background: rgba(11,18,32,0.94); backdrop-filter: blur(6px); z-index: 10;
+  }
+  .nav-inner {
+    max-width: 1100px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+  }
+  .logo { font-family: var(--display-font); font-weight: 700; font-size: 20px; letter-spacing: 0.02em; }
+  .tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+  .tab-btn {
+    padding: 8px 14px; border-radius: 4px; font-size: 14px; font-weight: 600;
+    cursor: pointer; border: none; background: transparent; color: var(--secondary);
+  }
+  .tab-btn.active { background: var(--panel); color: var(--ice); }
+  .tab-btn:focus-visible { outline: 2px solid var(--ice); }
+
+  /* Ticker */
+  .ticker-outer {
+    background: var(--panel); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    overflow: hidden; padding: 10px 0;
+  }
+  .ticker-track {
+    display: flex; gap: 40px; white-space: nowrap; width: max-content;
+    font-family: var(--mono-font); font-size: 13px; color: var(--secondary);
+    animation: ticker-scroll 40s linear infinite;
+  }
+  .ticker-track span.dot { color: var(--amber); margin-right: 8px; }
+  @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none !important; } }
+
+  /* Hero */
+  .hero-eyebrow { font-family: var(--mono-font); font-size: 12px; letter-spacing: 0.15em; color: var(--muted); margin-bottom: 14px; }
+  .hero-card {
+    border-radius: 4px; padding: 28px 32px; display: flex; align-items: center;
+    justify-content: space-between; flex-wrap: wrap; gap: 20px;
+  }
+  .hero-left { display: flex; align-items: center; gap: 20px; }
+  .hero-label { font-family: var(--display-font); font-size: 13px; letter-spacing: 0.1em; font-weight: 600; }
+  .hero-team-name { font-family: var(--display-font); font-size: 34px; font-weight: 700; line-height: 1.1; }
+  .hero-record { font-family: var(--mono-font); font-size: 14px; color: var(--secondary); margin-top: 4px; }
+  .hero-right { text-align: right; }
+  .hero-gap-label { font-family: var(--mono-font); font-size: 13px; color: var(--muted); }
+  .hero-gap-num { font-family: var(--display-font); font-size: 44px; font-weight: 700; color: var(--amber); line-height: 1; }
+
+  /* Shared */
+  .section-title { font-family: var(--display-font); font-size: 26px; font-weight: 700; margin-bottom: 18px; }
+  .initials {
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: var(--display-font); font-weight: 600; color: #0B1220; flex-shrink: 0; letter-spacing: 0.02em;
+  }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 4px; }
+
+  /* Standings */
+  table { width: 100%; border-collapse: collapse; min-width: 640px; }
+  th { text-align: left; padding: 12px 14px; font-size: 11px; letter-spacing: 0.08em; color: var(--muted); font-family: var(--display-font); font-weight: 600; border-bottom: 1px solid var(--border); }
+  td { padding: 10px 14px; font-size: 13px; color: #CBD5E1; }
+  td.mono { font-family: var(--mono-font); }
+  .table-scroll { overflow-x: auto; }
+  .team-cell { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+
+  /* Schedule */
+  .pill-row { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .pill { padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid var(--border); background: transparent; color: var(--secondary); }
+  .pill.active { border-color: var(--ice); background: rgba(56,189,248,0.13); color: var(--ice); }
+  .week-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  .week-head { padding: 12px 16px; border-bottom: 1px solid var(--border); font-family: var(--display-font); font-weight: 600; letter-spacing: 0.05em; color: var(--secondary); font-size: 13px; }
+  .game-row { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-bottom: 1px solid rgba(30,41,59,0.4); }
+  .game-time { font-family: var(--mono-font); font-size: 11px; color: var(--muted); width: 76px; flex-shrink: 0; }
+  .ha-tag { font-size: 10px; font-weight: 700; width: 14px; }
+  .game-team { flex: 1; font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .game-score { font-family: var(--mono-font); font-size: 13px; font-weight: 700; color: var(--amber); flex-shrink: 0; }
+
+  /* Stats */
+  .stats-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .stat-card-title { font-family: var(--display-font); font-weight: 600; font-size: 15px; letter-spacing: 0.04em; margin-bottom: 12px; }
+  .stat-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-top: 1px solid var(--border); }
+  .stat-row:first-child { border-top: none; }
+  .stat-rank { width: 16px; font-size: 12px; font-weight: 700; color: var(--muted); }
+  .stat-rank.top3 { color: var(--amber); }
+  .stat-name { flex: 1; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .stat-val { font-family: var(--mono-font); font-weight: 700; color: var(--ice); font-size: 14px; }
+
+  /* Playoffs */
+  .bracket-scroll { display: flex; gap: 28px; overflow-x: auto; padding-bottom: 12px; }
+  .round-col { display: flex; flex-direction: column; justify-content: space-around; gap: 20px; min-width: 240px; flex-shrink: 0; }
+  .round-label { font-family: var(--display-font); font-weight: 600; font-size: 13px; letter-spacing: 0.08em; color: var(--muted); text-align: center; }
+  .match-row { display: flex; align-items: center; gap: 10px; padding: 10px 14px; }
+  .match-row.winner { background: #1E293B; }
+  .match-name { flex: 1; font-size: 13px; }
+  .match-wins { font-family: var(--mono-font); font-weight: 700; color: var(--secondary); }
+  .match-wins.winner { color: var(--amber); }
+
+  /* Players */
+  #player-search {
+    width: 100%; padding: 10px 14px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 4px; color: var(--frost); font-size: 14px; margin-bottom: 18px; outline: none;
+  }
+  #player-search:focus { border-color: var(--ice); }
+  .players-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .player-card {
+    display: flex; align-items: center; gap: 12px; padding: 14px; text-align: left;
+    background: var(--panel); border: 1px solid var(--border); border-radius: 4px; cursor: pointer; width: 100%;
+    color: var(--frost); font-family: inherit;
+  }
+  .player-card:focus-visible { outline: 2px solid var(--ice); }
+  .player-card.selected { border-color: var(--ice); }
+  .player-name { font-weight: 600; font-size: 14px; color: var(--frost); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .player-sub { font-size: 12px; color: var(--muted); }
+  #player-detail { margin-top: 24px; padding: 24px; display: none; }
+  .detail-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+  .detail-name { font-family: var(--display-font); font-size: 24px; font-weight: 700; }
+  .detail-sub { font-size: 13px; color: var(--secondary); }
+  .detail-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 16px; }
+  .detail-stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.05em; }
+  .detail-stat-val { font-family: var(--mono-font); font-size: 22px; font-weight: 700; }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  .footer { text-align: center; padding: 32px 24px; color: #334155; font-size: 12px; }
+
+  /* Game results */
+  .result-card {
+    display: block; width: 100%; text-align: left; cursor: pointer; padding: 16px;
+    background: var(--panel); border: 1px solid var(--border); border-radius: 4px; color: var(--frost); font-family: inherit;
+  }
+  .result-card:focus-visible { outline: 2px solid var(--ice); }
+  .result-card.selected { border-color: var(--ice); }
+  .result-week { font-size: 11px; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; }
+  .result-matchup { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .result-team { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; overflow: hidden; }
+  .result-team span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .result-score { font-family: var(--mono-font); font-weight: 700; color: var(--amber); font-size: 15px; flex-shrink: 0; }
+
+  .recap-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 24px; }
+  .recap-team-block { display: flex; align-items: center; gap: 14px; }
+  .recap-team-name { font-family: var(--display-font); font-size: 22px; font-weight: 700; }
+  .recap-score-num { font-family: var(--display-font); font-size: 40px; font-weight: 700; }
+
+  .compare-row { display: flex; align-items: center; padding: 10px 0; }
+  .compare-val { font-family: var(--mono-font); font-weight: 700; font-size: 18px; width: 90px; }
+  .compare-val.away { text-align: right; }
+  .compare-label { flex: 1; text-align: center; font-size: 12px; letter-spacing: 0.06em; color: var(--muted); font-family: var(--display-font); font-weight: 600; }
+  .compare-bar-track { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; display: flex; margin: 0 8px; }
+
+  .roster-table-wrap { overflow-x: auto; margin-top: 10px; }
+  table.roster { width: 100%; border-collapse: collapse; min-width: 900px; }
+  table.roster th { text-align: left; padding: 8px 10px; font-size: 10px; letter-spacing: 0.04em; color: var(--muted); font-family: var(--display-font); font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  table.roster td { padding: 7px 10px; font-size: 12px; color: #CBD5E1; font-family: var(--mono-font); white-space: nowrap; }
+  table.roster td.name-cell { font-family: var(--body-font); color: var(--frost); font-weight: 600; }
+  .roster-section-label { font-family: var(--display-font); font-weight: 600; font-size: 15px; margin: 18px 0 4px; }
+</style>
+</head>
+<body>
+
+<div class="nav-outer">
+  <div class="nav-inner">
+    <div class="logo">NEHL</div>
+    <nav class="tabs" id="tabs"></nav>
+  </div>
+</div>
+
+<div class="ticker-outer">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<div id="tab-standings" class="tab-panel">
+  <div class="wrap" style="padding-bottom: 8px;">
+    <div class="hero-eyebrow">SEASON 2 · WEEK 4</div>
+    <div id="hero-card" class="hero-card"></div>
+  </div>
+  <div class="wrap">
+    <h2 class="section-title">Standings</h2>
+    <div class="card table-scroll">
+      <table>
+        <thead><tr id="standings-head"></tr></thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="tab-schedule" class="tab-panel">
+  <div class="wrap">
+    <h2 class="section-title">Schedule</h2>
+    <div class="pill-row" id="week-pills"></div>
+    <div class="week-grid" id="week-grid"></div>
+  </div>
+</div>
+
+<div id="tab-results" class="tab-panel">
+  <div class="wrap">
+    <h2 class="section-title">Game Results</h2>
+    <div id="results-list" class="week-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"></div>
+    <div id="result-detail" style="display:none; margin-top: 28px;"></div>
+  </div>
+</div>
+
+<div id="tab-stats" class="tab-panel">
+  <div class="wrap">
+    <h2 class="section-title">Stat Leaders</h2>
+    <div class="stats-grid" id="stats-grid"></div>
+  </div>
+</div>
+
+<div id="tab-playoffs" class="tab-panel">
+  <div class="wrap">
+    <h2 class="section-title">Playoffs</h2>
+    <div class="bracket-scroll" id="bracket"></div>
+  </div>
+</div>
+
+<div id="tab-players" class="tab-panel">
+  <div class="wrap">
+    <h2 class="section-title">Players</h2>
+    <input id="player-search" placeholder="Search players…" />
+    <div class="players-grid" id="players-grid"></div>
+    <div id="player-detail" class="card"></div>
+  </div>
+</div>
+
+<div class="footer">NEHL · Season 2 · Not yet connected to live data</div>
+
+<script>
+/* ============================== MOCK DATA ============================== */
+const TEAMS = [
+  { id: 1, name: "NEHL Denmark", abbr: "DEN", color: "#EF4444" },
+  { id: 2, name: "NEHL Sweden", abbr: "SWE", color: "#F97316" },
+  { id: 3, name: "NEHL Finland", abbr: "FIN", color: "#22C55E" },
+  { id: 4, name: "NEHL Canada", abbr: "CAN", color: "#14B8A6" },
+  { id: 5, name: "NEHL Russia", abbr: "RUS", color: "#3B82F6" },
+  { id: 6, name: "NEHL France", abbr: "FRA", color: "#6366F1" },
+  { id: 7, name: "NEHL Italy", abbr: "ITA", color: "#A855F7" },
+  { id: 8, name: "NEHL Japan", abbr: "JPN", color: "#EC4899" },
+];
+const STANDINGS = [
+  { teamId: 1, rank: 1, prevRank: 2, w: 18, l: 4, otl: 2, pts: 38, gf: 92, ga: 58, streak: "W4" },
+  { teamId: 5, rank: 2, prevRank: 1, w: 17, l: 5, otl: 1, pts: 35, gf: 88, ga: 61, streak: "L1" },
+  { teamId: 4, rank: 3, prevRank: 3, w: 15, l: 7, otl: 2, pts: 32, gf: 79, ga: 66, streak: "W2" },
+  { teamId: 2, rank: 4, prevRank: 5, w: 13, l: 9, otl: 1, pts: 27, gf: 74, ga: 71, streak: "W1" },
+  { teamId: 3, rank: 5, prevRank: 4, w: 12, l: 10, otl: 2, pts: 26, gf: 70, ga: 73, streak: "L2" },
+  { teamId: 7, rank: 6, prevRank: 6, w: 9, l: 13, otl: 1, pts: 19, gf: 61, ga: 82, streak: "L1" },
+  { teamId: 6, rank: 7, prevRank: 7, w: 7, l: 15, otl: 2, pts: 16, gf: 55, ga: 90, streak: "L3" },
+  { teamId: 8, rank: 8, prevRank: 8, w: 4, l: 18, otl: 2, pts: 10, gf: 44, ga: 101, streak: "L5" },
+];
+const SLOTS = ["Tue 8:00 PM", "Tue 8:30 PM", "Wed 8:00 PM", "Wed 8:30 PM", "Thu 8:00 PM", "Thu 8:30 PM"];
+function buildSchedule() {
+  const games = []; let gn = 1;
+  for (let week = 1; week <= 4; week++) {
+    for (let s = 0; s < 6; s++) {
+      const home = TEAMS[(s * 2) % 8].id;
+      const away = TEAMS[(s * 2 + 1) % 8].id;
+      const played = week < 3;
+      games.push({
+        num: gn++, week, slot: SLOTS[s], home, away, played,
+        homeScore: played ? Math.floor(Math.random() * 6) + 1 : null,
+        awayScore: played ? Math.floor(Math.random() * 6) + 1 : null,
+      });
+    }
+  }
+  return games;
+}
+const SCHEDULE = buildSchedule();
+const PLAYERS = [
+  { id: 1, name: "Und3rSh0t4487", teamId: 1, pos: "C", goalie: false, gp: 24, g: 22, a: 19, p: 41, pim: 12, hits: 88 },
+  { id: 2, name: "crunchyMustard69", teamId: 5, pos: "LW", goalie: false, gp: 23, g: 19, a: 21, p: 40, pim: 8, hits: 61 },
+  { id: 3, name: "xXHAYDENXx70", teamId: 1, pos: "G", goalie: true, gp: 18, w: 14, l: 3, otl: 1, gaa: 2.18, svp: 0.919, so: 2 },
+  { id: 4, name: "IceColdKilla", teamId: 4, pos: "D", goalie: false, gp: 24, g: 6, a: 24, p: 30, pim: 30, hits: 140 },
+  { id: 5, name: "SnipeShow22", teamId: 2, pos: "RW", goalie: false, gp: 22, g: 24, a: 11, p: 35, pim: 6, hits: 40 },
+  { id: 6, name: "GlassSaves88", teamId: 5, pos: "G", goalie: true, gp: 20, w: 15, l: 4, otl: 0, gaa: 2.41, svp: 0.911, so: 1 },
+  { id: 7, name: "TapeToTape", teamId: 3, pos: "C", goalie: false, gp: 22, g: 14, a: 20, p: 34, pim: 14, hits: 55 },
+  { id: 8, name: "Beauty_Dangle", teamId: 4, pos: "LW", goalie: false, gp: 24, g: 20, a: 15, p: 35, pim: 10, hits: 72 },
+];
+const LEADER_CATS = [
+  { key: "p", label: "Points" }, { key: "g", label: "Goals" }, { key: "a", label: "Assists" },
+  { key: "hits", label: "Hits" }, { key: "pim", label: "PIM" },
+];
+
+/* Game recap data -- generated rather than hand-typed, since a full
+   season of games each need up to 12 individual player stat lines.
+   Mirrors the exact columns the bot's game recap graphic shows. */
+const SKATER_NAME_POOL = [
+  "Und3rSh0t4487", "crunchyMustard69", "IceColdKilla", "SnipeShow22", "TapeToTape",
+  "Beauty_Dangle", "PuckHogg", "Zamboni_Driver", "OneTimerOnly", "GlassCannon",
+  "DangleKing", "BardownOrNoDown",
+];
+const GOALIE_NAME_POOL = ["xXHAYDENXx70", "GlassSaves88", "PadStackPro", "FiveHoleFred"];
+
+function randInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+function pick(arr, i) { return arr[i % arr.length]; }
+
+function makeSkaterLine(nameSeed, isWin) {
+  const g = randInt(0, 3), a = randInt(0, 4);
+  return {
+    name: pick(SKATER_NAME_POOL, nameSeed), pos: pick(["C", "LW", "RW", "D"], nameSeed),
+    g, a, p: g + a, pm: randInt(-3, 4), toi: `${randInt(10, 18)}:${String(randInt(0, 59)).padStart(2, "0")}`,
+    twp: `${randInt(1, 3)}:${String(randInt(0, 59)).padStart(2, "0")}`,
+    shots: randInt(2, 9), passPct: randInt(60, 90), fow: randInt(0, 6), fol: randInt(0, 5),
+    hits: randInt(0, 6), ta: randInt(0, 4), giveaways: randInt(0, 3), bs: randInt(0, 3),
+    int: randInt(0, 4), pim: [0, 0, 0, 2, 4][randInt(0, 4)],
+  };
+}
+function makeGoalieLine(nameSeed, isWin) {
+  const sa = randInt(22, 36), saves = sa - randInt(1, 5);
+  return {
+    name: pick(GOALIE_NAME_POOL, nameSeed), result: isWin ? "W" : "L",
+    sa, sv: saves, ga: sa - saves, svPct: (saves / sa).toFixed(3), toi: "60:00",
+    pkChk: randInt(0, 4), despSv: randInt(0, 2),
+  };
+}
+function makeTeamStats(won) {
+  const shots = randInt(24, 38);
+  return {
+    shots, faceoffsWon: randInt(20, 34), hits: randInt(14, 26),
+    toa: `${randInt(6, 11)}:${String(randInt(0, 59)).padStart(2, "0")}`,
+    pim: [0, 2, 4, 6, 8][randInt(0, 4)], passPct: randInt(70, 84),
+  };
+}
+
+const GAME_RESULTS = SCHEDULE.filter((g) => g.played).map((g, idx) => {
+  const homeWon = g.homeScore >= g.awayScore;
+  const mode6v6 = idx % 3 !== 0; // most games 6v6, every third game 4v4
+  const skaterCount = mode6v6 ? 5 : 3;
+  const homeSkaters = Array.from({ length: skaterCount }, (_, i) => makeSkaterLine(idx * 7 + i, homeWon));
+  const awaySkaters = Array.from({ length: skaterCount }, (_, i) => makeSkaterLine(idx * 11 + i + 50, !homeWon));
+  return {
+    id: g.num, week: g.week, home: g.home, away: g.away,
+    homeScore: g.homeScore, awayScore: g.awayScore, mode: mode6v6 ? "6v6" : "4v4",
+    teamStats: { home: makeTeamStats(homeWon), away: makeTeamStats(!homeWon) },
+    homeSkaters, awaySkaters,
+    homeGoalie: makeGoalieLine(idx * 3, homeWon),
+    awayGoalie: makeGoalieLine(idx * 5 + 20, !homeWon),
+  };
+}).reverse();
+
+const BRACKET = [
+  { round: "Quarterfinals", matches: [
+    { a: 1, b: 8, winsA: 3, winsB: 1, done: true },
+    { a: 4, b: 5, winsA: 2, winsB: 3, done: true },
+    { a: 3, b: 6, winsA: 3, winsB: 0, done: true },
+    { a: 2, b: 7, winsA: 1, winsB: 3, done: true },
+  ]},
+  { round: "Semifinals", matches: [
+    { a: 1, b: 5, winsA: 2, winsB: 1, done: false },
+    { a: 3, b: 7, winsA: 0, winsB: 0, done: false },
+  ]},
+  { round: "Finals", matches: [ { a: null, b: null, winsA: 0, winsB: 0, done: false } ]},
+];
+
+/* ============================== HELPERS ============================== */
+const teamById = (id) => TEAMS.find((t) => t.id === id);
+function initialsHTML(team, size) {
+  return `<div class="initials" style="width:${size}px;height:${size}px;background:${team.color};font-size:${size * 0.34}px;">${team.abbr}</div>`;
+}
+function trendHTML(rank, prevRank) {
+  if (prevRank == null || prevRank === rank) return `<span style="color:#64748B;font-size:13px;">—</span>`;
+  const up = rank < prevRank;
+  return `<span style="color:${up ? "#22C55E" : "#EF4444"};font-size:13px;font-weight:700;">${up ? "▲" : "▼"}</span>`;
+}
+function escapeHTML(s) {
+  const d = document.createElement("div"); d.textContent = s; return d.innerHTML;
+}
+
+/* ============================== RENDER: NAV + TICKER ============================== */
+const TABS = [
+  { key: "standings", label: "Standings" }, { key: "schedule", label: "Schedule" },
+  { key: "results", label: "Game Results" },
+  { key: "stats", label: "Stats" }, { key: "playoffs", label: "Playoffs" }, { key: "players", label: "Players" },
+];
+function renderTabs() {
+  const nav = document.getElementById("tabs");
+  nav.innerHTML = TABS.map((t) => `<button class="tab-btn" data-tab="${t.key}">${t.label}</button>`).join("");
+  nav.querySelectorAll(".tab-btn").forEach((btn) => btn.addEventListener("click", () => showTab(btn.dataset.tab)));
+}
+function showTab(key) {
+  document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
+  document.getElementById("tab-" + key).classList.add("active");
+  document.querySelectorAll(".tab-btn").forEach((b) => b.classList.toggle("active", b.dataset.tab === key));
+}
+function renderTicker() {
+  const results = SCHEDULE.filter((g) => g.played).slice(-10);
+  const items = results.map((g) => {
+    const h = teamById(g.home), a = teamById(g.away);
+    return `<span><span class="dot">●</span>${h.abbr} ${g.homeScore}–${g.awayScore} ${a.abbr}</span>`;
+  });
+  document.getElementById("ticker").innerHTML = items.concat(items).join("");
+}
+
+/* ============================== RENDER: STANDINGS ============================== */
+function renderHero() {
+  const leader = STANDINGS[0], team = teamById(leader.teamId);
+  const chaser = STANDINGS[1], chaserTeam = teamById(chaser.teamId);
+  const gap = leader.pts - chaser.pts;
+  document.getElementById("hero-card").innerHTML = `
+    <div style="background:linear-gradient(120deg, ${team.color}22, #131B2E 55%); border:1px solid ${team.color}55; border-radius:4px; padding:28px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+      <div class="hero-left">
+        ${initialsHTML(team, 64)}
+        <div>
+          <div class="hero-label" style="color:${team.color};">LEAGUE LEADER</div>
+          <div class="hero-team-name">${team.name}</div>
+          <div class="hero-record">${leader.w}-${leader.l}-${leader.otl} · ${leader.pts} PTS · ${leader.streak}</div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-gap-label">LEADING <span style="color:#FBBF24; font-weight:700;">${chaserTeam.abbr}</span> BY</div>
+        <div class="hero-gap-num">${gap} PTS</div>
+      </div>
+    </div>`;
+}
+function renderStandings() {
+  const heads = ["", "#", "TEAM", "GP", "W", "L", "OTL", "PTS", "GF", "GA", "DIFF", "STRK"];
+  document.getElementById("standings-head").innerHTML = heads.map((h) => `<th>${h}</th>`).join("");
+  document.getElementById("standings-body").innerHTML = STANDINGS.map((row, i) => {
+    const team = teamById(row.teamId);
+    const gp = row.w + row.l + row.otl, diff = row.gf - row.ga;
+    const diffColor = diff > 0 ? "#22C55E" : diff < 0 ? "#EF4444" : "#94A3B8";
+    return `<tr style="background:${i % 2 ? "#0F172A" : "transparent"}; border-left:3px solid ${team.color};">
+      <td style="width:20px;">${trendHTML(row.rank, row.prevRank)}</td>
+      <td style="font-family:var(--display-font); font-weight:700; color:${row.rank <= 3 ? "#FBBF24" : "#F1F5F9"};">${row.rank}</td>
+      <td><div class="team-cell">${initialsHTML(team, 26)}<span>${team.name}</span></div></td>
+      <td class="mono">${gp}</td><td class="mono">${row.w}</td><td class="mono">${row.l}</td><td class="mono">${row.otl}</td>
+      <td class="mono" style="font-weight:700; color:#F1F5F9;">${row.pts}</td>
+      <td class="mono">${row.gf}</td><td class="mono">${row.ga}</td>
+      <td class="mono" style="color:${diffColor};">${diff > 0 ? "+" + diff : diff}</td>
+      <td class="mono">${row.streak}</td>
+    </tr>`;
+  }).join("");
+}
+
+/* ============================== RENDER: SCHEDULE ============================== */
+let weekFilter = "all";
+function renderSchedulePills() {
+  const weeks = [...new Set(SCHEDULE.map((g) => g.week))];
+  const pills = [{ key: "all", label: "All Weeks" }, ...weeks.map((w) => ({ key: w, label: `Week ${w}` }))];
+  document.getElementById("week-pills").innerHTML = pills.map((p) =>
+    `<button class="pill ${weekFilter === p.key ? "active" : ""}" data-week="${p.key}">${p.label}</button>`
+  ).join("");
+  document.querySelectorAll(".pill").forEach((btn) => btn.addEventListener("click", () => {
+    weekFilter = btn.dataset.week === "all" ? "all" : Number(btn.dataset.week);
+    renderSchedulePills(); renderWeekGrid();
+  }));
+}
+function renderWeekGrid() {
+  const weeks = [...new Set(SCHEDULE.map((g) => g.week))];
+  const filtered = weekFilter === "all" ? SCHEDULE : SCHEDULE.filter((g) => g.week === weekFilter);
+  const grouped = weeks.map((w) => ({ week: w, games: filtered.filter((g) => g.week === w) })).filter((x) => x.games.length);
+  document.getElementById("week-grid").innerHTML = grouped.map(({ week, games }) => `
+    <div class="card" style="overflow:hidden;">
+      <div class="week-head">WEEK ${week}</div>
+      ${games.map((g) => {
+        const home = teamById(g.home), away = teamById(g.away);
+        const scoreHTML = g.played
+          ? `<span class="game-score">${g.homeScore}-${g.awayScore}</span>`
+          : `<span style="font-size:12px; color:#475569; flex-shrink:0;">🕒</span>`;
+        return `<div class="game-row">
+          <span class="game-time">${g.slot}</span>
+          <span class="ha-tag" style="color:#22C55E;">H</span>
+          <span class="game-team">${home.name}</span>
+          <span class="ha-tag" style="color:#38BDF8;">A</span>
+          <span class="game-team">${away.name}</span>
+          ${scoreHTML}
+        </div>`;
+      }).join("")}
+    </div>`).join("");
+}
+
+/* ============================== RENDER: GAME RESULTS ============================== */
+let selectedResult = null;
+
+function renderResultsList() {
+  document.getElementById("results-list").innerHTML = GAME_RESULTS.map((r) => {
+    const home = teamById(r.home), away = teamById(r.away);
+    return `<button class="result-card ${selectedResult === r.id ? "selected" : ""}" data-result="${r.id}">
+      <div class="result-week">WEEK ${r.week} · GAME #${r.id} · ${r.mode}</div>
+      <div class="result-matchup">
+        <div class="result-team">${initialsHTML(home, 24)}<span>${home.name}</span></div>
+        <div class="result-score">${r.homeScore}-${r.awayScore}</div>
+        <div class="result-team" style="justify-content:flex-end;"><span>${away.name}</span>${initialsHTML(away, 24)}</div>
+      </div>
+    </button>`;
+  }).join("");
+  document.querySelectorAll(".result-card").forEach((btn) => btn.addEventListener("click", () => {
+    selectedResult = Number(btn.dataset.result);
+    renderResultsList();
+    renderResultDetail();
+  }));
+}
+
+function compareRowHTML(label, homeVal, awayVal, homeColor, awayColor, isNumeric) {
+  let barHTML = "";
+  if (isNumeric) {
+    const total = homeVal + awayVal || 1;
+    const homePct = Math.round((homeVal / total) * 100);
+    barHTML = `<div class="compare-bar-track" style="flex:1;">
+      <div style="width:${homePct}%; background:${homeColor};"></div>
+      <div style="width:${100 - homePct}%; background:${awayColor};"></div>
+    </div>`;
+  } else {
+    barHTML = `<div style="flex:1;"></div>`;
+  }
+  return `<div class="compare-row">
+    <div class="compare-val" style="color:${homeColor};">${homeVal}</div>
+    ${barHTML}
+    <div class="compare-label">${label}</div>
+    ${isNumeric ? "" : `<div style="flex:1;"></div>`}
+    <div class="compare-val away" style="color:${awayColor};">${awayVal}</div>
+  </div>`;
+}
+
+function skaterTableHTML(skaters) {
+  const headers = ["PLAYER", "POS", "G", "A", "P", "+/-", "TOI", "TwP", "SOG", "PASS%", "FOW", "FOL", "H", "TA", "GA", "BS", "INT", "PIM"];
+  const rows = skaters.map((s) => `<tr>
+    <td class="name-cell">${s.name}</td><td>${s.pos}</td><td>${s.g}</td><td>${s.a}</td><td>${s.p}</td>
+    <td>${s.pm > 0 ? "+" + s.pm : s.pm}</td><td>${s.toi}</td><td>${s.twp}</td><td>${s.shots}</td><td>${s.passPct}%</td>
+    <td>${s.fow}</td><td>${s.fol}</td><td>${s.hits}</td><td>${s.ta}</td><td>${s.giveaways}</td><td>${s.bs}</td><td>${s.int}</td><td>${s.pim}</td>
+  </tr>`).join("");
+  return `<div class="roster-table-wrap"><table class="roster"><thead><tr>${headers.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function goalieTableHTML(goalie) {
+  const headers = ["GOALIE", "RESULT", "SA", "SV", "GA", "SV%", "TOI", "PKCHK", "DESPSV"];
+  const row = `<tr>
+    <td class="name-cell">${goalie.name}</td><td>${goalie.result}</td><td>${goalie.sa}</td><td>${goalie.sv}</td>
+    <td>${goalie.ga}</td><td>${goalie.svPct}</td><td>${goalie.toi}</td><td>${goalie.pkChk}</td><td>${goalie.despSv}</td>
+  </tr>`;
+  return `<div class="roster-table-wrap"><table class="roster"><thead><tr>${headers.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${row}</tbody></table></div>`;
+}
+
+function renderResultDetail() {
+  const el = document.getElementById("result-detail");
+  if (selectedResult == null) { el.style.display = "none"; return; }
+  const r = GAME_RESULTS.find((g) => g.id === selectedResult);
+  const home = teamById(r.home), away = teamById(r.away);
+  const ts = r.teamStats;
+
+  el.style.display = "block";
+  el.innerHTML = `
+    <div class="card" style="overflow:hidden;">
+      <div class="recap-header" style="background:linear-gradient(120deg, ${home.color}22, ${away.color}22);">
+        <div class="recap-team-block">${initialsHTML(home, 48)}<div class="recap-team-name">${home.name}</div></div>
+        <div class="recap-score-num">${r.homeScore} - ${r.awayScore}</div>
+        <div class="recap-team-block">${initialsHTML(away, 48)}<div class="recap-team-name">${away.name}</div></div>
+      </div>
+      <div style="padding: 20px 24px; border-top: 1px solid var(--border);">
+        <div class="roster-section-label" style="margin-top:0;">TEAM COMPARISON</div>
+        ${compareRowHTML("SHOTS", ts.home.shots, ts.away.shots, home.color, away.color, true)}
+        ${compareRowHTML("FACEOFFS WON", ts.home.faceoffsWon, ts.away.faceoffsWon, home.color, away.color, true)}
+        ${compareRowHTML("HITS", ts.home.hits, ts.away.hits, home.color, away.color, true)}
+        ${compareRowHTML("TIME ON ATTACK", ts.home.toa, ts.away.toa, home.color, away.color, false)}
+        ${compareRowHTML("PIM", ts.home.pim, ts.away.pim, home.color, away.color, true)}
+        ${compareRowHTML("PASSING %", ts.home.passPct + "%", ts.away.passPct + "%", home.color, away.color, false)}
+      </div>
+      <div style="padding: 0 24px 24px;">
+        <div class="roster-section-label">${home.name.toUpperCase()}</div>
+        ${skaterTableHTML(r.homeSkaters)}
+        ${goalieTableHTML(r.homeGoalie)}
+        <div class="roster-section-label">${away.name.toUpperCase()}</div>
+        ${skaterTableHTML(r.awaySkaters)}
+        ${goalieTableHTML(r.awayGoalie)}
+      </div>
+    </div>`;
+}
+
+/* ============================== RENDER: STATS ============================== */
+function renderStats() {
+  const skaterCards = LEADER_CATS.map((cat) => {
+    const ranked = PLAYERS.filter((p) => !p.goalie).sort((a, b) => b[cat.key] - a[cat.key]).slice(0, 5);
+    return `<div class="card" style="padding:18px;">
+      <div class="stat-card-title">${cat.label.toUpperCase()}</div>
+      ${ranked.map((p, i) => {
+        const team = teamById(p.teamId);
+        return `<div class="stat-row">
+          <span class="stat-rank ${i < 3 ? "top3" : ""}">${i + 1}</span>
+          ${initialsHTML(team, 22)}
+          <span class="stat-name">${p.name}</span>
+          <span class="stat-val">${p[cat.key]}</span>
+        </div>`;
+      }).join("")}
+    </div>`;
+  }).join("");
+  const goalieRanked = PLAYERS.filter((p) => p.goalie).sort((a, b) => b.svp - a.svp);
+  const goalieCard = `<div class="card" style="padding:18px;">
+    <div class="stat-card-title">SAVE %</div>
+    ${goalieRanked.map((p, i) => {
+      const team = teamById(p.teamId);
+      return `<div class="stat-row">
+        <span class="stat-rank ${i < 3 ? "top3" : ""}">${i + 1}</span>
+        ${initialsHTML(team, 22)}
+        <span class="stat-name">${p.name}</span>
+        <span class="stat-val">${p.svp.toFixed(3)}</span>
+      </div>`;
+    }).join("")}
+  </div>`;
+  document.getElementById("stats-grid").innerHTML = skaterCards + goalieCard;
+}
+
+/* ============================== RENDER: PLAYOFFS ============================== */
+function matchRowHTML(teamId, wins, isWinner) {
+  const team = teamId ? teamById(teamId) : null;
+  return `<div class="match-row ${isWinner ? "winner" : ""}">
+    ${team ? initialsHTML(team, 22) : `<div style="width:22px;height:22px;border-radius:50%;background:#1E293B;"></div>`}
+    <span class="match-name" style="font-weight:${isWinner ? 700 : 500}; color:${team ? "#F1F5F9" : "#475569"};">${team ? team.name : "TBD"}</span>
+    <span class="match-wins ${isWinner ? "winner" : ""}">${wins}</span>
+  </div>`;
+}
+function renderBracket() {
+  document.getElementById("bracket").innerHTML = BRACKET.map((round) => `
+    <div class="round-col">
+      <div class="round-label">${round.round.toUpperCase()}</div>
+      ${round.matches.map((m) => `
+        <div class="card" style="overflow:hidden;">
+          ${matchRowHTML(m.a, m.winsA, m.done && m.winsA > m.winsB)}
+          <div style="height:1px; background:#1E293B;"></div>
+          ${matchRowHTML(m.b, m.winsB, m.done && m.winsB > m.winsA)}
+        </div>`).join("")}
+    </div>`).join("");
+}
+
+/* ============================== RENDER: PLAYERS ============================== */
+let selectedPlayer = null;
+function renderPlayersGrid(query) {
+  const filtered = PLAYERS.filter((p) => p.name.toLowerCase().includes((query || "").toLowerCase()));
+  document.getElementById("players-grid").innerHTML = filtered.map((p) => {
+    const team = teamById(p.teamId);
+    return `<button class="player-card ${selectedPlayer === p.id ? "selected" : ""}" data-player="${p.id}"
+        style="border-color:${selectedPlayer === p.id ? team.color : "#1E293B"};">
+      ${initialsHTML(team, 36)}
+      <div style="overflow:hidden;">
+        <div class="player-name">${p.name}</div>
+        <div class="player-sub">${team.abbr} · ${p.pos}</div>
+      </div>
+    </button>`;
+  }).join("");
+  document.querySelectorAll(".player-card").forEach((btn) => btn.addEventListener("click", () => {
+    selectedPlayer = Number(btn.dataset.player);
+    renderPlayersGrid(document.getElementById("player-search").value);
+    renderPlayerDetail();
+  }));
+}
+function renderPlayerDetail() {
+  const el = document.getElementById("player-detail");
+  if (selectedPlayer == null) { el.style.display = "none"; return; }
+  const p = PLAYERS.find((pl) => pl.id === selectedPlayer);
+  const team = teamById(p.teamId);
+  const stats = p.goalie
+    ? [["GP", p.gp], ["W-L-OTL", `${p.w}-${p.l}-${p.otl}`], ["GAA", p.gaa], ["SV%", p.svp.toFixed(3)], ["SO", p.so]]
+    : [["GP", p.gp], ["G", p.g], ["A", p.a], ["P", p.p], ["PIM", p.pim], ["HITS", p.hits]];
+  el.style.display = "block";
+  el.style.borderColor = team.color + "55";
+  el.innerHTML = `
+    <div class="detail-head">
+      ${initialsHTML(team, 52)}
+      <div>
+        <div class="detail-name">${p.name}</div>
+        <div class="detail-sub">${team.name} · ${p.pos}</div>
+      </div>
+    </div>
+    <div class="detail-stats">
+      ${stats.map(([label, val]) => `<div><div class="detail-stat-label">${label}</div><div class="detail-stat-val">${val}</div></div>`).join("")}
+    </div>`;
+}
+
+/* ============================== INIT ============================== */
+renderTabs();
+renderTicker();
+renderHero();
+renderStandings();
+renderSchedulePills();
+renderWeekGrid();
+renderResultsList();
+renderResultDetail();
+renderStats();
+renderBracket();
+renderPlayersGrid("");
+renderPlayerDetail();
+document.getElementById("player-search").addEventListener("input", (e) => renderPlayersGrid(e.target.value));
+showTab("standings");
+</script>
+</body>
+</html>
