@@ -247,6 +247,13 @@
   </div>
 </div>
 
+<div id="tab-teams" class="tab-panel">
+  <div class="wrap">
+    <h2 class="section-title">Teams</h2>
+    <div id="teams-grid" style="display:grid; gap:24px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));"></div>
+  </div>
+</div>
+
 <div id="tab-players" class="tab-panel">
   <div class="wrap">
     <h2 class="section-title">Players</h2>
@@ -412,7 +419,8 @@ function escapeHTML(s) {
 const TABS = [
   { key: "standings", label: "Standings" }, { key: "schedule", label: "Schedule" },
   { key: "results", label: "Game Results" },
-  { key: "stats", label: "Stats" }, { key: "playoffs", label: "Playoffs" }, { key: "players", label: "Players" },
+  { key: "stats", label: "Stats" }, { key: "playoffs", label: "Playoffs" },
+  { key: "teams", label: "Teams" }, { key: "players", label: "Players" },
 ];
 function renderTabs() {
   const nav = document.getElementById("tabs");
@@ -686,6 +694,44 @@ function renderBracket() {
     </div>`).join("");
 }
 
+/* ============================== RENDER: TEAMS ============================== */
+function renderTeams() {
+  const grid = document.getElementById("teams-grid");
+  grid.innerHTML = TEAMS.map((team) => {
+    const roster = PLAYERS.filter((p) => p.teamId === team.id);
+    const skaters = roster.filter((p) => !p.goalie).sort((a, b) => b.p - a.p);
+    const goalies = roster.filter((p) => p.goalie).sort((a, b) => b.gp - a.gp);
+
+    const skaterRows = skaters.map((p) => `<tr>
+      <td class="name-cell">${p.name}</td><td>${p.pos}</td><td>${p.gp}</td><td>${p.g}</td><td>${p.a}</td><td>${p.p}</td>
+    </tr>`).join("");
+    const goalieRows = goalies.map((p) => `<tr>
+      <td class="name-cell">${p.name}</td><td>G</td><td>${p.gp}</td><td>${p.w}-${p.l}-${p.otl}</td><td>${p.gaa.toFixed(2)}</td><td>${p.svp.toFixed(3)}</td>
+    </tr>`).join("");
+
+    const skaterTable = skaters.length ? `
+      <div class="roster-table-wrap"><table class="roster" style="min-width:0;">
+        <thead><tr><th>SKATER</th><th>POS</th><th>GP</th><th>G</th><th>A</th><th>P</th></tr></thead>
+        <tbody>${skaterRows}</tbody>
+      </table></div>` : "";
+    const goalieTable = goalies.length ? `
+      <div class="roster-table-wrap" style="margin-top:10px;"><table class="roster" style="min-width:0;">
+        <thead><tr><th>GOALIE</th><th>POS</th><th>GP</th><th>REC</th><th>GAA</th><th>SV%</th></tr></thead>
+        <tbody>${goalieRows}</tbody>
+      </table></div>` : "";
+    const emptyNote = (!skaters.length && !goalies.length)
+      ? `<div style="color: var(--muted); font-size:13px; text-align:center; padding:12px;">No players on this roster yet.</div>` : "";
+
+    return `<div class="card" style="overflow:hidden; border-top: 3px solid ${team.color};">
+      <div style="display:flex; align-items:center; gap:12px; padding:16px 18px; border-bottom:1px solid var(--border);">
+        ${initialsHTML(team, 40)}
+        <div style="font-family: var(--display-font); font-size:18px; font-weight:700;">${team.name}</div>
+      </div>
+      <div style="padding: 14px 18px;">${skaterTable}${goalieTable}${emptyNote}</div>
+    </div>`;
+  }).join("");
+}
+
 /* ============================== RENDER: PLAYERS ============================== */
 let selectedPlayer = null;
 function renderPlayersGrid(query) {
@@ -777,6 +823,7 @@ async function init() {
   renderResultDetail();
   renderStats();
   renderBracket();
+  renderTeams();
   renderPlayersGrid("");
   renderPlayerDetail();
   document.getElementById("player-search").addEventListener("input", (e) => renderPlayersGrid(e.target.value));
