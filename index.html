@@ -39,6 +39,24 @@
   }
   .logo { font-family: var(--display-font); font-weight: 700; font-size: 20px; letter-spacing: 0.02em; }
   .tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+
+  #menu-toggle {
+    display: none; background: transparent; border: 1px solid var(--border); border-radius: 4px;
+    color: var(--frost); font-size: 20px; line-height: 1; padding: 6px 12px; cursor: pointer;
+  }
+  #menu-toggle:focus-visible { outline: 2px solid var(--ice); }
+
+  @media (max-width: 720px) {
+    #menu-toggle { display: block; }
+    .tabs {
+      display: none; position: absolute; left: 0; right: 0; top: 100%;
+      flex-direction: column; gap: 0; background: var(--navy); border-bottom: 1px solid var(--border);
+      padding: 8px 16px 16px;
+    }
+    .tabs.open { display: flex; }
+    .tab-btn { width: 100%; text-align: left; padding: 12px 8px; }
+    .nav-outer { position: sticky; }
+  }
   .tab-btn {
     padding: 8px 14px; border-radius: 4px; font-size: 14px; font-weight: 600;
     cursor: pointer; border: none; background: transparent; color: var(--secondary);
@@ -187,7 +205,8 @@
 <div class="nav-outer">
   <div class="nav-inner">
     <div id="league-brand" class="logo" style="display:flex; align-items:center; gap:10px;">NEHL</div>
-    <span id="data-status" style="font-size: 11px; color: var(--muted); font-family: var(--mono-font);">Loading…</span>
+    <span id="data-status" style="font-size: 11px; color: var(--muted); font-family: var(--mono-font); flex:1;">Loading…</span>
+    <button id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="tabs" id="tabs"></nav>
   </div>
 </div>
@@ -425,7 +444,22 @@ const TABS = [
 function renderTabs() {
   const nav = document.getElementById("tabs");
   nav.innerHTML = TABS.map((t) => `<button class="tab-btn" data-tab="${t.key}">${t.label}</button>`).join("");
-  nav.querySelectorAll(".tab-btn").forEach((btn) => btn.addEventListener("click", () => showTab(btn.dataset.tab)));
+  nav.querySelectorAll(".tab-btn").forEach((btn) => btn.addEventListener("click", () => {
+    showTab(btn.dataset.tab);
+    closeMobileMenu();
+  }));
+}
+function closeMobileMenu() {
+  document.getElementById("tabs").classList.remove("open");
+  document.getElementById("menu-toggle").setAttribute("aria-expanded", "false");
+}
+function initMenuToggle() {
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("tabs");
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
 }
 function showTab(key) {
   document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
@@ -813,6 +847,7 @@ async function loadRealDataIfAvailable() {
 async function init() {
   await loadRealDataIfAvailable();
   renderTabs();
+  initMenuToggle();
   renderTicker();
   renderHero();
   renderStandings();
