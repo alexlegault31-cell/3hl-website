@@ -556,13 +556,18 @@ function renderWeekGrid() {
         const scoreHTML = g.played
           ? `<span class="game-score">${g.homeScore}-${g.awayScore}</span>`
           : `<span style="font-size:12px; color:#475569; flex-shrink:0;">🕒</span>`;
-        return `<div class="game-row">
+        const codeHTML = home.gameCode
+          ? `<div style="padding: 0 16px 8px 76px; font-size:11px; font-family: var(--mono-font); color: var(--ice); border-bottom: 1px solid rgba(30,41,59,0.4);">Code: ${escapeHTML(home.gameCode)}</div>`
+          : "";
+        return `<div>
+        <div class="game-row" style="border-bottom: ${codeHTML ? "none" : "1px solid rgba(30,41,59,0.4)"};">
           <span class="game-time">${g.slot}</span>
           <span class="ha-tag" style="color:#22C55E;">H</span>
           <span class="game-team">${home.name}</span>
           <span class="ha-tag" style="color:#38BDF8;">A</span>
           <span class="game-team">${away.name}</span>
           ${scoreHTML}
+        </div>${codeHTML}
         </div>`;
       }).join("")}
     </div>`).join("");
