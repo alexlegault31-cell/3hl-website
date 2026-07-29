@@ -797,9 +797,15 @@ function renderPlayerDetail() {
   if (selectedPlayer == null) { el.style.display = "none"; return; }
   const p = PLAYERS.find((pl) => pl.id === selectedPlayer);
   const team = teamById(p.teamId);
-  const stats = p.goalie
-    ? [["GP", p.gp], ["W-L-OTL", `${p.w}-${p.l}-${p.otl}`], ["GAA", p.gaa], ["SV%", p.svp.toFixed(3)], ["SO", p.so]]
-    : [["GP", p.gp], ["G", p.g], ["A", p.a], ["P", p.p], ["PIM", p.pim], ["HITS", p.hits]];
+  const split = p.split || { regular: {}, playoffs: {} };
+
+  function statsFor(half) {
+    half = half || {};
+    return p.goalie
+      ? [["GP", half.gp || 0], ["SA", half.sa || 0], ["GA", half.ga || 0], ["SV%", (half.svp || 0).toFixed(3)], ["GAA", (half.gaa || 0).toFixed(2)], ["SO", half.so || 0]]
+      : [["GP", half.gp || 0], ["G", half.g || 0], ["A", half.a || 0], ["P", half.p || 0], ["PIM", half.pim || 0], ["HITS", half.hits || 0]];
+  }
+
   el.style.display = "block";
   el.style.borderColor = team.color + "55";
   el.innerHTML = `
@@ -810,8 +816,19 @@ function renderPlayerDetail() {
         <div class="detail-sub">${team.name} · ${p.pos}</div>
       </div>
     </div>
-    <div class="detail-stats">
-      ${stats.map(([label, val]) => `<div><div class="detail-stat-label">${label}</div><div class="detail-stat-val">${val}</div></div>`).join("")}
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px; margin-top:16px;">
+      <div>
+        <div style="font-size:12px; letter-spacing:0.06em; color:var(--muted); margin-bottom:8px; font-family:var(--display-font); font-weight:600;">REGULAR SEASON</div>
+        <div class="detail-stats">
+          ${statsFor(split.regular).map(([label, val]) => `<div><div class="detail-stat-label">${label}</div><div class="detail-stat-val">${val}</div></div>`).join("")}
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px; letter-spacing:0.06em; color:var(--muted); margin-bottom:8px; font-family:var(--display-font); font-weight:600;">PLAYOFFS</div>
+        <div class="detail-stats">
+          ${statsFor(split.playoffs).map(([label, val]) => `<div><div class="detail-stat-label">${label}</div><div class="detail-stat-val">${val}</div></div>`).join("")}
+        </div>
+      </div>
     </div>`;
 }
 
