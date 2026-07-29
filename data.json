@@ -4,86 +4,96 @@
     "number": 2
   },
   "league": {
-    "name": "3HL",
+    "name": "3HL - 3's Hockey League",
     "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-125e21c3-c08a-4255-9129-7f2498ca2f70.jpg"
   },
   "teams": [
-    {
-      "id": 10,
-      "name": "Dallas Stars",
-      "abbr": "ARS",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-da73b3d4-3ce6-47bf-8ba3-f79b3ee38026.png"
-    },
-    {
-      "id": 13,
-      "name": "Ottawa Senators",
-      "abbr": "ORS",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-0bf04289-9fb4-4d44-b697-e3663512fc69.png"
-    },
-    {
-      "id": 14,
-      "name": "Edmonton Oilers",
-      "abbr": "ERS",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-9dda7665-4923-47ba-a86d-c8f92021dac3.png"
-    },
-    {
-      "id": 15,
-      "name": "Carolina Hurricanes",
-      "abbr": "NES",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-ed149f93-e3cf-48eb-8d72-396a4667d6f7.png"
-    },
     {
       "id": 16,
       "name": "Buffalo Sabres",
       "abbr": "RES",
       "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-66ca4998-5126-4263-b5a8-dbc97574f37d.png"
-    },
-    {
-      "id": 17,
-      "name": "Manitoba Moose",
-      "abbr": "OSE",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-104b2fcb-dbd5-4bce-96c0-120001ad08b7.png"
-    },
-    {
-      "id": 12,
-      "name": "Winnipeg Jets",
-      "abbr": "ETS",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-394a72b2-b170-4b94-996a-153feb37102b.png"
-    },
-    {
-      "id": 9,
-      "name": "Montreal Canadiens",
-      "abbr": "ENS",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-ce3bf2a1-d5bf-46e1-a212-16fe188c8bd1.png"
+      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-66ca4998-5126-4263-b5a8-dbc97574f37d.png",
+      "gameCode": "3HLBUF"
     },
     {
       "id": 18,
       "name": "Calgary Flames",
       "abbr": "MES",
       "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-cc6f424c-cc67-4ce8-8b56-8c5b5e6dbfac.png"
+      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-cc6f424c-cc67-4ce8-8b56-8c5b5e6dbfac.png",
+      "gameCode": "3HLCGY"
+    },
+    {
+      "id": 15,
+      "name": "Carolina Hurricanes",
+      "abbr": "NES",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-ed149f93-e3cf-48eb-8d72-396a4667d6f7.png",
+      "gameCode": "3HLCAR"
+    },
+    {
+      "id": 10,
+      "name": "Dallas Stars",
+      "abbr": "ARS",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-da73b3d4-3ce6-47bf-8ba3-f79b3ee38026.png",
+      "gameCode": "3HLDAL"
+    },
+    {
+      "id": 14,
+      "name": "Edmonton Oilers",
+      "abbr": "ERS",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-9dda7665-4923-47ba-a86d-c8f92021dac3.png",
+      "gameCode": "3HLEDM"
+    },
+    {
+      "id": 17,
+      "name": "Manitoba Moose",
+      "abbr": "OSE",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-104b2fcb-dbd5-4bce-96c0-120001ad08b7.png",
+      "gameCode": "3HLMBM"
+    },
+    {
+      "id": 9,
+      "name": "Montreal Canadiens",
+      "abbr": "ENS",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-ce3bf2a1-d5bf-46e1-a212-16fe188c8bd1.png",
+      "gameCode": "3HLMTL"
+    },
+    {
+      "id": 13,
+      "name": "Ottawa Senators",
+      "abbr": "ORS",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-0bf04289-9fb4-4d44-b697-e3663512fc69.png",
+      "gameCode": "3HLOTT"
     },
     {
       "id": 19,
       "name": "Pittsburgh Penguins",
       "abbr": "INS",
       "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-ad77199a-ef24-41ce-bcb9-6f639ee8e012.png"
+      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-ad77199a-ef24-41ce-bcb9-6f639ee8e012.png",
+      "gameCode": "3HLPIT"
+    },
+    {
+      "id": 12,
+      "name": "Winnipeg Jets",
+      "abbr": "ETS",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-394a72b2-b170-4b94-996a-153feb37102b.png",
+      "gameCode": "3HLWPG"
     }
   ],
   "standings": [
     {
-      "teamId": 10,
+      "teamId": 16,
       "rank": 1,
-      "prevRank": null,
+      "prevRank": 5,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -93,21 +103,9 @@
       "streak": "-"
     },
     {
-      "teamId": 13,
+      "teamId": 18,
       "rank": 2,
-      "prevRank": null,
-      "w": 0,
-      "l": 0,
-      "otl": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "streak": "-"
-    },
-    {
-      "teamId": 14,
-      "rank": 3,
-      "prevRank": null,
+      "prevRank": 9,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -118,8 +116,8 @@
     },
     {
       "teamId": 15,
-      "rank": 4,
-      "prevRank": null,
+      "rank": 3,
+      "prevRank": 4,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -129,9 +127,21 @@
       "streak": "-"
     },
     {
-      "teamId": 16,
+      "teamId": 10,
+      "rank": 4,
+      "prevRank": 1,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 14,
       "rank": 5,
-      "prevRank": null,
+      "prevRank": 3,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -143,19 +153,7 @@
     {
       "teamId": 17,
       "rank": 6,
-      "prevRank": null,
-      "w": 0,
-      "l": 0,
-      "otl": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "streak": "-"
-    },
-    {
-      "teamId": 12,
-      "rank": 7,
-      "prevRank": null,
+      "prevRank": 6,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -166,8 +164,8 @@
     },
     {
       "teamId": 9,
-      "rank": 8,
-      "prevRank": null,
+      "rank": 7,
+      "prevRank": 8,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -177,9 +175,9 @@
       "streak": "-"
     },
     {
-      "teamId": 18,
-      "rank": 9,
-      "prevRank": null,
+      "teamId": 13,
+      "rank": 8,
+      "prevRank": 2,
       "w": 0,
       "l": 0,
       "otl": 0,
@@ -190,8 +188,20 @@
     },
     {
       "teamId": 19,
+      "rank": 9,
+      "prevRank": 10,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 0,
+      "streak": "-"
+    },
+    {
+      "teamId": 12,
       "rank": 10,
-      "prevRank": null,
+      "prevRank": 7,
       "w": 0,
       "l": 0,
       "otl": 0,
