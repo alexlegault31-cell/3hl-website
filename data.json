@@ -103,8 +103,20 @@
       "streak": "W4"
     },
     {
-      "teamId": 9,
+      "teamId": 14,
       "rank": 2,
+      "prevRank": 3,
+      "w": 4,
+      "l": 0,
+      "otl": 0,
+      "pts": 8,
+      "gf": 23,
+      "ga": 5,
+      "streak": "W1"
+    },
+    {
+      "teamId": 9,
+      "rank": 3,
       "prevRank": 2,
       "w": 3,
       "l": 1,
@@ -113,18 +125,6 @@
       "gf": 33,
       "ga": 21,
       "streak": "L1"
-    },
-    {
-      "teamId": 14,
-      "rank": 3,
-      "prevRank": 3,
-      "w": 3,
-      "l": 0,
-      "otl": 0,
-      "pts": 6,
-      "gf": 15,
-      "ga": 5,
-      "streak": "T1"
     },
     {
       "teamId": 17,
@@ -175,20 +175,8 @@
       "streak": "W1"
     },
     {
-      "teamId": 19,
-      "rank": 8,
-      "prevRank": 9,
-      "w": 0,
-      "l": 3,
-      "otl": 0,
-      "pts": 0,
-      "gf": 8,
-      "ga": 21,
-      "streak": "L3"
-    },
-    {
       "teamId": 12,
-      "rank": 9,
+      "rank": 8,
       "prevRank": 7,
       "w": 0,
       "l": 3,
@@ -200,7 +188,7 @@
     },
     {
       "teamId": 15,
-      "rank": 10,
+      "rank": 9,
       "prevRank": 7,
       "w": 0,
       "l": 3,
@@ -209,6 +197,18 @@
       "gf": 9,
       "ga": 24,
       "streak": "L3"
+    },
+    {
+      "teamId": 19,
+      "rank": 10,
+      "prevRank": 8,
+      "w": 0,
+      "l": 4,
+      "otl": 0,
+      "pts": 0,
+      "gf": 8,
+      "ga": 29,
+      "streak": "L4"
     }
   ],
   "schedule": [
@@ -388,9 +388,9 @@
       "slot": "Wed 9:30 PM EST",
       "home": 14,
       "away": 19,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 8,
+      "awayScore": 0
     },
     {
       "num": 19,
@@ -3019,6 +3019,78 @@
       }
     },
     {
+      "id": 37,
+      "name": "Lil420baguette",
+      "teamId": 14,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 3,
+      "g": 11,
+      "a": 6,
+      "p": 17,
+      "pim": 0,
+      "hits": 34,
+      "fow": 0,
+      "fol": 0,
+      "ta": 12,
+      "int": 3,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 11,
+          "a": 6,
+          "p": 17,
+          "pim": 0,
+          "hits": 34
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 253,
+      "name": "ShIfTy8989",
+      "teamId": 14,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 2,
+      "g": 3,
+      "a": 6,
+      "p": 9,
+      "pim": 0,
+      "hits": 17,
+      "fow": 22,
+      "fol": 19,
+      "ta": 8,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 3,
+          "a": 6,
+          "p": 9,
+          "pim": 0,
+          "hits": 17
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 249,
       "name": "RlNNE I2I",
       "teamId": 13,
@@ -3055,27 +3127,63 @@
       }
     },
     {
-      "id": 236,
-      "name": "MrAZeK6013",
-      "teamId": 19,
-      "pos": "G",
-      "goalie": true,
+      "id": 254,
+      "name": "BBoeser06",
+      "teamId": 14,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
       "gp": 2,
-      "w": 0,
-      "l": 2,
-      "otl": 0,
-      "gaa": 10.94,
-      "svp": 0.617,
-      "so": 0,
+      "g": 2,
+      "a": 8,
+      "p": 10,
+      "pim": 2,
+      "hits": 2,
+      "fow": 0,
+      "fol": 0,
+      "ta": 9,
+      "int": 4,
+      "bs": 2,
       "split": {
         "regular": {
           "gp": 2,
+          "g": 2,
+          "a": 8,
+          "p": 10,
+          "pim": 2,
+          "hits": 2
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 248,
+      "name": "Dairy Cannonss",
+      "teamId": 14,
+      "pos": "G",
+      "goalie": true,
+      "gp": 3,
+      "w": 3,
+      "l": 0,
+      "otl": 0,
+      "gaa": 1.65,
+      "svp": 0.894,
+      "so": 1,
+      "split": {
+        "regular": {
+          "gp": 3,
           "sa": 47,
-          "ga": 18,
-          "sv": 29,
-          "svp": 0.617,
-          "gaa": 10.94,
-          "so": 0
+          "ga": 5,
+          "sv": 42,
+          "svp": 0.894,
+          "gaa": 1.65,
+          "so": 1
         },
         "playoffs": {
           "gp": 0,
@@ -3085,6 +3193,78 @@
           "svp": 0.0,
           "gaa": 0.0,
           "so": 0
+        }
+      }
+    },
+    {
+      "id": 236,
+      "name": "MrAZeK6013",
+      "teamId": 19,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 3,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 2,
+      "fow": 0,
+      "fol": 0,
+      "ta": 2,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 2
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 237,
+      "name": "Spaceltm",
+      "teamId": 19,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 3,
+      "g": 0,
+      "a": 6,
+      "p": 6,
+      "pim": 0,
+      "hits": 16,
+      "fow": 18,
+      "fol": 32,
+      "ta": 8,
+      "int": 4,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 0,
+          "a": 6,
+          "p": 6,
+          "pim": 0,
+          "hits": 16
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
         }
       }
     },
@@ -3149,78 +3329,6 @@
           "p": 17,
           "pim": 0,
           "hits": 17
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 37,
-      "name": "Lil420baguette",
-      "teamId": 14,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 2,
-      "g": 6,
-      "a": 3,
-      "p": 9,
-      "pim": 0,
-      "hits": 29,
-      "fow": 0,
-      "fol": 0,
-      "ta": 9,
-      "int": 1,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 6,
-          "a": 3,
-          "p": 9,
-          "pim": 0,
-          "hits": 29
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 253,
-      "name": "ShIfTy8989",
-      "teamId": 14,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 1,
-      "g": 1,
-      "a": 2,
-      "p": 3,
-      "pim": 0,
-      "hits": 12,
-      "fow": 10,
-      "fol": 13,
-      "ta": 4,
-      "int": 0,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 1,
-          "a": 2,
-          "p": 3,
-          "pim": 0,
-          "hits": 12
         },
         "playoffs": {
           "gp": 0,
@@ -3373,76 +3481,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 254,
-      "name": "BBoeser06",
-      "teamId": 14,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 1,
-      "g": 1,
-      "a": 2,
-      "p": 3,
-      "pim": 2,
-      "hits": 1,
-      "fow": 0,
-      "fol": 0,
-      "ta": 5,
-      "int": 2,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 1,
-          "a": 2,
-          "p": 3,
-          "pim": 2,
-          "hits": 1
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 248,
-      "name": "Dairy Cannonss",
-      "teamId": 14,
-      "pos": "G",
-      "goalie": true,
-      "gp": 2,
-      "w": 2,
-      "l": 0,
-      "otl": 0,
-      "gaa": 2.24,
-      "svp": 0.872,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "sa": 39,
-          "ga": 5,
-          "sv": 34,
-          "svp": 0.872,
-          "gaa": 2.24,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -3695,6 +3733,76 @@
       }
     },
     {
+      "id": 238,
+      "name": "Drixo9840",
+      "teamId": 19,
+      "pos": "G",
+      "goalie": true,
+      "gp": 3,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "gaa": 10.03,
+      "svp": 0.724,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 29,
+          "ga": 8,
+          "sv": 21,
+          "svp": 0.724,
+          "gaa": 10.03,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 239,
+      "name": "AcidChief397",
+      "teamId": 19,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 3,
+      "g": 1,
+      "a": 4,
+      "p": 5,
+      "pim": 0,
+      "hits": 11,
+      "fow": 0,
+      "fol": 0,
+      "ta": 6,
+      "int": 4,
+      "bs": 5,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 1,
+          "a": 4,
+          "p": 5,
+          "pim": 0,
+          "hits": 11
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 250,
       "name": "Lemieux4Ever",
       "teamId": 13,
@@ -3789,114 +3897,6 @@
           "p": 18,
           "pim": 4,
           "hits": 16
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 237,
-      "name": "Spaceltm",
-      "teamId": 19,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 2,
-      "g": 0,
-      "a": 6,
-      "p": 6,
-      "pim": 0,
-      "hits": 15,
-      "fow": 15,
-      "fol": 27,
-      "ta": 7,
-      "int": 4,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 0,
-          "a": 6,
-          "p": 6,
-          "pim": 0,
-          "hits": 15
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 238,
-      "name": "Drixo9840",
-      "teamId": 19,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 2,
-      "g": 7,
-      "a": 0,
-      "p": 7,
-      "pim": 2,
-      "hits": 18,
-      "fow": 0,
-      "fol": 0,
-      "ta": 11,
-      "int": 1,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 7,
-          "a": 0,
-          "p": 7,
-          "pim": 2,
-          "hits": 18
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 239,
-      "name": "AcidChief397",
-      "teamId": 19,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 2,
-      "g": 1,
-      "a": 4,
-      "p": 5,
-      "pim": 0,
-      "hits": 9,
-      "fow": 0,
-      "fol": 0,
-      "ta": 6,
-      "int": 4,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 1,
-          "a": 4,
-          "p": 5,
-          "pim": 0,
-          "hits": 9
         },
         "playoffs": {
           "gp": 0,
@@ -4194,6 +4194,179 @@
     }
   ],
   "gameResults": [
+    {
+      "id": 18,
+      "week": 1,
+      "home": 14,
+      "away": 19,
+      "homeScore": 8,
+      "awayScore": 0,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 29,
+          "faceoffsWon": 12,
+          "hits": 11,
+          "toa": "12:39",
+          "pim": 0,
+          "passPct": 86
+        },
+        "away": {
+          "shots": 8,
+          "faceoffsWon": 3,
+          "hits": 5,
+          "toa": "3:54",
+          "pim": 0,
+          "passPct": 68
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Lil420baguette",
+          "pos": "LEF",
+          "g": 5,
+          "a": 3,
+          "p": 8,
+          "pm": 8,
+          "toi": "47:50",
+          "twp": "7:42",
+          "shots": 10,
+          "passPct": 88,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 3,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "ShIfTy8989",
+          "pos": "CEN",
+          "g": 2,
+          "a": 4,
+          "p": 6,
+          "pm": 8,
+          "toi": "47:50",
+          "twp": "6:32",
+          "shots": 9,
+          "passPct": 78,
+          "fow": 12,
+          "fol": 6,
+          "hits": 5,
+          "ta": 4,
+          "giveaways": 0,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "BBoeser06",
+          "pos": "DEF",
+          "g": 1,
+          "a": 6,
+          "p": 7,
+          "pm": 8,
+          "toi": "47:50",
+          "twp": "5:26",
+          "shots": 8,
+          "passPct": 91,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 4,
+          "giveaways": 2,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "MrAZeK6013",
+          "pos": "LEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -6,
+          "toi": "44:54",
+          "twp": "4:00",
+          "shots": 1,
+          "passPct": 62,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 2,
+          "giveaways": 11,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Spaceltm",
+          "pos": "CEN",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -3,
+          "toi": "26:43",
+          "twp": "1:22",
+          "shots": 0,
+          "passPct": 50,
+          "fow": 3,
+          "fol": 5,
+          "hits": 1,
+          "ta": 1,
+          "giveaways": 8,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "AcidChief397",
+          "pos": "DEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "47:50",
+          "twp": "3:11",
+          "shots": 3,
+          "passPct": 92,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 0,
+          "giveaways": 2,
+          "bs": 3,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "Dairy Cannonss",
+        "result": "W",
+        "sa": 8,
+        "sv": 8,
+        "ga": 0,
+        "svPct": "1.000",
+        "toi": "47:50",
+        "pkChk": 0,
+        "despSv": 1
+      },
+      "awayGoalie": {
+        "name": "Drixo9840",
+        "result": "L",
+        "sa": 29,
+        "sv": 21,
+        "ga": 8,
+        "svPct": "0.724",
+        "toi": "47:50",
+        "pkChk": 1,
+        "despSv": 1
+      }
+    },
     {
       "id": 17,
       "week": 1,
