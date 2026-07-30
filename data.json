@@ -117,14 +117,14 @@
     {
       "teamId": 14,
       "rank": 3,
-      "prevRank": 4,
-      "w": 2,
+      "prevRank": 3,
+      "w": 3,
       "l": 0,
       "otl": 0,
-      "pts": 4,
-      "gf": 11,
-      "ga": 2,
-      "streak": "W2"
+      "pts": 6,
+      "gf": 15,
+      "ga": 5,
+      "streak": "T1"
     },
     {
       "teamId": 13,
@@ -153,14 +153,14 @@
     {
       "teamId": 18,
       "rank": 6,
-      "prevRank": 4,
+      "prevRank": 6,
       "w": 1,
       "l": 1,
-      "otl": 0,
-      "pts": 2,
-      "gf": 11,
-      "ga": 11,
-      "streak": "L1"
+      "otl": 1,
+      "pts": 3,
+      "gf": 14,
+      "ga": 15,
+      "streak": "O1"
     },
     {
       "teamId": 15,
@@ -348,9 +348,9 @@
       "slot": "Wed 9:00 PM EST",
       "home": 18,
       "away": 14,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 3,
+      "awayScore": 4
     },
     {
       "num": 15,
@@ -3377,6 +3377,78 @@
       }
     },
     {
+      "id": 37,
+      "name": "Lil420baguette",
+      "teamId": 14,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 2,
+      "g": 6,
+      "a": 3,
+      "p": 9,
+      "pim": 0,
+      "hits": 29,
+      "fow": 0,
+      "fol": 0,
+      "ta": 9,
+      "int": 1,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 6,
+          "a": 3,
+          "p": 9,
+          "pim": 0,
+          "hits": 29
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 253,
+      "name": "ShIfTy8989",
+      "teamId": 14,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 1,
+      "a": 2,
+      "p": 3,
+      "pim": 0,
+      "hits": 12,
+      "fow": 10,
+      "fol": 13,
+      "ta": 4,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 1,
+          "a": 2,
+          "p": 3,
+          "pim": 0,
+          "hits": 12
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 240,
       "name": "TSNGURR",
       "teamId": 18,
@@ -3449,40 +3521,6 @@
       }
     },
     {
-      "id": 31,
-      "name": "XxColdAimxX",
-      "teamId": 18,
-      "pos": "G",
-      "goalie": true,
-      "gp": 1,
-      "w": 0,
-      "l": 1,
-      "otl": 0,
-      "gaa": 11.0,
-      "svp": 0.633,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 30,
-          "ga": 11,
-          "sv": 19,
-          "svp": 0.633,
-          "gaa": 11.0,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
       "id": 243,
       "name": "MVTGoalie72_911",
       "teamId": 15,
@@ -3519,30 +3557,30 @@
       }
     },
     {
-      "id": 37,
-      "name": "Lil420baguette",
+      "id": 254,
+      "name": "BBoeser06",
       "teamId": 14,
-      "pos": "LEFTWING",
+      "pos": "DEFENSEMEN",
       "goalie": false,
       "gp": 1,
-      "g": 4,
+      "g": 1,
       "a": 2,
-      "p": 6,
-      "pim": 0,
-      "hits": 11,
+      "p": 3,
+      "pim": 2,
+      "hits": 1,
       "fow": 0,
       "fol": 0,
-      "ta": 4,
-      "int": 1,
-      "bs": 0,
+      "ta": 5,
+      "int": 2,
+      "bs": 2,
       "split": {
         "regular": {
           "gp": 1,
-          "g": 4,
+          "g": 1,
           "a": 2,
-          "p": 6,
-          "pim": 0,
-          "hits": 11
+          "p": 3,
+          "pim": 2,
+          "hits": 1
         },
         "playoffs": {
           "gp": 0,
@@ -3560,21 +3598,55 @@
       "teamId": 14,
       "pos": "G",
       "goalie": true,
-      "gp": 1,
-      "w": 1,
+      "gp": 2,
+      "w": 2,
       "l": 0,
       "otl": 0,
-      "gaa": 2.0,
-      "svp": 0.857,
+      "gaa": 2.24,
+      "svp": 0.872,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "sa": 39,
+          "ga": 5,
+          "sv": 34,
+          "svp": 0.872,
+          "gaa": 2.24,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 255,
+      "name": "vuftr",
+      "teamId": 18,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 0,
+      "l": 0,
+      "otl": 1,
+      "gaa": 3.25,
+      "svp": 0.826,
       "so": 0,
       "split": {
         "regular": {
           "gp": 1,
-          "sa": 14,
-          "ga": 2,
-          "sv": 12,
-          "svp": 0.857,
-          "gaa": 2.0,
+          "sa": 23,
+          "ga": 4,
+          "sv": 19,
+          "svp": 0.826,
+          "gaa": 3.25,
           "so": 0
         },
         "playoffs": {
@@ -4013,9 +4085,290 @@
           "hits": 0
         }
       }
+    },
+    {
+      "id": 256,
+      "name": "Jonmck97",
+      "teamId": 18,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 2,
+      "p": 2,
+      "pim": 2,
+      "hits": 5,
+      "fow": 0,
+      "fol": 0,
+      "ta": 8,
+      "int": 0,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 2,
+          "p": 2,
+          "pim": 2,
+          "hits": 5
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "SussyAidan5937",
+      "teamId": 18,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 3,
+      "a": 0,
+      "p": 3,
+      "pim": 2,
+      "hits": 6,
+      "fow": 0,
+      "fol": 0,
+      "ta": 3,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 3,
+          "a": 0,
+          "p": 3,
+          "pim": 2,
+          "hits": 6
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 31,
+      "name": "XxColdAimxX",
+      "teamId": 18,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 2,
+      "g": 0,
+      "a": 2,
+      "p": 2,
+      "pim": 2,
+      "hits": 5,
+      "fow": 13,
+      "fol": 10,
+      "ta": 3,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 2,
+          "p": 2,
+          "pim": 2,
+          "hits": 5
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 14,
+      "week": 1,
+      "home": 18,
+      "away": 14,
+      "homeScore": 3,
+      "awayScore": 4,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 26,
+          "faceoffsWon": 13,
+          "hits": 16,
+          "toa": "12:51",
+          "pim": 6,
+          "passPct": 84
+        },
+        "away": {
+          "shots": 25,
+          "faceoffsWon": 10,
+          "hits": 31,
+          "toa": "13:12",
+          "pim": 2,
+          "passPct": 83
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Jonmck97",
+          "pos": "DEF",
+          "g": 0,
+          "a": 2,
+          "p": 2,
+          "pm": 0,
+          "toi": "73:44",
+          "twp": "5:50",
+          "shots": 2,
+          "passPct": 92,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 8,
+          "giveaways": 2,
+          "bs": 2,
+          "int": 0,
+          "pim": 2
+        },
+        {
+          "name": "SussyAidan5937",
+          "pos": "LEF",
+          "g": 3,
+          "a": 0,
+          "p": 3,
+          "pm": 0,
+          "toi": "73:44",
+          "twp": "6:36",
+          "shots": 9,
+          "passPct": 79,
+          "fow": 0,
+          "fol": 0,
+          "hits": 6,
+          "ta": 3,
+          "giveaways": 11,
+          "bs": 0,
+          "int": 1,
+          "pim": 2
+        },
+        {
+          "name": "XxColdAimxX",
+          "pos": "CEN",
+          "g": 0,
+          "a": 2,
+          "p": 2,
+          "pm": 0,
+          "toi": "73:44",
+          "twp": "12:00",
+          "shots": 15,
+          "passPct": 80,
+          "fow": 13,
+          "fol": 10,
+          "hits": 5,
+          "ta": 3,
+          "giveaways": 16,
+          "bs": 0,
+          "int": 0,
+          "pim": 2
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "Lil420baguette",
+          "pos": "LEF",
+          "g": 2,
+          "a": 1,
+          "p": 3,
+          "pm": 0,
+          "toi": "73:44",
+          "twp": "7:57",
+          "shots": 9,
+          "passPct": 100,
+          "fow": 0,
+          "fol": 0,
+          "hits": 18,
+          "ta": 5,
+          "giveaways": 10,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "ShIfTy8989",
+          "pos": "CEN",
+          "g": 1,
+          "a": 2,
+          "p": 3,
+          "pm": 0,
+          "toi": "73:44",
+          "twp": "8:53",
+          "shots": 4,
+          "passPct": 64,
+          "fow": 10,
+          "fol": 13,
+          "hits": 12,
+          "ta": 4,
+          "giveaways": 14,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "BBoeser06",
+          "pos": "DEF",
+          "g": 1,
+          "a": 2,
+          "p": 3,
+          "pm": 0,
+          "toi": "73:44",
+          "twp": "7:40",
+          "shots": 6,
+          "passPct": 86,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 5,
+          "giveaways": 3,
+          "bs": 2,
+          "int": 2,
+          "pim": 2
+        }
+      ],
+      "homeGoalie": {
+        "name": "vuftr",
+        "result": "OTL",
+        "sa": 23,
+        "sv": 19,
+        "ga": 4,
+        "svPct": "0.826",
+        "toi": "73:44",
+        "pkChk": 1,
+        "despSv": 3
+      },
+      "awayGoalie": {
+        "name": "Dairy Cannonss",
+        "result": "W",
+        "sa": 25,
+        "sv": 22,
+        "ga": 3,
+        "svPct": "0.880",
+        "toi": "73:41",
+        "pkChk": 0,
+        "despSv": 1
+      }
+    },
     {
       "id": 13,
       "week": 1,
