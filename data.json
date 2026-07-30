@@ -165,26 +165,26 @@
     {
       "teamId": 10,
       "rank": 7,
-      "prevRank": 9,
+      "prevRank": 7,
       "w": 1,
-      "l": 2,
+      "l": 3,
       "otl": 0,
       "pts": 2,
-      "gf": 11,
-      "ga": 20,
-      "streak": "W1"
+      "gf": 20,
+      "ga": 31,
+      "streak": "L1"
     },
     {
       "teamId": 12,
       "rank": 8,
-      "prevRank": 7,
-      "w": 0,
+      "prevRank": 8,
+      "w": 1,
       "l": 3,
       "otl": 0,
-      "pts": 0,
-      "gf": 13,
-      "ga": 28,
-      "streak": "L3"
+      "pts": 2,
+      "gf": 24,
+      "ga": 37,
+      "streak": "W1"
     },
     {
       "teamId": 15,
@@ -398,9 +398,9 @@
       "slot": "Wed 9:30 PM EST",
       "home": 10,
       "away": 12,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 9,
+      "awayScore": 11
     },
     {
       "num": 20,
@@ -2665,6 +2665,42 @@
       }
     },
     {
+      "id": 222,
+      "name": "BraZeau JR",
+      "teamId": 12,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 4,
+      "g": 7,
+      "a": 10,
+      "p": 17,
+      "pim": 0,
+      "hits": 20,
+      "fow": 7,
+      "fol": 17,
+      "ta": 11,
+      "int": 6,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 7,
+          "a": 10,
+          "p": 17,
+          "pim": 0,
+          "hits": 20
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 48,
       "name": "Leop81_",
       "teamId": 16,
@@ -2701,64 +2737,28 @@
       }
     },
     {
-      "id": 222,
-      "name": "BraZeau JR",
-      "teamId": 12,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 3,
-      "g": 4,
-      "a": 6,
-      "p": 10,
-      "pim": 0,
-      "hits": 15,
-      "fow": 7,
-      "fol": 17,
-      "ta": 7,
-      "int": 4,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 4,
-          "a": 6,
-          "p": 10,
-          "pim": 0,
-          "hits": 15
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 223,
       "name": "F4MoUs RedBUL",
       "teamId": 12,
-      "pos": "LEFTWING",
+      "pos": "CENTER",
       "goalie": false,
-      "gp": 3,
-      "g": 6,
-      "a": 4,
-      "p": 10,
+      "gp": 4,
+      "g": 8,
+      "a": 12,
+      "p": 20,
       "pim": 8,
       "hits": 2,
-      "fow": 18,
-      "fol": 9,
-      "ta": 9,
+      "fow": 29,
+      "fol": 34,
+      "ta": 15,
       "int": 3,
-      "bs": 0,
+      "bs": 1,
       "split": {
         "regular": {
-          "gp": 3,
-          "g": 6,
-          "a": 4,
-          "p": 10,
+          "gp": 4,
+          "g": 8,
+          "a": 12,
+          "p": 20,
           "pim": 8,
           "hits": 2
         },
@@ -2778,25 +2778,25 @@
       "teamId": 12,
       "pos": "DEFENSEMEN",
       "goalie": false,
-      "gp": 3,
-      "g": 3,
-      "a": 7,
-      "p": 10,
+      "gp": 4,
+      "g": 9,
+      "a": 10,
+      "p": 19,
       "pim": 2,
-      "hits": 31,
+      "hits": 40,
       "fow": 10,
       "fol": 11,
-      "ta": 11,
-      "int": 6,
-      "bs": 2,
+      "ta": 16,
+      "int": 9,
+      "bs": 4,
       "split": {
         "regular": {
-          "gp": 3,
-          "g": 3,
-          "a": 7,
-          "p": 10,
+          "gp": 4,
+          "g": 9,
+          "a": 10,
+          "p": 19,
           "pim": 2,
-          "hits": 31
+          "hits": 40
         },
         "playoffs": {
           "gp": 0,
@@ -2814,21 +2814,21 @@
       "teamId": 12,
       "pos": "G",
       "goalie": true,
-      "gp": 3,
-      "w": 0,
+      "gp": 4,
+      "w": 1,
       "l": 3,
       "otl": 0,
-      "gaa": 9.33,
-      "svp": 0.705,
+      "gaa": 9.25,
+      "svp": 0.694,
       "so": 0,
       "split": {
         "regular": {
-          "gp": 3,
-          "sa": 95,
-          "ga": 28,
-          "sv": 67,
-          "svp": 0.705,
-          "gaa": 9.33,
+          "gp": 4,
+          "sa": 121,
+          "ga": 37,
+          "sv": 84,
+          "svp": 0.694,
+          "gaa": 9.25,
           "so": 0
         },
         "playoffs": {
@@ -3269,6 +3269,42 @@
       }
     },
     {
+      "id": 233,
+      "name": "II Antho II6454",
+      "teamId": 10,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 4,
+      "g": 7,
+      "a": 8,
+      "p": 15,
+      "pim": 2,
+      "hits": 30,
+      "fow": 36,
+      "fol": 25,
+      "ta": 29,
+      "int": 6,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 7,
+          "a": 8,
+          "p": 15,
+          "pim": 2,
+          "hits": 30
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 231,
       "name": "T-Waugh91",
       "teamId": 13,
@@ -3329,6 +3365,78 @@
           "p": 17,
           "pim": 0,
           "hits": 17
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 234,
+      "name": "N0rmy I96I",
+      "teamId": 10,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 4,
+      "g": 2,
+      "a": 8,
+      "p": 10,
+      "pim": 0,
+      "hits": 37,
+      "fow": 0,
+      "fol": 0,
+      "ta": 17,
+      "int": 2,
+      "bs": 3,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 2,
+          "a": 8,
+          "p": 10,
+          "pim": 0,
+          "hits": 37
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "CarteronSteroids",
+      "teamId": 10,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 4,
+      "g": 11,
+      "a": 4,
+      "p": 15,
+      "pim": 0,
+      "hits": 32,
+      "fow": 19,
+      "fol": 31,
+      "ta": 18,
+      "int": 6,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 11,
+          "a": 4,
+          "p": 15,
+          "pim": 0,
+          "hits": 32
         },
         "playoffs": {
           "gp": 0,
@@ -3485,6 +3593,40 @@
       }
     },
     {
+      "id": 235,
+      "name": "THEWOLF947250",
+      "teamId": 10,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 1,
+      "l": 3,
+      "otl": 0,
+      "gaa": 8.25,
+      "svp": 0.659,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "sa": 91,
+          "ga": 31,
+          "sv": 60,
+          "svp": 0.659,
+          "gaa": 8.25,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
       "id": 255,
       "name": "vuftr",
       "teamId": 18,
@@ -3515,78 +3657,6 @@
           "svp": 0.0,
           "gaa": 0.0,
           "so": 0
-        }
-      }
-    },
-    {
-      "id": 233,
-      "name": "II Antho II6454",
-      "teamId": 10,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 3,
-      "g": 3,
-      "a": 4,
-      "p": 7,
-      "pim": 2,
-      "hits": 24,
-      "fow": 11,
-      "fol": 14,
-      "ta": 21,
-      "int": 4,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 3,
-          "a": 4,
-          "p": 7,
-          "pim": 2,
-          "hits": 24
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 234,
-      "name": "N0rmy I96I",
-      "teamId": 10,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 3,
-      "g": 2,
-      "a": 7,
-      "p": 9,
-      "pim": 0,
-      "hits": 28,
-      "fow": 0,
-      "fol": 0,
-      "ta": 13,
-      "int": 2,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 2,
-          "a": 7,
-          "p": 9,
-          "pim": 0,
-          "hits": 28
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
         }
       }
     },
@@ -3945,76 +4015,6 @@
       }
     },
     {
-      "id": 23,
-      "name": "CarteronSteroids",
-      "teamId": 10,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 3,
-      "g": 6,
-      "a": 3,
-      "p": 9,
-      "pim": 0,
-      "hits": 19,
-      "fow": 19,
-      "fol": 31,
-      "ta": 13,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 6,
-          "a": 3,
-          "p": 9,
-          "pim": 0,
-          "hits": 19
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 235,
-      "name": "THEWOLF947250",
-      "teamId": 10,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 1,
-      "l": 2,
-      "otl": 0,
-      "gaa": 7.25,
-      "svp": 0.692,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "sa": 65,
-          "ga": 20,
-          "sv": 45,
-          "svp": 0.692,
-          "gaa": 7.25,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
       "id": 245,
       "name": "MrBubskies",
       "teamId": 17,
@@ -4194,6 +4194,179 @@
     }
   ],
   "gameResults": [
+    {
+      "id": 19,
+      "week": 1,
+      "home": 10,
+      "away": 12,
+      "homeScore": 9,
+      "awayScore": 11,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 25,
+          "faceoffsWon": 25,
+          "hits": 28,
+          "toa": "8:52",
+          "pim": 0,
+          "passPct": 77
+        },
+        "away": {
+          "shots": 26,
+          "faceoffsWon": 11,
+          "hits": 14,
+          "toa": "7:35",
+          "pim": 0,
+          "passPct": 73
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "II Antho II6454",
+          "pos": "CEN",
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pm": -2,
+          "toi": "60:00",
+          "twp": "7:12",
+          "shots": 17,
+          "passPct": 84,
+          "fow": 25,
+          "fol": 11,
+          "hits": 6,
+          "ta": 8,
+          "giveaways": 9,
+          "bs": 1,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "N0rmy I96I",
+          "pos": "DEF",
+          "g": 0,
+          "a": 1,
+          "p": 1,
+          "pm": -2,
+          "toi": "60:00",
+          "twp": "4:53",
+          "shots": 0,
+          "passPct": 84,
+          "fow": 0,
+          "fol": 0,
+          "hits": 9,
+          "ta": 4,
+          "giveaways": 2,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "CarteronSteroids",
+          "pos": "LEF",
+          "g": 5,
+          "a": 1,
+          "p": 6,
+          "pm": -2,
+          "toi": "60:00",
+          "twp": "7:06",
+          "shots": 6,
+          "passPct": 64,
+          "fow": 0,
+          "fol": 0,
+          "hits": 13,
+          "ta": 5,
+          "giveaways": 22,
+          "bs": 0,
+          "int": 3,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "BraZeau JR",
+          "pos": "LEF",
+          "g": 3,
+          "a": 4,
+          "p": 7,
+          "pm": 2,
+          "toi": "60:00",
+          "twp": "7:14",
+          "shots": 7,
+          "passPct": 64,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 4,
+          "giveaways": 11,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "F4MoUs RedBUL",
+          "pos": "CEN",
+          "g": 2,
+          "a": 8,
+          "p": 10,
+          "pm": 2,
+          "toi": "60:00",
+          "twp": "3:58",
+          "shots": 4,
+          "passPct": 75,
+          "fow": 11,
+          "fol": 25,
+          "hits": 0,
+          "ta": 6,
+          "giveaways": 11,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Demidxv x 93",
+          "pos": "DEF",
+          "g": 6,
+          "a": 3,
+          "p": 9,
+          "pm": 2,
+          "toi": "60:00",
+          "twp": "6:57",
+          "shots": 12,
+          "passPct": 80,
+          "fow": 0,
+          "fol": 0,
+          "hits": 9,
+          "ta": 5,
+          "giveaways": 15,
+          "bs": 2,
+          "int": 3,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "THEWOLF947250",
+        "result": "L",
+        "sa": 26,
+        "sv": 15,
+        "ga": 11,
+        "svPct": "0.577",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 0
+      },
+      "awayGoalie": {
+        "name": "I KYLzee I",
+        "result": "W",
+        "sa": 26,
+        "sv": 17,
+        "ga": 9,
+        "svPct": "0.654",
+        "toi": "60:00",
+        "pkChk": 2,
+        "despSv": 1
+      }
+    },
     {
       "id": 18,
       "week": 1,
