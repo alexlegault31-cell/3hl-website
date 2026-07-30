@@ -94,25 +94,25 @@
       "teamId": 16,
       "rank": 1,
       "prevRank": 1,
-      "w": 3,
+      "w": 4,
       "l": 0,
       "otl": 0,
-      "pts": 6,
-      "gf": 26,
-      "ga": 7,
-      "streak": "W3"
+      "pts": 8,
+      "gf": 31,
+      "ga": 10,
+      "streak": "W4"
     },
     {
       "teamId": 9,
       "rank": 2,
       "prevRank": 2,
       "w": 3,
-      "l": 0,
+      "l": 1,
       "otl": 0,
       "pts": 6,
-      "gf": 30,
-      "ga": 16,
-      "streak": "W3"
+      "gf": 33,
+      "ga": 21,
+      "streak": "L1"
     },
     {
       "teamId": 14,
@@ -368,9 +368,9 @@
       "slot": "Wed 9:30 PM EST",
       "home": 9,
       "away": 16,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 3,
+      "awayScore": 5
     },
     {
       "num": 17,
@@ -2559,6 +2559,78 @@
       }
     },
     {
+      "id": 46,
+      "name": "ZR_Exterminator",
+      "teamId": 16,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 4,
+      "g": 2,
+      "a": 13,
+      "p": 15,
+      "pim": 2,
+      "hits": 11,
+      "fow": 0,
+      "fol": 0,
+      "ta": 19,
+      "int": 5,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 2,
+          "a": 13,
+          "p": 15,
+          "pim": 2,
+          "hits": 11
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 220,
+      "name": "Lord_Wolfpac",
+      "teamId": 16,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 4,
+      "g": 10,
+      "a": 11,
+      "p": 21,
+      "pim": 6,
+      "hits": 22,
+      "fow": 45,
+      "fol": 31,
+      "ta": 24,
+      "int": 2,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 10,
+          "a": 11,
+          "p": 21,
+          "pim": 6,
+          "hits": 22
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 228,
       "name": "beanbemird",
       "teamId": 15,
@@ -2593,102 +2665,30 @@
       }
     },
     {
-      "id": 46,
-      "name": "ZR_Exterminator",
-      "teamId": 16,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 3,
-      "g": 2,
-      "a": 10,
-      "p": 12,
-      "pim": 0,
-      "hits": 10,
-      "fow": 0,
-      "fol": 0,
-      "ta": 14,
-      "int": 1,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 2,
-          "a": 10,
-          "p": 12,
-          "pim": 0,
-          "hits": 10
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 220,
-      "name": "Lord_Wolfpac",
-      "teamId": 16,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 3,
-      "g": 9,
-      "a": 8,
-      "p": 17,
-      "pim": 6,
-      "hits": 14,
-      "fow": 36,
-      "fol": 22,
-      "ta": 16,
-      "int": 2,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 9,
-          "a": 8,
-          "p": 17,
-          "pim": 6,
-          "hits": 14
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 48,
       "name": "Leop81_",
       "teamId": 16,
       "pos": "LEFTWING",
       "goalie": false,
-      "gp": 3,
-      "g": 15,
-      "a": 10,
-      "p": 25,
+      "gp": 4,
+      "g": 19,
+      "a": 11,
+      "p": 30,
       "pim": 0,
-      "hits": 22,
+      "hits": 34,
       "fow": 0,
       "fol": 0,
-      "ta": 17,
-      "int": 0,
+      "ta": 19,
+      "int": 1,
       "bs": 1,
       "split": {
         "regular": {
-          "gp": 3,
-          "g": 15,
-          "a": 10,
-          "p": 25,
+          "gp": 4,
+          "g": 19,
+          "a": 11,
+          "p": 30,
           "pim": 0,
-          "hits": 22
+          "hits": 34
         },
         "playoffs": {
           "gp": 0,
@@ -2697,40 +2697,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 221,
-      "name": "l Vaklex l",
-      "teamId": 16,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 3,
-      "l": 0,
-      "otl": 0,
-      "gaa": 2.65,
-      "svp": 0.781,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "sa": 32,
-          "ga": 7,
-          "sv": 25,
-          "svp": 0.781,
-          "gaa": 2.65,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -2897,6 +2863,40 @@
           "sv": 34,
           "svp": 0.68,
           "gaa": 10.18,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 221,
+      "name": "l Vaklex l",
+      "teamId": 16,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 4,
+      "l": 0,
+      "otl": 0,
+      "gaa": 2.74,
+      "svp": 0.8,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "sa": 50,
+          "ga": 10,
+          "sv": 40,
+          "svp": 0.8,
+          "gaa": 2.74,
           "so": 0
         },
         "playoffs": {
@@ -3079,42 +3079,6 @@
           "p": 2,
           "pim": 0,
           "hits": 2
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 26,
-      "name": "BOOST GREECY",
-      "teamId": 9,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 3,
-      "g": 4,
-      "a": 21,
-      "p": 25,
-      "pim": 0,
-      "hits": 9,
-      "fow": 0,
-      "fol": 0,
-      "ta": 10,
-      "int": 7,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 4,
-          "a": 21,
-          "p": 25,
-          "pim": 0,
-          "hits": 9
         },
         "playoffs": {
           "gp": 0,
@@ -3555,6 +3519,42 @@
       }
     },
     {
+      "id": 26,
+      "name": "BOOST GREECY",
+      "teamId": 9,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 4,
+      "g": 4,
+      "a": 23,
+      "p": 27,
+      "pim": 0,
+      "hits": 16,
+      "fow": 0,
+      "fol": 0,
+      "ta": 16,
+      "int": 7,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 4,
+          "a": 23,
+          "p": 27,
+          "pim": 0,
+          "hits": 16
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 254,
       "name": "BBoeser06",
       "teamId": 14,
@@ -3731,6 +3731,112 @@
       }
     },
     {
+      "id": 232,
+      "name": "NABOKOVx1995",
+      "teamId": 9,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 3,
+      "l": 1,
+      "otl": 0,
+      "gaa": 5.59,
+      "svp": 0.716,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "sa": 74,
+          "ga": 21,
+          "sv": 53,
+          "svp": 0.716,
+          "gaa": 5.59,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 252,
+      "name": "Malekxx94",
+      "teamId": 9,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 2,
+      "g": 6,
+      "a": 5,
+      "p": 11,
+      "pim": 2,
+      "hits": 6,
+      "fow": 0,
+      "fol": 0,
+      "ta": 10,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 6,
+          "a": 5,
+          "p": 11,
+          "pim": 2,
+          "hits": 6
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Bxnenfant",
+      "teamId": 9,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 4,
+      "g": 14,
+      "a": 13,
+      "p": 27,
+      "pim": 0,
+      "hits": 26,
+      "fow": 56,
+      "fol": 37,
+      "ta": 16,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 14,
+          "a": 13,
+          "p": 27,
+          "pim": 0,
+          "hits": 26
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 36,
       "name": "kikass23415",
       "teamId": 13,
@@ -3797,112 +3903,6 @@
           "svp": 0.0,
           "gaa": 0.0,
           "so": 0
-        }
-      }
-    },
-    {
-      "id": 232,
-      "name": "NABOKOVx1995",
-      "teamId": 9,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 3,
-      "l": 0,
-      "otl": 0,
-      "gaa": 5.8,
-      "svp": 0.692,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "sa": 52,
-          "ga": 16,
-          "sv": 36,
-          "svp": 0.692,
-          "gaa": 5.8,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
-      "id": 252,
-      "name": "Malekxx94",
-      "teamId": 9,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 1,
-      "g": 4,
-      "a": 4,
-      "p": 8,
-      "pim": 2,
-      "hits": 1,
-      "fow": 0,
-      "fol": 0,
-      "ta": 6,
-      "int": 1,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 4,
-          "a": 4,
-          "p": 8,
-          "pim": 2,
-          "hits": 1
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 41,
-      "name": "Bxnenfant",
-      "teamId": 9,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 3,
-      "g": 13,
-      "a": 12,
-      "p": 25,
-      "pim": 0,
-      "hits": 21,
-      "fow": 47,
-      "fol": 28,
-      "ta": 10,
-      "int": 1,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 13,
-          "a": 12,
-          "p": 25,
-          "pim": 0,
-          "hits": 21
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
         }
       }
     },
@@ -4194,6 +4194,179 @@
     }
   ],
   "gameResults": [
+    {
+      "id": 16,
+      "week": 1,
+      "home": 9,
+      "away": 16,
+      "homeScore": 3,
+      "awayScore": 5,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 18,
+          "faceoffsWon": 9,
+          "hits": 17,
+          "toa": "8:55",
+          "pim": 0,
+          "passPct": 69
+        },
+        "away": {
+          "shots": 22,
+          "faceoffsWon": 9,
+          "hits": 21,
+          "toa": "14:26",
+          "pim": 2,
+          "passPct": 87
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "BOOST GREECY",
+          "pos": "DEF",
+          "g": 0,
+          "a": 2,
+          "p": 2,
+          "pm": -3,
+          "toi": "60:00",
+          "twp": "2:44",
+          "shots": 1,
+          "passPct": 77,
+          "fow": 0,
+          "fol": 0,
+          "hits": 7,
+          "ta": 6,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Malekxx94",
+          "pos": "LEF",
+          "g": 2,
+          "a": 1,
+          "p": 3,
+          "pm": -3,
+          "toi": "60:00",
+          "twp": "10:13",
+          "shots": 11,
+          "passPct": 57,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 4,
+          "giveaways": 24,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Bxnenfant",
+          "pos": "CEN",
+          "g": 1,
+          "a": 1,
+          "p": 2,
+          "pm": -3,
+          "toi": "60:00",
+          "twp": "3:45",
+          "shots": 5,
+          "passPct": 73,
+          "fow": 9,
+          "fol": 9,
+          "hits": 5,
+          "ta": 6,
+          "giveaways": 6,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "ZR_Exterminator",
+          "pos": "DEF",
+          "g": 0,
+          "a": 3,
+          "p": 3,
+          "pm": 3,
+          "toi": "60:00",
+          "twp": "5:09",
+          "shots": 1,
+          "passPct": 93,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 5,
+          "giveaways": 0,
+          "bs": 0,
+          "int": 4,
+          "pim": 2
+        },
+        {
+          "name": "Lord_Wolfpac",
+          "pos": "CEN",
+          "g": 1,
+          "a": 3,
+          "p": 4,
+          "pm": 3,
+          "toi": "60:00",
+          "twp": "7:52",
+          "shots": 5,
+          "passPct": 86,
+          "fow": 9,
+          "fol": 9,
+          "hits": 8,
+          "ta": 8,
+          "giveaways": 6,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Leop81_",
+          "pos": "LEF",
+          "g": 4,
+          "a": 1,
+          "p": 5,
+          "pm": 3,
+          "toi": "60:00",
+          "twp": "11:27",
+          "shots": 14,
+          "passPct": 83,
+          "fow": 0,
+          "fol": 0,
+          "hits": 12,
+          "ta": 2,
+          "giveaways": 24,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "NABOKOVx1995",
+        "result": "L",
+        "sa": 22,
+        "sv": 17,
+        "ga": 5,
+        "svPct": "0.773",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 3
+      },
+      "awayGoalie": {
+        "name": "l Vaklex l",
+        "result": "W",
+        "sa": 18,
+        "sv": 15,
+        "ga": 3,
+        "svPct": "0.833",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 2
+      }
+    },
     {
       "id": 15,
       "week": 1,
