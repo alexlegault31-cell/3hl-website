@@ -91,8 +91,20 @@
   ],
   "standings": [
     {
-      "teamId": 13,
+      "teamId": 9,
       "rank": 1,
+      "prevRank": 7,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "pts": 2,
+      "gf": 9,
+      "ga": 1,
+      "streak": "W1"
+    },
+    {
+      "teamId": 13,
+      "rank": 2,
       "prevRank": 8,
       "w": 1,
       "l": 0,
@@ -104,7 +116,7 @@
     },
     {
       "teamId": 16,
-      "rank": 2,
+      "rank": 3,
       "prevRank": 1,
       "w": 1,
       "l": 0,
@@ -116,7 +128,7 @@
     },
     {
       "teamId": 18,
-      "rank": 3,
+      "rank": 4,
       "prevRank": 2,
       "w": 1,
       "l": 0,
@@ -125,18 +137,6 @@
       "gf": 3,
       "ga": 0,
       "streak": "W1"
-    },
-    {
-      "teamId": 10,
-      "rank": 4,
-      "prevRank": 1,
-      "w": 0,
-      "l": 0,
-      "otl": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "streak": "-"
     },
     {
       "teamId": 14,
@@ -163,20 +163,8 @@
       "streak": "-"
     },
     {
-      "teamId": 9,
-      "rank": 7,
-      "prevRank": 8,
-      "w": 0,
-      "l": 0,
-      "otl": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "streak": "-"
-    },
-    {
       "teamId": 19,
-      "rank": 8,
+      "rank": 7,
       "prevRank": 9,
       "w": 0,
       "l": 1,
@@ -188,13 +176,25 @@
     },
     {
       "teamId": 12,
-      "rank": 9,
+      "rank": 8,
       "prevRank": 10,
       "w": 0,
       "l": 1,
       "otl": 0,
       "pts": 0,
       "gf": 4,
+      "ga": 9,
+      "streak": "L1"
+    },
+    {
+      "teamId": 10,
+      "rank": 9,
+      "prevRank": 4,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "pts": 0,
+      "gf": 1,
       "ga": 9,
       "streak": "L1"
     },
@@ -248,9 +248,9 @@
       "slot": "Wed 8:00 PM EST",
       "home": 10,
       "away": 9,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 1,
+      "awayScore": 9
     },
     {
       "num": 5,
@@ -2981,9 +2981,466 @@
           "hits": 0
         }
       }
+    },
+    {
+      "id": 40,
+      "name": "Kaizen x 96",
+      "teamId": 9,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 5,
+      "a": 3,
+      "p": 8,
+      "pim": 0,
+      "hits": 9,
+      "fow": 0,
+      "fol": 0,
+      "ta": 0,
+      "int": 0,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 5,
+          "a": 3,
+          "p": 8,
+          "pim": 0,
+          "hits": 9
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "BOOST GREECY",
+      "teamId": 9,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 1,
+      "a": 7,
+      "p": 8,
+      "pim": 0,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 2,
+      "int": 2,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 1,
+          "a": 7,
+          "p": 8,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 232,
+      "name": "NABOKOVx1995",
+      "teamId": 9,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "gaa": 1.32,
+      "svp": 0.933,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 15,
+          "ga": 1,
+          "sv": 14,
+          "svp": 0.933,
+          "gaa": 1.32,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Bxnenfant",
+      "teamId": 9,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 3,
+      "a": 5,
+      "p": 8,
+      "pim": 0,
+      "hits": 6,
+      "fow": 9,
+      "fol": 12,
+      "ta": 2,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 3,
+          "a": 5,
+          "p": 8,
+          "pim": 0,
+          "hits": 6
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 233,
+      "name": "II Antho II6454",
+      "teamId": 10,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 5,
+      "fow": 0,
+      "fol": 0,
+      "ta": 9,
+      "int": 2,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 5
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 234,
+      "name": "N0rmy I96I",
+      "teamId": 10,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 1,
+      "p": 1,
+      "pim": 0,
+      "hits": 5,
+      "fow": 0,
+      "fol": 0,
+      "ta": 6,
+      "int": 0,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 1,
+          "p": 1,
+          "pim": 0,
+          "hits": 5
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "CarteronSteroids",
+      "teamId": 10,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 1,
+      "a": 0,
+      "p": 1,
+      "pim": 0,
+      "hits": 1,
+      "fow": 12,
+      "fol": 9,
+      "ta": 1,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 1,
+          "a": 0,
+          "p": 1,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 235,
+      "name": "THEWOLF947250",
+      "teamId": 10,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "gaa": 11.88,
+      "svp": 0.438,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 16,
+          "ga": 9,
+          "sv": 7,
+          "svp": 0.438,
+          "gaa": 11.88,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 4,
+      "week": 1,
+      "home": 10,
+      "away": 9,
+      "homeScore": 1,
+      "awayScore": 9,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 15,
+          "faceoffsWon": 12,
+          "hits": 11,
+          "toa": "5:36",
+          "pim": 0,
+          "passPct": 76
+        },
+        "away": {
+          "shots": 17,
+          "faceoffsWon": 9,
+          "hits": 16,
+          "toa": "9:55",
+          "pim": 0,
+          "passPct": 71
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "II Antho II6454",
+          "pos": "DEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "45:27",
+          "twp": "2:40",
+          "shots": 6,
+          "passPct": 84,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 9,
+          "giveaways": 0,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "N0rmy I96I",
+          "pos": "LEF",
+          "g": 0,
+          "a": 1,
+          "p": 1,
+          "pm": -8,
+          "toi": "45:27",
+          "twp": "4:14",
+          "shots": 2,
+          "passPct": 88,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 6,
+          "giveaways": 0,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "CarteronSteroids",
+          "pos": "CEN",
+          "g": 1,
+          "a": 0,
+          "p": 1,
+          "pm": -8,
+          "toi": "45:27",
+          "twp": "4:47",
+          "shots": 6,
+          "passPct": 56,
+          "fow": 12,
+          "fol": 9,
+          "hits": 1,
+          "ta": 1,
+          "giveaways": 8,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "Kaizen x 96",
+          "pos": "LEF",
+          "g": 5,
+          "a": 3,
+          "p": 8,
+          "pm": 8,
+          "toi": "45:27",
+          "twp": "5:50",
+          "shots": 7,
+          "passPct": 53,
+          "fow": 0,
+          "fol": 0,
+          "hits": 9,
+          "ta": 0,
+          "giveaways": 13,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "BOOST GREECY",
+          "pos": "DEF",
+          "g": 1,
+          "a": 7,
+          "p": 8,
+          "pm": 8,
+          "toi": "45:27",
+          "twp": "5:16",
+          "shots": 1,
+          "passPct": 77,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 2,
+          "giveaways": 8,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "Bxnenfant",
+          "pos": "CEN",
+          "g": 3,
+          "a": 5,
+          "p": 8,
+          "pm": 8,
+          "toi": "45:27",
+          "twp": "6:32",
+          "shots": 5,
+          "passPct": 84,
+          "fow": 9,
+          "fol": 12,
+          "hits": 6,
+          "ta": 2,
+          "giveaways": 11,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "THEWOLF947250",
+        "result": "L",
+        "sa": 16,
+        "sv": 7,
+        "ga": 9,
+        "svPct": "0.438",
+        "toi": "45:27",
+        "pkChk": 1,
+        "despSv": 0
+      },
+      "awayGoalie": {
+        "name": "NABOKOVx1995",
+        "result": "W",
+        "sa": 15,
+        "sv": 14,
+        "ga": 1,
+        "svPct": "0.933",
+        "toi": "45:27",
+        "pkChk": 0,
+        "despSv": 0
+      }
+    },
     {
       "id": 3,
       "week": 1,
