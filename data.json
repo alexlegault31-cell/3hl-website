@@ -129,14 +129,14 @@
     {
       "teamId": 14,
       "rank": 4,
-      "prevRank": 5,
-      "w": 1,
+      "prevRank": 4,
+      "w": 2,
       "l": 0,
       "otl": 0,
-      "pts": 2,
-      "gf": 3,
-      "ga": 0,
-      "streak": "W1"
+      "pts": 4,
+      "gf": 11,
+      "ga": 2,
+      "streak": "W2"
     },
     {
       "teamId": 18,
@@ -163,20 +163,8 @@
       "streak": "W1"
     },
     {
-      "teamId": 10,
-      "rank": 7,
-      "prevRank": 4,
-      "w": 0,
-      "l": 1,
-      "otl": 0,
-      "pts": 0,
-      "gf": 1,
-      "ga": 9,
-      "streak": "L1"
-    },
-    {
       "teamId": 12,
-      "rank": 8,
+      "rank": 7,
       "prevRank": 7,
       "w": 0,
       "l": 2,
@@ -188,7 +176,7 @@
     },
     {
       "teamId": 15,
-      "rank": 9,
+      "rank": 8,
       "prevRank": 8,
       "w": 0,
       "l": 2,
@@ -200,7 +188,7 @@
     },
     {
       "teamId": 19,
-      "rank": 10,
+      "rank": 9,
       "prevRank": 7,
       "w": 0,
       "l": 2,
@@ -208,6 +196,18 @@
       "pts": 0,
       "gf": 1,
       "ga": 11,
+      "streak": "L2"
+    },
+    {
+      "teamId": 10,
+      "rank": 10,
+      "prevRank": 7,
+      "w": 0,
+      "l": 2,
+      "otl": 0,
+      "pts": 0,
+      "gf": 3,
+      "ga": 17,
       "streak": "L2"
     }
   ],
@@ -308,9 +308,9 @@
       "slot": "Wed 8:30 PM EST",
       "home": 14,
       "away": 10,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 8,
+      "awayScore": 2
     },
     {
       "num": 11,
@@ -2949,30 +2949,30 @@
       }
     },
     {
-      "id": 233,
-      "name": "II Antho II6454",
-      "teamId": 10,
-      "pos": "DEFENSEMEN",
+      "id": 54,
+      "name": "Beaudreeez",
+      "teamId": 14,
+      "pos": "CENTER",
       "goalie": false,
       "gp": 1,
-      "g": 0,
-      "a": 0,
-      "p": 0,
-      "pim": 0,
-      "hits": 5,
-      "fow": 0,
-      "fol": 0,
-      "ta": 9,
-      "int": 2,
+      "g": 4,
+      "a": 4,
+      "p": 8,
+      "pim": 2,
+      "hits": 9,
+      "fow": 22,
+      "fol": 7,
+      "ta": 5,
+      "int": 0,
       "bs": 0,
       "split": {
         "regular": {
           "gp": 1,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 5
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pim": 2,
+          "hits": 9
         },
         "playoffs": {
           "gp": 0,
@@ -2985,30 +2985,30 @@
       }
     },
     {
-      "id": 234,
-      "name": "N0rmy I96I",
-      "teamId": 10,
-      "pos": "LEFTWING",
+      "id": 56,
+      "name": "LuceCannon37",
+      "teamId": 14,
+      "pos": "DEFENSEMEN",
       "goalie": false,
       "gp": 1,
       "g": 0,
-      "a": 1,
-      "p": 1,
+      "a": 7,
+      "p": 7,
       "pim": 0,
-      "hits": 5,
+      "hits": 8,
       "fow": 0,
       "fol": 0,
-      "ta": 6,
-      "int": 0,
+      "ta": 5,
+      "int": 2,
       "bs": 1,
       "split": {
         "regular": {
           "gp": 1,
           "g": 0,
-          "a": 1,
-          "p": 1,
+          "a": 7,
+          "p": 7,
           "pim": 0,
-          "hits": 5
+          "hits": 8
         },
         "playoffs": {
           "gp": 0,
@@ -3017,76 +3017,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 23,
-      "name": "CarteronSteroids",
-      "teamId": 10,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 1,
-      "g": 1,
-      "a": 0,
-      "p": 1,
-      "pim": 0,
-      "hits": 1,
-      "fow": 12,
-      "fol": 9,
-      "ta": 1,
-      "int": 0,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 1,
-          "a": 0,
-          "p": 1,
-          "pim": 0,
-          "hits": 1
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 235,
-      "name": "THEWOLF947250",
-      "teamId": 10,
-      "pos": "G",
-      "goalie": true,
-      "gp": 1,
-      "w": 0,
-      "l": 1,
-      "otl": 0,
-      "gaa": 11.88,
-      "svp": 0.438,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 16,
-          "ga": 9,
-          "sv": 7,
-          "svp": 0.438,
-          "gaa": 11.88,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -3727,9 +3657,394 @@
           "hits": 0
         }
       }
+    },
+    {
+      "id": 37,
+      "name": "Lil420baguette",
+      "teamId": 14,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 4,
+      "a": 2,
+      "p": 6,
+      "pim": 0,
+      "hits": 11,
+      "fow": 0,
+      "fol": 0,
+      "ta": 4,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 4,
+          "a": 2,
+          "p": 6,
+          "pim": 0,
+          "hits": 11
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 248,
+      "name": "Dairy Cannonss",
+      "teamId": 14,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "gaa": 2.0,
+      "svp": 0.857,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 14,
+          "ga": 2,
+          "sv": 12,
+          "svp": 0.857,
+          "gaa": 2.0,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 233,
+      "name": "II Antho II6454",
+      "teamId": 10,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 2,
+      "g": 0,
+      "a": 1,
+      "p": 1,
+      "pim": 0,
+      "hits": 13,
+      "fow": 0,
+      "fol": 0,
+      "ta": 13,
+      "int": 4,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 0,
+          "a": 1,
+          "p": 1,
+          "pim": 0,
+          "hits": 13
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 234,
+      "name": "N0rmy I96I",
+      "teamId": 10,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 2,
+      "g": 1,
+      "a": 1,
+      "p": 2,
+      "pim": 0,
+      "hits": 12,
+      "fow": 0,
+      "fol": 0,
+      "ta": 7,
+      "int": 0,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 1,
+          "a": 1,
+          "p": 2,
+          "pim": 0,
+          "hits": 12
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "CarteronSteroids",
+      "teamId": 10,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 2,
+      "g": 2,
+      "a": 1,
+      "p": 3,
+      "pim": 0,
+      "hits": 11,
+      "fow": 19,
+      "fol": 31,
+      "ta": 10,
+      "int": 2,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 2,
+          "a": 1,
+          "p": 3,
+          "pim": 0,
+          "hits": 11
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 235,
+      "name": "THEWOLF947250",
+      "teamId": 10,
+      "pos": "G",
+      "goalie": true,
+      "gp": 2,
+      "w": 0,
+      "l": 2,
+      "otl": 0,
+      "gaa": 9.67,
+      "svp": 0.622,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "sa": 45,
+          "ga": 17,
+          "sv": 28,
+          "svp": 0.622,
+          "gaa": 9.67,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 10,
+      "week": 1,
+      "home": 14,
+      "away": 10,
+      "homeScore": 8,
+      "awayScore": 2,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 28,
+          "faceoffsWon": 22,
+          "hits": 28,
+          "toa": "16:56",
+          "pim": 2,
+          "passPct": 84
+        },
+        "away": {
+          "shots": 15,
+          "faceoffsWon": 7,
+          "hits": 25,
+          "toa": "6:16",
+          "pim": 0,
+          "passPct": 84
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Lil420baguette",
+          "pos": "LEF",
+          "g": 4,
+          "a": 2,
+          "p": 6,
+          "pm": 6,
+          "toi": "60:00",
+          "twp": "7:38",
+          "shots": 10,
+          "passPct": 74,
+          "fow": 0,
+          "fol": 0,
+          "hits": 11,
+          "ta": 4,
+          "giveaways": 18,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        },
+        {
+          "name": "Beaudreeez",
+          "pos": "CEN",
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pm": 6,
+          "toi": "60:00",
+          "twp": "11:29",
+          "shots": 12,
+          "passPct": 91,
+          "fow": 22,
+          "fol": 7,
+          "hits": 9,
+          "ta": 5,
+          "giveaways": 8,
+          "bs": 0,
+          "int": 0,
+          "pim": 2
+        },
+        {
+          "name": "LuceCannon37",
+          "pos": "DEF",
+          "g": 0,
+          "a": 7,
+          "p": 7,
+          "pm": 6,
+          "toi": "60:00",
+          "twp": "7:03",
+          "shots": 4,
+          "passPct": 87,
+          "fow": 0,
+          "fol": 0,
+          "hits": 8,
+          "ta": 5,
+          "giveaways": 6,
+          "bs": 1,
+          "int": 2,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "II Antho II6454",
+          "pos": "DEF",
+          "g": 0,
+          "a": 1,
+          "p": 1,
+          "pm": -6,
+          "toi": "60:00",
+          "twp": "2:50",
+          "shots": 4,
+          "passPct": 84,
+          "fow": 0,
+          "fol": 0,
+          "hits": 8,
+          "ta": 4,
+          "giveaways": 6,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "N0rmy I96I",
+          "pos": "LEF",
+          "g": 1,
+          "a": 0,
+          "p": 1,
+          "pm": -6,
+          "toi": "60:00",
+          "twp": "4:27",
+          "shots": 1,
+          "passPct": 68,
+          "fow": 0,
+          "fol": 0,
+          "hits": 7,
+          "ta": 1,
+          "giveaways": 9,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "CarteronSteroids",
+          "pos": "CEN",
+          "g": 1,
+          "a": 1,
+          "p": 2,
+          "pm": -6,
+          "toi": "60:00",
+          "twp": "6:30",
+          "shots": 5,
+          "passPct": 100,
+          "fow": 7,
+          "fol": 22,
+          "hits": 10,
+          "ta": 9,
+          "giveaways": 16,
+          "bs": 1,
+          "int": 2,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "Dairy Cannonss",
+        "result": "W",
+        "sa": 14,
+        "sv": 12,
+        "ga": 2,
+        "svPct": "0.857",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 0
+      },
+      "awayGoalie": {
+        "name": "THEWOLF947250",
+        "result": "L",
+        "sa": 29,
+        "sv": 21,
+        "ga": 8,
+        "svPct": "0.724",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 4
+      }
+    },
     {
       "id": 9,
       "week": 1,
