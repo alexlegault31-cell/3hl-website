@@ -91,8 +91,20 @@
   ],
   "standings": [
     {
-      "teamId": 16,
+      "teamId": 13,
       "rank": 1,
+      "prevRank": 8,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "pts": 2,
+      "gf": 8,
+      "ga": 0,
+      "streak": "W1"
+    },
+    {
+      "teamId": 16,
+      "rank": 2,
       "prevRank": 1,
       "w": 1,
       "l": 0,
@@ -104,7 +116,7 @@
     },
     {
       "teamId": 18,
-      "rank": 2,
+      "rank": 3,
       "prevRank": 2,
       "w": 1,
       "l": 0,
@@ -113,18 +125,6 @@
       "gf": 3,
       "ga": 0,
       "streak": "W1"
-    },
-    {
-      "teamId": 15,
-      "rank": 3,
-      "prevRank": 4,
-      "w": 0,
-      "l": 0,
-      "otl": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "streak": "-"
     },
     {
       "teamId": 10,
@@ -175,20 +175,8 @@
       "streak": "-"
     },
     {
-      "teamId": 13,
-      "rank": 8,
-      "prevRank": 2,
-      "w": 0,
-      "l": 0,
-      "otl": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "streak": "-"
-    },
-    {
       "teamId": 19,
-      "rank": 9,
+      "rank": 8,
       "prevRank": 9,
       "w": 0,
       "l": 1,
@@ -200,7 +188,7 @@
     },
     {
       "teamId": 12,
-      "rank": 10,
+      "rank": 9,
       "prevRank": 10,
       "w": 0,
       "l": 1,
@@ -208,6 +196,18 @@
       "pts": 0,
       "gf": 4,
       "ga": 9,
+      "streak": "L1"
+    },
+    {
+      "teamId": 15,
+      "rank": 10,
+      "prevRank": 3,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "pts": 0,
+      "gf": 0,
+      "ga": 8,
       "streak": "L1"
     }
   ],
@@ -238,9 +238,9 @@
       "slot": "Wed 8:00 PM EST",
       "home": 15,
       "away": 13,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 0,
+      "awayScore": 8
     },
     {
       "num": 4,
@@ -2697,9 +2697,466 @@
           "so": 0
         }
       }
+    },
+    {
+      "id": 225,
+      "name": "Jam-16-Mac",
+      "teamId": 15,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 0,
+      "int": 2,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 226,
+      "name": "Tr-xAssassiNx-Qc",
+      "teamId": 15,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 5,
+      "fow": 5,
+      "fol": 7,
+      "ta": 4,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 5
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 227,
+      "name": "andrewgamer5983",
+      "teamId": 15,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "gaa": 14.0,
+      "svp": 0.619,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 21,
+          "ga": 8,
+          "sv": 13,
+          "svp": 0.619,
+          "gaa": 14.0,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 228,
+      "name": "beanbemird",
+      "teamId": 15,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 5,
+      "fow": 0,
+      "fol": 0,
+      "ta": 4,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 5
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 229,
+      "name": "MrReSniper",
+      "teamId": 13,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 4,
+      "a": 3,
+      "p": 7,
+      "pim": 0,
+      "hits": 1,
+      "fow": 7,
+      "fol": 5,
+      "ta": 1,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 4,
+          "a": 3,
+          "p": 7,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 230,
+      "name": "iChels",
+      "teamId": 13,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 4,
+      "a": 4,
+      "p": 8,
+      "pim": 0,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 0,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 36,
+      "name": "kikass23415",
+      "teamId": 13,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "gaa": 0.0,
+      "svp": 1.0,
+      "so": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 8,
+          "ga": 0,
+          "sv": 8,
+          "svp": 1.0,
+          "gaa": 0.0,
+          "so": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 231,
+      "name": "T-Waugh91",
+      "teamId": 13,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 5,
+      "p": 5,
+      "pim": 0,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 2,
+      "int": 0,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 5,
+          "p": 5,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 3,
+      "week": 1,
+      "home": 15,
+      "away": 13,
+      "homeScore": 0,
+      "awayScore": 8,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 8,
+          "faceoffsWon": 5,
+          "hits": 11,
+          "toa": "4:28",
+          "pim": 0,
+          "passPct": 61
+        },
+        "away": {
+          "shots": 21,
+          "faceoffsWon": 7,
+          "hits": 3,
+          "toa": "8:06",
+          "pim": 0,
+          "passPct": 86
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Jam-16-Mac",
+          "pos": "LEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "34:17",
+          "twp": "4:01",
+          "shots": 3,
+          "passPct": 86,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 0,
+          "giveaways": 2,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "Tr-xAssassiNx-Qc",
+          "pos": "CEN",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "34:17",
+          "twp": "2:43",
+          "shots": 1,
+          "passPct": 25,
+          "fow": 5,
+          "fol": 7,
+          "hits": 5,
+          "ta": 4,
+          "giveaways": 3,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "beanbemird",
+          "pos": "DEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "34:17",
+          "twp": "2:18",
+          "shots": 1,
+          "passPct": 71,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 4,
+          "giveaways": 2,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "MrReSniper",
+          "pos": "CEN",
+          "g": 4,
+          "a": 3,
+          "p": 7,
+          "pm": 8,
+          "toi": "34:17",
+          "twp": "5:04",
+          "shots": 11,
+          "passPct": 78,
+          "fow": 7,
+          "fol": 5,
+          "hits": 1,
+          "ta": 1,
+          "giveaways": 10,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "iChels",
+          "pos": "LEF",
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pm": 8,
+          "toi": "34:17",
+          "twp": "4:22",
+          "shots": 7,
+          "passPct": 94,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 0,
+          "giveaways": 3,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "T-Waugh91",
+          "pos": "DEF",
+          "g": 0,
+          "a": 5,
+          "p": 5,
+          "pm": 8,
+          "toi": "34:17",
+          "twp": "3:11",
+          "shots": 2,
+          "passPct": 87,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 2,
+          "giveaways": 3,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "andrewgamer5983",
+        "result": "L",
+        "sa": 21,
+        "sv": 13,
+        "ga": 8,
+        "svPct": "0.619",
+        "toi": "34:17",
+        "pkChk": 0,
+        "despSv": 4
+      },
+      "awayGoalie": {
+        "name": "kikass23415",
+        "result": "W",
+        "sa": 8,
+        "sv": 8,
+        "ga": 0,
+        "svPct": "1.000",
+        "toi": "34:17",
+        "pkChk": 0,
+        "despSv": 0
+      }
+    },
     {
       "id": 2,
       "week": 1,
