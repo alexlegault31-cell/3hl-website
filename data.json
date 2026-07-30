@@ -105,14 +105,14 @@
     {
       "teamId": 9,
       "rank": 2,
-      "prevRank": 3,
-      "w": 2,
+      "prevRank": 2,
+      "w": 3,
       "l": 0,
       "otl": 0,
-      "pts": 4,
-      "gf": 20,
-      "ga": 9,
-      "streak": "W2"
+      "pts": 6,
+      "gf": 30,
+      "ga": 16,
+      "streak": "W3"
     },
     {
       "teamId": 14,
@@ -189,14 +189,14 @@
     {
       "teamId": 19,
       "rank": 9,
-      "prevRank": 7,
+      "prevRank": 9,
       "w": 0,
-      "l": 2,
+      "l": 3,
       "otl": 0,
       "pts": 0,
-      "gf": 1,
-      "ga": 11,
-      "streak": "L2"
+      "gf": 8,
+      "ga": 21,
+      "streak": "L3"
     },
     {
       "teamId": 10,
@@ -328,9 +328,9 @@
       "slot": "Wed 9:00 PM EST",
       "home": 19,
       "away": 9,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 7,
+      "awayScore": 10
     },
     {
       "num": 13,
@@ -3093,26 +3093,62 @@
       }
     },
     {
+      "id": 26,
+      "name": "BOOST GREECY",
+      "teamId": 9,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 3,
+      "g": 4,
+      "a": 21,
+      "p": 25,
+      "pim": 0,
+      "hits": 9,
+      "fow": 0,
+      "fol": 0,
+      "ta": 10,
+      "int": 7,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 4,
+          "a": 21,
+          "p": 25,
+          "pim": 0,
+          "hits": 9
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 236,
       "name": "MrAZeK6013",
       "teamId": 19,
       "pos": "G",
       "goalie": true,
-      "gp": 1,
+      "gp": 2,
       "w": 0,
-      "l": 1,
+      "l": 2,
       "otl": 0,
-      "gaa": 12.39,
-      "svp": 0.667,
+      "gaa": 10.94,
+      "svp": 0.617,
       "so": 0,
       "split": {
         "regular": {
-          "gp": 1,
-          "sa": 24,
-          "ga": 8,
-          "sv": 16,
-          "svp": 0.667,
-          "gaa": 12.39,
+          "gp": 2,
+          "sa": 47,
+          "ga": 18,
+          "sv": 29,
+          "svp": 0.617,
+          "gaa": 10.94,
           "so": 0
         },
         "playoffs": {
@@ -3123,114 +3159,6 @@
           "svp": 0.0,
           "gaa": 0.0,
           "so": 0
-        }
-      }
-    },
-    {
-      "id": 237,
-      "name": "Spaceltm",
-      "teamId": 19,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 1,
-      "g": 0,
-      "a": 1,
-      "p": 1,
-      "pim": 0,
-      "hits": 6,
-      "fow": 7,
-      "fol": 8,
-      "ta": 0,
-      "int": 1,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 0,
-          "a": 1,
-          "p": 1,
-          "pim": 0,
-          "hits": 6
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 238,
-      "name": "Drixo9840",
-      "teamId": 19,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 1,
-      "g": 1,
-      "a": 0,
-      "p": 1,
-      "pim": 0,
-      "hits": 8,
-      "fow": 0,
-      "fol": 0,
-      "ta": 5,
-      "int": 0,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 1,
-          "a": 0,
-          "p": 1,
-          "pim": 0,
-          "hits": 8
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 239,
-      "name": "AcidChief397",
-      "teamId": 19,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 1,
-      "g": 0,
-      "a": 1,
-      "p": 1,
-      "pim": 0,
-      "hits": 4,
-      "fow": 0,
-      "fol": 0,
-      "ta": 3,
-      "int": 2,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 0,
-          "a": 1,
-          "p": 1,
-          "pim": 0,
-          "hits": 4
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
         }
       }
     },
@@ -3295,112 +3223,6 @@
           "p": 17,
           "pim": 0,
           "hits": 17
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 26,
-      "name": "BOOST GREECY",
-      "teamId": 9,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 2,
-      "g": 3,
-      "a": 15,
-      "p": 18,
-      "pim": 0,
-      "hits": 4,
-      "fow": 0,
-      "fol": 0,
-      "ta": 6,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 3,
-          "a": 15,
-          "p": 18,
-          "pim": 0,
-          "hits": 4
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 232,
-      "name": "NABOKOVx1995",
-      "teamId": 9,
-      "pos": "G",
-      "goalie": true,
-      "gp": 2,
-      "w": 2,
-      "l": 0,
-      "otl": 0,
-      "gaa": 5.12,
-      "svp": 0.735,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "sa": 34,
-          "ga": 9,
-          "sv": 25,
-          "svp": 0.735,
-          "gaa": 5.12,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
-      "id": 41,
-      "name": "Bxnenfant",
-      "teamId": 9,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 2,
-      "g": 8,
-      "a": 9,
-      "p": 17,
-      "pim": 0,
-      "hits": 12,
-      "fow": 28,
-      "fol": 20,
-      "ta": 8,
-      "int": 0,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 8,
-          "a": 9,
-          "p": 17,
-          "pim": 0,
-          "hits": 12
         },
         "playoffs": {
           "gp": 0,
@@ -3977,9 +3799,396 @@
           "so": 0
         }
       }
+    },
+    {
+      "id": 232,
+      "name": "NABOKOVx1995",
+      "teamId": 9,
+      "pos": "G",
+      "goalie": true,
+      "gp": 3,
+      "w": 3,
+      "l": 0,
+      "otl": 0,
+      "gaa": 5.8,
+      "svp": 0.692,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "sa": 52,
+          "ga": 16,
+          "sv": 36,
+          "svp": 0.692,
+          "gaa": 5.8,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 252,
+      "name": "Malekxx94",
+      "teamId": 9,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 4,
+      "a": 4,
+      "p": 8,
+      "pim": 2,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 6,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pim": 2,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Bxnenfant",
+      "teamId": 9,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 3,
+      "g": 13,
+      "a": 12,
+      "p": 25,
+      "pim": 0,
+      "hits": 21,
+      "fow": 47,
+      "fol": 28,
+      "ta": 10,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 13,
+          "a": 12,
+          "p": 25,
+          "pim": 0,
+          "hits": 21
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 237,
+      "name": "Spaceltm",
+      "teamId": 19,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 2,
+      "g": 0,
+      "a": 6,
+      "p": 6,
+      "pim": 0,
+      "hits": 15,
+      "fow": 15,
+      "fol": 27,
+      "ta": 7,
+      "int": 4,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 0,
+          "a": 6,
+          "p": 6,
+          "pim": 0,
+          "hits": 15
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 238,
+      "name": "Drixo9840",
+      "teamId": 19,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 2,
+      "g": 7,
+      "a": 0,
+      "p": 7,
+      "pim": 2,
+      "hits": 18,
+      "fow": 0,
+      "fol": 0,
+      "ta": 11,
+      "int": 1,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 7,
+          "a": 0,
+          "p": 7,
+          "pim": 2,
+          "hits": 18
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 239,
+      "name": "AcidChief397",
+      "teamId": 19,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 2,
+      "g": 1,
+      "a": 4,
+      "p": 5,
+      "pim": 0,
+      "hits": 9,
+      "fow": 0,
+      "fol": 0,
+      "ta": 6,
+      "int": 4,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 1,
+          "a": 4,
+          "p": 5,
+          "pim": 0,
+          "hits": 9
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 12,
+      "week": 1,
+      "home": 19,
+      "away": 9,
+      "homeScore": 7,
+      "awayScore": 10,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 18,
+          "faceoffsWon": 8,
+          "hits": 24,
+          "toa": "7:38",
+          "pim": 2,
+          "passPct": 77
+        },
+        "away": {
+          "shots": 24,
+          "faceoffsWon": 19,
+          "hits": 15,
+          "toa": "12:05",
+          "pim": 2,
+          "passPct": 67
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Spaceltm",
+          "pos": "CEN",
+          "g": 0,
+          "a": 5,
+          "p": 5,
+          "pm": -4,
+          "toi": "60:00",
+          "twp": "7:21",
+          "shots": 4,
+          "passPct": 73,
+          "fow": 8,
+          "fol": 19,
+          "hits": 9,
+          "ta": 7,
+          "giveaways": 10,
+          "bs": 0,
+          "int": 3,
+          "pim": 0
+        },
+        {
+          "name": "Drixo9840",
+          "pos": "LEF",
+          "g": 6,
+          "a": 0,
+          "p": 6,
+          "pm": -4,
+          "toi": "60:00",
+          "twp": "6:38",
+          "shots": 8,
+          "passPct": 78,
+          "fow": 0,
+          "fol": 0,
+          "hits": 10,
+          "ta": 6,
+          "giveaways": 9,
+          "bs": 1,
+          "int": 1,
+          "pim": 2
+        },
+        {
+          "name": "AcidChief397",
+          "pos": "DEF",
+          "g": 1,
+          "a": 3,
+          "p": 4,
+          "pm": -4,
+          "toi": "60:00",
+          "twp": "4:17",
+          "shots": 3,
+          "passPct": 79,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 3,
+          "giveaways": 10,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "BOOST GREECY",
+          "pos": "DEF",
+          "g": 1,
+          "a": 6,
+          "p": 7,
+          "pm": 4,
+          "toi": "60:00",
+          "twp": "4:31",
+          "shots": 2,
+          "passPct": 81,
+          "fow": 0,
+          "fol": 0,
+          "hits": 5,
+          "ta": 4,
+          "giveaways": 4,
+          "bs": 1,
+          "int": 4,
+          "pim": 0
+        },
+        {
+          "name": "Malekxx94",
+          "pos": "LEF",
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pm": 4,
+          "toi": "60:00",
+          "twp": "12:02",
+          "shots": 10,
+          "passPct": 48,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 6,
+          "giveaways": 18,
+          "bs": 0,
+          "int": 1,
+          "pim": 2
+        },
+        {
+          "name": "Bxnenfant",
+          "pos": "CEN",
+          "g": 5,
+          "a": 3,
+          "p": 8,
+          "pm": 4,
+          "toi": "60:00",
+          "twp": "4:28",
+          "shots": 6,
+          "passPct": 71,
+          "fow": 19,
+          "fol": 8,
+          "hits": 9,
+          "ta": 2,
+          "giveaways": 12,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "MrAZeK6013",
+        "result": "L",
+        "sa": 23,
+        "sv": 13,
+        "ga": 10,
+        "svPct": "0.565",
+        "toi": "59:56",
+        "pkChk": 0,
+        "despSv": 1
+      },
+      "awayGoalie": {
+        "name": "NABOKOVx1995",
+        "result": "W",
+        "sa": 18,
+        "sv": 11,
+        "ga": 7,
+        "svPct": "0.611",
+        "toi": "59:58",
+        "pkChk": 0,
+        "despSv": 1
+      }
+    },
     {
       "id": 11,
       "week": 1,
