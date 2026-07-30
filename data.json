@@ -127,28 +127,28 @@
       "streak": "T1"
     },
     {
-      "teamId": 13,
+      "teamId": 17,
       "rank": 4,
-      "prevRank": 2,
-      "w": 2,
+      "prevRank": 5,
+      "w": 3,
       "l": 1,
       "otl": 0,
-      "pts": 4,
-      "gf": 19,
-      "ga": 14,
-      "streak": "L1"
+      "pts": 6,
+      "gf": 27,
+      "ga": 18,
+      "streak": "W3"
     },
     {
-      "teamId": 17,
+      "teamId": 13,
       "rank": 5,
-      "prevRank": 6,
+      "prevRank": 4,
       "w": 2,
-      "l": 1,
+      "l": 2,
       "otl": 0,
       "pts": 4,
-      "gf": 18,
-      "ga": 13,
-      "streak": "W2"
+      "gf": 24,
+      "ga": 23,
+      "streak": "L2"
     },
     {
       "teamId": 18,
@@ -378,9 +378,9 @@
       "slot": "Wed 9:30 PM EST",
       "home": 17,
       "away": 13,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 9,
+      "awayScore": 5
     },
     {
       "num": 18,
@@ -3019,208 +3019,30 @@
       }
     },
     {
-      "id": 250,
-      "name": "Lemieux4Ever",
+      "id": 249,
+      "name": "RlNNE I2I",
       "teamId": 13,
       "pos": "DEFENSEMEN",
       "goalie": false,
-      "gp": 1,
-      "g": 0,
-      "a": 1,
-      "p": 1,
-      "pim": 0,
-      "hits": 0,
-      "fow": 0,
-      "fol": 0,
-      "ta": 1,
-      "int": 2,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 0,
-          "a": 1,
-          "p": 1,
-          "pim": 0,
-          "hits": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 251,
-      "name": "B3GNOCH3",
-      "teamId": 13,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 1,
+      "gp": 2,
       "g": 1,
-      "a": 1,
-      "p": 2,
-      "pim": 0,
-      "hits": 2,
+      "a": 3,
+      "p": 4,
+      "pim": 2,
+      "hits": 8,
       "fow": 0,
       "fol": 0,
       "ta": 2,
       "int": 1,
-      "bs": 1,
+      "bs": 2,
       "split": {
         "regular": {
           "gp": 1,
           "g": 1,
-          "a": 1,
-          "p": 2,
-          "pim": 0,
-          "hits": 2
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 244,
-      "name": "Absanity9970",
-      "teamId": 17,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 2,
-      "g": 4,
-      "a": 8,
-      "p": 12,
-      "pim": 4,
-      "hits": 9,
-      "fow": 0,
-      "fol": 0,
-      "ta": 11,
-      "int": 2,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 4,
-          "a": 8,
-          "p": 12,
-          "pim": 4,
-          "hits": 9
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 245,
-      "name": "MrBubskies",
-      "teamId": 17,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 2,
-      "g": 7,
-      "a": 5,
-      "p": 12,
-      "pim": 0,
-      "hits": 28,
-      "fow": 21,
-      "fol": 38,
-      "ta": 14,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 7,
-          "a": 5,
-          "p": 12,
-          "pim": 0,
-          "hits": 28
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 246,
-      "name": "TTVSwueemthesal",
-      "teamId": 17,
-      "pos": "G",
-      "goalie": true,
-      "gp": 2,
-      "w": 2,
-      "l": 0,
-      "otl": 0,
-      "gaa": 5.0,
-      "svp": 0.744,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "sa": 39,
-          "ga": 10,
-          "sv": 29,
-          "svp": 0.744,
-          "gaa": 5.0,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
-      "id": 247,
-      "name": "Reflex658897",
-      "teamId": 17,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 2,
-      "g": 7,
-      "a": 7,
-      "p": 14,
-      "pim": 0,
-      "hits": 20,
-      "fow": 0,
-      "fol": 0,
-      "ta": 8,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 7,
-          "a": 7,
-          "p": 14,
-          "pim": 0,
-          "hits": 20
+          "a": 3,
+          "p": 4,
+          "pim": 2,
+          "hits": 8
         },
         "playoffs": {
           "gp": 0,
@@ -3842,25 +3664,25 @@
       "teamId": 13,
       "pos": "CENTER",
       "goalie": false,
-      "gp": 3,
-      "g": 1,
-      "a": 1,
-      "p": 2,
+      "gp": 4,
+      "g": 4,
+      "a": 3,
+      "p": 7,
       "pim": 0,
-      "hits": 8,
-      "fow": 6,
-      "fol": 17,
-      "ta": 5,
-      "int": 2,
-      "bs": 1,
+      "hits": 11,
+      "fow": 16,
+      "fol": 30,
+      "ta": 8,
+      "int": 4,
+      "bs": 4,
       "split": {
         "regular": {
-          "gp": 1,
-          "g": 1,
-          "a": 1,
-          "p": 2,
+          "gp": 2,
+          "g": 4,
+          "a": 3,
+          "p": 7,
           "pim": 0,
-          "hits": 8
+          "hits": 11
         },
         "playoffs": {
           "gp": 0,
@@ -3873,25 +3695,25 @@
       }
     },
     {
-      "id": 249,
-      "name": "RlNNE I2I",
+      "id": 250,
+      "name": "Lemieux4Ever",
       "teamId": 13,
       "pos": "G",
       "goalie": true,
-      "gp": 1,
+      "gp": 2,
       "w": 0,
       "l": 1,
       "otl": 0,
       "gaa": 9.0,
-      "svp": 0.75,
+      "svp": 0.735,
       "so": 0,
       "split": {
         "regular": {
           "gp": 1,
-          "sa": 36,
+          "sa": 34,
           "ga": 9,
-          "sv": 27,
-          "svp": 0.75,
+          "sv": 25,
+          "svp": 0.735,
           "gaa": 9.0,
           "so": 0
         },
@@ -3903,6 +3725,78 @@
           "svp": 0.0,
           "gaa": 0.0,
           "so": 0
+        }
+      }
+    },
+    {
+      "id": 251,
+      "name": "B3GNOCH3",
+      "teamId": 13,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 2,
+      "g": 2,
+      "a": 3,
+      "p": 5,
+      "pim": 2,
+      "hits": 4,
+      "fow": 0,
+      "fol": 0,
+      "ta": 7,
+      "int": 1,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 2,
+          "a": 3,
+          "p": 5,
+          "pim": 2,
+          "hits": 4
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 244,
+      "name": "Absanity9970",
+      "teamId": 17,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 3,
+      "g": 7,
+      "a": 11,
+      "p": 18,
+      "pim": 4,
+      "hits": 16,
+      "fow": 0,
+      "fol": 0,
+      "ta": 19,
+      "int": 2,
+      "bs": 3,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 7,
+          "a": 11,
+          "p": 18,
+          "pim": 4,
+          "hits": 16
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
         }
       }
     },
@@ -4121,6 +4015,112 @@
       }
     },
     {
+      "id": 245,
+      "name": "MrBubskies",
+      "teamId": 17,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 3,
+      "g": 13,
+      "a": 7,
+      "p": 20,
+      "pim": 0,
+      "hits": 34,
+      "fow": 34,
+      "fol": 48,
+      "ta": 20,
+      "int": 5,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 13,
+          "a": 7,
+          "p": 20,
+          "pim": 0,
+          "hits": 34
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 246,
+      "name": "TTVSwueemthesal",
+      "teamId": 17,
+      "pos": "G",
+      "goalie": true,
+      "gp": 3,
+      "w": 3,
+      "l": 0,
+      "otl": 0,
+      "gaa": 5.0,
+      "svp": 0.694,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "sa": 49,
+          "ga": 15,
+          "sv": 34,
+          "svp": 0.694,
+          "gaa": 5.0,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 247,
+      "name": "Reflex658897",
+      "teamId": 17,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 3,
+      "g": 7,
+      "a": 13,
+      "p": 20,
+      "pim": 0,
+      "hits": 23,
+      "fow": 0,
+      "fol": 0,
+      "ta": 11,
+      "int": 7,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 7,
+          "a": 13,
+          "p": 20,
+          "pim": 0,
+          "hits": 23
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 33,
       "name": "SussyAidan5937",
       "teamId": 18,
@@ -4194,6 +4194,179 @@
     }
   ],
   "gameResults": [
+    {
+      "id": 17,
+      "week": 1,
+      "home": 17,
+      "away": 13,
+      "homeScore": 9,
+      "awayScore": 5,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 34,
+          "faceoffsWon": 13,
+          "hits": 16,
+          "toa": "12:22",
+          "pim": 0,
+          "passPct": 86
+        },
+        "away": {
+          "shots": 10,
+          "faceoffsWon": 10,
+          "hits": 13,
+          "toa": "6:47",
+          "pim": 4,
+          "passPct": 75
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Absanity9970",
+          "pos": "DEF",
+          "g": 3,
+          "a": 3,
+          "p": 6,
+          "pm": 4,
+          "toi": "60:00",
+          "twp": "9:54",
+          "shots": 10,
+          "passPct": 93,
+          "fow": 0,
+          "fol": 0,
+          "hits": 7,
+          "ta": 8,
+          "giveaways": 6,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "MrBubskies",
+          "pos": "CEN",
+          "g": 6,
+          "a": 2,
+          "p": 8,
+          "pm": 4,
+          "toi": "60:00",
+          "twp": "6:23",
+          "shots": 14,
+          "passPct": 76,
+          "fow": 13,
+          "fol": 10,
+          "hits": 6,
+          "ta": 6,
+          "giveaways": 11,
+          "bs": 1,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "Reflex658897",
+          "pos": "LEF",
+          "g": 0,
+          "a": 6,
+          "p": 6,
+          "pm": 4,
+          "toi": "60:00",
+          "twp": "5:06",
+          "shots": 7,
+          "passPct": 90,
+          "fow": 0,
+          "fol": 0,
+          "hits": 3,
+          "ta": 3,
+          "giveaways": 4,
+          "bs": 1,
+          "int": 4,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "kikass23415",
+          "pos": "CEN",
+          "g": 3,
+          "a": 2,
+          "p": 5,
+          "pm": -4,
+          "toi": "60:00",
+          "twp": "5:12",
+          "shots": 3,
+          "passPct": 84,
+          "fow": 10,
+          "fol": 13,
+          "hits": 3,
+          "ta": 3,
+          "giveaways": 5,
+          "bs": 3,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "RlNNE I2I",
+          "pos": "DEF",
+          "g": 1,
+          "a": 3,
+          "p": 4,
+          "pm": -4,
+          "toi": "60:00",
+          "twp": "5:59",
+          "shots": 2,
+          "passPct": 89,
+          "fow": 0,
+          "fol": 0,
+          "hits": 8,
+          "ta": 2,
+          "giveaways": 14,
+          "bs": 2,
+          "int": 1,
+          "pim": 2
+        },
+        {
+          "name": "B3GNOCH3",
+          "pos": "LEF",
+          "g": 1,
+          "a": 2,
+          "p": 3,
+          "pm": -4,
+          "toi": "60:00",
+          "twp": "5:04",
+          "shots": 4,
+          "passPct": 52,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 5,
+          "giveaways": 16,
+          "bs": 1,
+          "int": 0,
+          "pim": 2
+        }
+      ],
+      "homeGoalie": {
+        "name": "TTVSwueemthesal",
+        "result": "W",
+        "sa": 10,
+        "sv": 5,
+        "ga": 5,
+        "svPct": "0.500",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 0
+      },
+      "awayGoalie": {
+        "name": "Lemieux4Ever",
+        "result": "L",
+        "sa": 34,
+        "sv": 25,
+        "ga": 9,
+        "svPct": "0.735",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 1
+      }
+    },
     {
       "id": 16,
       "week": 1,
