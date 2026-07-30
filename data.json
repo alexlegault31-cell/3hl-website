@@ -141,26 +141,26 @@
     {
       "teamId": 14,
       "rank": 5,
-      "prevRank": 3,
-      "w": 0,
+      "prevRank": 5,
+      "w": 1,
       "l": 0,
       "otl": 0,
-      "pts": 0,
-      "gf": 0,
+      "pts": 2,
+      "gf": 3,
       "ga": 0,
-      "streak": "-"
+      "streak": "W1"
     },
     {
       "teamId": 17,
       "rank": 6,
       "prevRank": 6,
       "w": 0,
-      "l": 0,
+      "l": 1,
       "otl": 0,
       "pts": 0,
       "gf": 0,
-      "ga": 0,
-      "streak": "-"
+      "ga": 3,
+      "streak": "L1"
     },
     {
       "teamId": 19,
@@ -258,9 +258,9 @@
       "slot": "Wed 8:00 PM EST",
       "home": 14,
       "away": 17,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "num": 6,
@@ -3268,6 +3268,37 @@
     }
   ],
   "gameResults": [
+    {
+      "id": 5,
+      "week": 1,
+      "home": 14,
+      "away": 17,
+      "homeScore": 3,
+      "awayScore": 0,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 0,
+          "faceoffsWon": 0,
+          "hits": 0,
+          "toa": "0:00",
+          "pim": 0,
+          "passPct": 0
+        },
+        "away": {
+          "shots": 0,
+          "faceoffsWon": 0,
+          "hits": 0,
+          "toa": "0:00",
+          "pim": 0,
+          "passPct": 0
+        }
+      },
+      "homeSkaters": [],
+      "awaySkaters": [],
+      "homeGoalie": null,
+      "awayGoalie": null
+    },
     {
       "id": 4,
       "week": 1,
