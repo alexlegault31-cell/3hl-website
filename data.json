@@ -91,8 +91,20 @@
   ],
   "standings": [
     {
-      "teamId": 9,
+      "teamId": 16,
       "rank": 1,
+      "prevRank": 2,
+      "w": 7,
+      "l": 1,
+      "otl": 0,
+      "pts": 14,
+      "gf": 57,
+      "ga": 22,
+      "streak": "W2"
+    },
+    {
+      "teamId": 9,
+      "rank": 2,
       "prevRank": 3,
       "w": 6,
       "l": 1,
@@ -100,18 +112,6 @@
       "pts": 12,
       "gf": 54,
       "ga": 27,
-      "streak": "W1"
-    },
-    {
-      "teamId": 16,
-      "rank": 2,
-      "prevRank": 2,
-      "w": 6,
-      "l": 1,
-      "otl": 0,
-      "pts": 12,
-      "gf": 49,
-      "ga": 22,
       "streak": "W1"
     },
     {
@@ -201,14 +201,14 @@
     {
       "teamId": 15,
       "rank": 10,
-      "prevRank": 9,
+      "prevRank": 10,
       "w": 1,
-      "l": 6,
+      "l": 7,
       "otl": 0,
       "pts": 2,
       "gf": 18,
-      "ga": 48,
-      "streak": "L1"
+      "ga": 56,
+      "streak": "L2"
     }
   ],
   "schedule": [
@@ -568,9 +568,9 @@
       "slot": "Thu 9:30 PM EST",
       "home": 15,
       "away": 16,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 0,
+      "awayScore": 8
     },
     {
       "num": 37,
@@ -2451,6 +2451,40 @@
       }
     },
     {
+      "id": 221,
+      "name": "l Vaklex l",
+      "teamId": 16,
+      "pos": "G",
+      "goalie": true,
+      "gp": 5,
+      "w": 5,
+      "l": 0,
+      "otl": 0,
+      "gaa": 2.4,
+      "svp": 0.821,
+      "so": 1,
+      "split": {
+        "regular": {
+          "gp": 5,
+          "sa": 56,
+          "ga": 10,
+          "sv": 46,
+          "svp": 0.821,
+          "gaa": 2.4,
+          "so": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
       "id": 224,
       "name": "I KYLzee I",
       "teamId": 19,
@@ -2475,42 +2509,6 @@
           "p": 7,
           "pim": 2,
           "hits": 5
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 226,
-      "name": "Tr-xAssassiNx-Qc",
-      "teamId": 15,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 5,
-      "g": 7,
-      "a": 4,
-      "p": 11,
-      "pim": 2,
-      "hits": 23,
-      "fow": 53,
-      "fol": 50,
-      "ta": 22,
-      "int": 0,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 5,
-          "g": 7,
-          "a": 4,
-          "p": 11,
-          "pim": 2,
-          "hits": 23
         },
         "playoffs": {
           "gp": 0,
@@ -2775,42 +2773,6 @@
       }
     },
     {
-      "id": 227,
-      "name": "andrewgamer5983",
-      "teamId": 15,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 6,
-      "g": 3,
-      "a": 2,
-      "p": 5,
-      "pim": 0,
-      "hits": 9,
-      "fow": 6,
-      "fol": 9,
-      "ta": 8,
-      "int": 2,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 3,
-          "a": 2,
-          "p": 5,
-          "pim": 0,
-          "hits": 9
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 162,
       "name": "Demidxv x 93",
       "teamId": 12,
@@ -2835,6 +2797,78 @@
           "p": 19,
           "pim": 2,
           "hits": 40
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 226,
+      "name": "Tr-xAssassiNx-Qc",
+      "teamId": 15,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 6,
+      "g": 7,
+      "a": 4,
+      "p": 11,
+      "pim": 4,
+      "hits": 23,
+      "fow": 56,
+      "fol": 59,
+      "ta": 25,
+      "int": 0,
+      "bs": 3,
+      "split": {
+        "regular": {
+          "gp": 6,
+          "g": 7,
+          "a": 4,
+          "p": 11,
+          "pim": 4,
+          "hits": 23
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 227,
+      "name": "andrewgamer5983",
+      "teamId": 15,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 7,
+      "g": 3,
+      "a": 2,
+      "p": 5,
+      "pim": 0,
+      "hits": 11,
+      "fow": 6,
+      "fol": 9,
+      "ta": 10,
+      "int": 2,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 3,
+          "a": 2,
+          "p": 5,
+          "pim": 0,
+          "hits": 11
         },
         "playoffs": {
           "gp": 0,
@@ -2879,40 +2913,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 221,
-      "name": "l Vaklex l",
-      "teamId": 16,
-      "pos": "G",
-      "goalie": true,
-      "gp": 4,
-      "w": 4,
-      "l": 0,
-      "otl": 0,
-      "gaa": 2.74,
-      "svp": 0.8,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 4,
-          "sa": 50,
-          "ga": 10,
-          "sv": 40,
-          "svp": 0.8,
-          "gaa": 2.74,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -4233,112 +4233,6 @@
       }
     },
     {
-      "id": 264,
-      "name": "Bedzy l98l",
-      "teamId": 16,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 3,
-      "g": 3,
-      "a": 1,
-      "p": 4,
-      "pim": 0,
-      "hits": 4,
-      "fow": 0,
-      "fol": 0,
-      "ta": 0,
-      "int": 3,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 3,
-          "a": 1,
-          "p": 4,
-          "pim": 0,
-          "hits": 4
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 265,
-      "name": "Fleury x 299631",
-      "teamId": 16,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 3,
-      "g": 8,
-      "a": 8,
-      "p": 16,
-      "pim": 2,
-      "hits": 23,
-      "fow": 0,
-      "fol": 0,
-      "ta": 18,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 8,
-          "a": 8,
-          "p": 16,
-          "pim": 2,
-          "hits": 23
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 276,
-      "name": "Hapou5645",
-      "teamId": 16,
-      "pos": "G",
-      "goalie": true,
-      "gp": 1,
-      "w": 1,
-      "l": 0,
-      "otl": 0,
-      "gaa": 5.0,
-      "svp": 0.667,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 15,
-          "ga": 5,
-          "sv": 10,
-          "svp": 0.667,
-          "gaa": 5.0,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
       "id": 1,
       "name": "Ms Jaleel",
       "teamId": 10,
@@ -4405,40 +4299,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 274,
-      "name": "jacobndad2008",
-      "teamId": 15,
-      "pos": "G",
-      "goalie": true,
-      "gp": 2,
-      "w": 0,
-      "l": 1,
-      "otl": 0,
-      "gaa": 12.02,
-      "svp": 0.385,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 13,
-          "ga": 8,
-          "sv": 5,
-          "svp": 0.385,
-          "gaa": 12.02,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -4803,6 +4663,42 @@
       }
     },
     {
+      "id": 264,
+      "name": "Bedzy l98l",
+      "teamId": 16,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 4,
+      "g": 7,
+      "a": 5,
+      "p": 12,
+      "pim": 0,
+      "hits": 8,
+      "fow": 0,
+      "fol": 0,
+      "ta": 3,
+      "int": 3,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 7,
+          "a": 5,
+          "p": 12,
+          "pim": 0,
+          "hits": 8
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 273,
       "name": "Ayetonayy",
       "teamId": 17,
@@ -4909,6 +4805,78 @@
       }
     },
     {
+      "id": 265,
+      "name": "Fleury x 299631",
+      "teamId": 16,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 4,
+      "g": 9,
+      "a": 11,
+      "p": 20,
+      "pim": 2,
+      "hits": 25,
+      "fow": 0,
+      "fol": 0,
+      "ta": 19,
+      "int": 3,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 9,
+          "a": 11,
+          "p": 20,
+          "pim": 2,
+          "hits": 25
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 276,
+      "name": "Hapou5645",
+      "teamId": 16,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 2,
+      "g": 3,
+      "a": 3,
+      "p": 6,
+      "pim": 0,
+      "hits": 1,
+      "fow": 9,
+      "fol": 3,
+      "ta": 2,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 3,
+          "a": 3,
+          "p": 6,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 42,
       "name": "AFK Depuis 1995",
       "teamId": 9,
@@ -4975,9 +4943,252 @@
           "so": 0
         }
       }
+    },
+    {
+      "id": 274,
+      "name": "jacobndad2008",
+      "teamId": 15,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 3,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 4,
+      "fow": 0,
+      "fol": 0,
+      "ta": 6,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 4
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 285,
+      "name": "clay boyz alt",
+      "teamId": 15,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "gaa": 15.2,
+      "svp": 0.556,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 18,
+          "ga": 8,
+          "sv": 10,
+          "svp": 0.556,
+          "gaa": 15.2,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 36,
+      "week": 1,
+      "home": 15,
+      "away": 16,
+      "homeScore": 0,
+      "awayScore": 8,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 6,
+          "faceoffsWon": 3,
+          "hits": 3,
+          "toa": "2:19",
+          "pim": 2,
+          "passPct": 71
+        },
+        "away": {
+          "shots": 19,
+          "faceoffsWon": 9,
+          "hits": 7,
+          "toa": "8:32",
+          "pim": 0,
+          "passPct": 78
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "Tr-xAssassiNx-Qc",
+          "pos": "CEN",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "31:35",
+          "twp": "2:35",
+          "shots": 0,
+          "passPct": 83,
+          "fow": 3,
+          "fol": 9,
+          "hits": 0,
+          "ta": 3,
+          "giveaways": 6,
+          "bs": 1,
+          "int": 0,
+          "pim": 2
+        },
+        {
+          "name": "jacobndad2008",
+          "pos": "DEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -7,
+          "toi": "28:19",
+          "twp": "2:23",
+          "shots": 3,
+          "passPct": 50,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 3,
+          "giveaways": 2,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        },
+        {
+          "name": "andrewgamer5983",
+          "pos": "LEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "31:35",
+          "twp": "2:03",
+          "shots": 3,
+          "passPct": 80,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 2,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "Bedzy l98l",
+          "pos": "LEF",
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pm": 8,
+          "toi": "31:35",
+          "twp": "5:12",
+          "shots": 6,
+          "passPct": 73,
+          "fow": 0,
+          "fol": 0,
+          "hits": 4,
+          "ta": 3,
+          "giveaways": 8,
+          "bs": 2,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Fleury x 299631",
+          "pos": "DEF",
+          "g": 1,
+          "a": 3,
+          "p": 4,
+          "pm": 8,
+          "toi": "31:35",
+          "twp": "3:26",
+          "shots": 1,
+          "passPct": 89,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 1,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Hapou5645",
+          "pos": "CEN",
+          "g": 3,
+          "a": 3,
+          "p": 6,
+          "pm": 8,
+          "toi": "31:35",
+          "twp": "4:15",
+          "shots": 7,
+          "passPct": 73,
+          "fow": 9,
+          "fol": 3,
+          "hits": 1,
+          "ta": 2,
+          "giveaways": 7,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "clay boyz alt",
+        "result": "L",
+        "sa": 18,
+        "sv": 10,
+        "ga": 8,
+        "svPct": "0.556",
+        "toi": "31:35",
+        "pkChk": 0,
+        "despSv": 2
+      },
+      "awayGoalie": {
+        "name": "l Vaklex l",
+        "result": "W",
+        "sa": 6,
+        "sv": 6,
+        "ga": 0,
+        "svPct": "1.000",
+        "toi": "31:35",
+        "pkChk": 0,
+        "despSv": 0
+      }
+    },
     {
       "id": 35,
       "week": 1,
