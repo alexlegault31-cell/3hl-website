@@ -115,8 +115,20 @@
       "streak": "W2"
     },
     {
-      "teamId": 18,
+      "teamId": 14,
       "rank": 3,
+      "prevRank": 4,
+      "w": 5,
+      "l": 2,
+      "otl": 0,
+      "pts": 10,
+      "gf": 39,
+      "ga": 17,
+      "streak": "W1"
+    },
+    {
+      "teamId": 18,
+      "rank": 4,
       "prevRank": 4,
       "w": 4,
       "l": 1,
@@ -125,18 +137,6 @@
       "gf": 40,
       "ga": 30,
       "streak": "W3"
-    },
-    {
-      "teamId": 14,
-      "rank": 4,
-      "prevRank": 3,
-      "w": 4,
-      "l": 2,
-      "otl": 0,
-      "pts": 8,
-      "gf": 31,
-      "ga": 17,
-      "streak": "L2"
     },
     {
       "teamId": 17,
@@ -189,14 +189,14 @@
     {
       "teamId": 15,
       "rank": 9,
-      "prevRank": 10,
+      "prevRank": 9,
       "w": 1,
-      "l": 5,
+      "l": 6,
       "otl": 0,
       "pts": 2,
       "gf": 18,
-      "ga": 40,
-      "streak": "W1"
+      "ga": 48,
+      "streak": "L1"
     },
     {
       "teamId": 19,
@@ -528,9 +528,9 @@
       "slot": "Thu 9:00 PM EST",
       "home": 14,
       "away": 15,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 8,
+      "awayScore": 0
     },
     {
       "num": 33,
@@ -2487,36 +2487,38 @@
       }
     },
     {
-      "id": 228,
-      "name": "beanbemird",
+      "id": 226,
+      "name": "Tr-xAssassiNx-Qc",
       "teamId": 15,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 0,
-      "l": 2,
-      "otl": 0,
-      "gaa": 10.21,
-      "svp": 0.685,
-      "so": 0,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 5,
+      "g": 7,
+      "a": 4,
+      "p": 11,
+      "pim": 2,
+      "hits": 23,
+      "fow": 53,
+      "fol": 50,
+      "ta": 22,
+      "int": 0,
+      "bs": 2,
       "split": {
         "regular": {
-          "gp": 2,
-          "sa": 54,
-          "ga": 17,
-          "sv": 37,
-          "svp": 0.685,
-          "gaa": 10.21,
-          "so": 0
+          "gp": 5,
+          "g": 7,
+          "a": 4,
+          "p": 11,
+          "pim": 2,
+          "hits": 23
         },
         "playoffs": {
           "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
         }
       }
     },
@@ -2701,42 +2703,6 @@
       }
     },
     {
-      "id": 227,
-      "name": "andrewgamer5983",
-      "teamId": 15,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 5,
-      "g": 3,
-      "a": 2,
-      "p": 5,
-      "pim": 0,
-      "hits": 6,
-      "fow": 6,
-      "fol": 9,
-      "ta": 4,
-      "int": 2,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 3,
-          "a": 2,
-          "p": 5,
-          "pim": 0,
-          "hits": 6
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 162,
       "name": "Demidxv x 93",
       "teamId": 12,
@@ -2761,6 +2727,42 @@
           "p": 19,
           "pim": 2,
           "hits": 40
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 227,
+      "name": "andrewgamer5983",
+      "teamId": 15,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 6,
+      "g": 3,
+      "a": 2,
+      "p": 5,
+      "pim": 0,
+      "hits": 9,
+      "fow": 6,
+      "fol": 9,
+      "ta": 8,
+      "int": 2,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 3,
+          "a": 2,
+          "p": 5,
+          "pim": 0,
+          "hits": 9
         },
         "playoffs": {
           "gp": 0,
@@ -2843,30 +2845,30 @@
       }
     },
     {
-      "id": 226,
-      "name": "Tr-xAssassiNx-Qc",
+      "id": 228,
+      "name": "beanbemird",
       "teamId": 15,
-      "pos": "CENTER",
+      "pos": "LEFTWING",
       "goalie": false,
       "gp": 4,
-      "g": 7,
-      "a": 4,
-      "p": 11,
-      "pim": 2,
-      "hits": 20,
-      "fow": 48,
-      "fol": 41,
-      "ta": 18,
-      "int": 0,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 7,
+      "fow": 0,
+      "fol": 0,
+      "ta": 8,
+      "int": 1,
       "bs": 1,
       "split": {
         "regular": {
-          "gp": 4,
-          "g": 7,
-          "a": 4,
-          "p": 11,
-          "pim": 2,
-          "hits": 20
+          "gp": 2,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 7
         },
         "playoffs": {
           "gp": 0,
@@ -2913,38 +2915,36 @@
       }
     },
     {
-      "id": 54,
-      "name": "Beaudreeez",
+      "id": 248,
+      "name": "Dairy Cannonss",
       "teamId": 14,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 3,
-      "g": 5,
-      "a": 7,
-      "p": 12,
-      "pim": 4,
-      "hits": 14,
-      "fow": 33,
-      "fol": 18,
-      "ta": 11,
-      "int": 1,
-      "bs": 1,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 4,
+      "l": 0,
+      "otl": 0,
+      "gaa": 1.35,
+      "svp": 0.915,
+      "so": 2,
       "split": {
         "regular": {
-          "gp": 2,
-          "g": 5,
-          "a": 7,
-          "p": 12,
-          "pim": 4,
-          "hits": 14
+          "gp": 4,
+          "sa": 59,
+          "ga": 5,
+          "sv": 54,
+          "svp": 0.915,
+          "gaa": 1.35,
+          "so": 2
         },
         "playoffs": {
           "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
         }
       }
     },
@@ -3125,40 +3125,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 248,
-      "name": "Dairy Cannonss",
-      "teamId": 14,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 3,
-      "l": 0,
-      "otl": 0,
-      "gaa": 1.65,
-      "svp": 0.894,
-      "so": 1,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "sa": 47,
-          "ga": 5,
-          "sv": 42,
-          "svp": 0.894,
-          "gaa": 1.65,
-          "so": 1
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -3947,40 +3913,6 @@
       }
     },
     {
-      "id": 253,
-      "name": "ShIfTy8989",
-      "teamId": 14,
-      "pos": "G",
-      "goalie": true,
-      "gp": 4,
-      "w": 1,
-      "l": 0,
-      "otl": 0,
-      "gaa": 3.11,
-      "svp": 0.7,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 10,
-          "ga": 3,
-          "sv": 7,
-          "svp": 0.7,
-          "gaa": 3.11,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
       "id": 251,
       "name": "B3GNOCH3",
       "teamId": 13,
@@ -4053,6 +3985,42 @@
       }
     },
     {
+      "id": 253,
+      "name": "ShIfTy8989",
+      "teamId": 14,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 5,
+      "g": 6,
+      "a": 11,
+      "p": 17,
+      "pim": 4,
+      "hits": 33,
+      "fow": 48,
+      "fol": 40,
+      "ta": 16,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 6,
+          "a": 11,
+          "p": 17,
+          "pim": 4,
+          "hits": 33
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 242,
       "name": "B-E-A-N-S-2",
       "teamId": 18,
@@ -4077,6 +4045,42 @@
           "p": 19,
           "pim": 0,
           "hits": 11
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 54,
+      "name": "Beaudreeez",
+      "teamId": 14,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 4,
+      "g": 9,
+      "a": 11,
+      "p": 20,
+      "pim": 4,
+      "hits": 20,
+      "fow": 33,
+      "fol": 18,
+      "ta": 15,
+      "int": 3,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 9,
+          "a": 11,
+          "p": 20,
+          "pim": 4,
+          "hits": 20
         },
         "playoffs": {
           "gp": 0,
@@ -4319,6 +4323,76 @@
           "sv": 65,
           "svp": 0.793,
           "gaa": 5.67,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 277,
+      "name": "IrishTugg2694",
+      "teamId": 14,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 1,
+      "a": 5,
+      "p": 6,
+      "pim": 0,
+      "hits": 0,
+      "fow": 0,
+      "fol": 0,
+      "ta": 3,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 1,
+          "a": 5,
+          "p": 6,
+          "pim": 0,
+          "hits": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 274,
+      "name": "jacobndad2008",
+      "teamId": 15,
+      "pos": "G",
+      "goalie": true,
+      "gp": 2,
+      "w": 0,
+      "l": 1,
+      "otl": 0,
+      "gaa": 12.02,
+      "svp": 0.385,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 13,
+          "ga": 8,
+          "sv": 5,
+          "svp": 0.385,
+          "gaa": 12.02,
           "so": 0
         },
         "playoffs": {
@@ -4581,42 +4655,6 @@
       }
     },
     {
-      "id": 274,
-      "name": "jacobndad2008",
-      "teamId": 15,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 1,
-      "g": 0,
-      "a": 0,
-      "p": 0,
-      "pim": 0,
-      "hits": 3,
-      "fow": 0,
-      "fol": 0,
-      "ta": 3,
-      "int": 0,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 3
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 275,
       "name": "SniperKing0085",
       "teamId": 15,
@@ -4762,6 +4800,179 @@
     }
   ],
   "gameResults": [
+    {
+      "id": 32,
+      "week": 1,
+      "home": 14,
+      "away": 15,
+      "homeScore": 8,
+      "awayScore": 0,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 13,
+          "faceoffsWon": 9,
+          "hits": 10,
+          "toa": "7:37",
+          "pim": 2,
+          "passPct": 81
+        },
+        "away": {
+          "shots": 13,
+          "faceoffsWon": 5,
+          "hits": 8,
+          "toa": "5:24",
+          "pim": 0,
+          "passPct": 75
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "ShIfTy8989",
+          "pos": "CEN",
+          "g": 3,
+          "a": 3,
+          "p": 6,
+          "pm": 8,
+          "toi": "39:57",
+          "twp": "4:09",
+          "shots": 4,
+          "passPct": 72,
+          "fow": 9,
+          "fol": 5,
+          "hits": 4,
+          "ta": 2,
+          "giveaways": 6,
+          "bs": 0,
+          "int": 0,
+          "pim": 2
+        },
+        {
+          "name": "Beaudreeez",
+          "pos": "LEF",
+          "g": 4,
+          "a": 4,
+          "p": 8,
+          "pm": 8,
+          "toi": "39:57",
+          "twp": "6:51",
+          "shots": 6,
+          "passPct": 82,
+          "fow": 0,
+          "fol": 0,
+          "hits": 6,
+          "ta": 4,
+          "giveaways": 10,
+          "bs": 1,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "IrishTugg2694",
+          "pos": "DEF",
+          "g": 1,
+          "a": 5,
+          "p": 6,
+          "pm": 8,
+          "toi": "39:57",
+          "twp": "5:46",
+          "shots": 1,
+          "passPct": 89,
+          "fow": 0,
+          "fol": 0,
+          "hits": 0,
+          "ta": 3,
+          "giveaways": 8,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "Tr-xAssassiNx-Qc",
+          "pos": "CEN",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "39:57",
+          "twp": "2:37",
+          "shots": 1,
+          "passPct": 50,
+          "fow": 5,
+          "fol": 9,
+          "hits": 3,
+          "ta": 4,
+          "giveaways": 12,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "andrewgamer5983",
+          "pos": "DEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "39:57",
+          "twp": "2:58",
+          "shots": 3,
+          "passPct": 75,
+          "fow": 0,
+          "fol": 0,
+          "hits": 3,
+          "ta": 4,
+          "giveaways": 2,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "beanbemird",
+          "pos": "LEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -8,
+          "toi": "39:57",
+          "twp": "4:35",
+          "shots": 8,
+          "passPct": 100,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 4,
+          "giveaways": 6,
+          "bs": 1,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "Dairy Cannonss",
+        "result": "W",
+        "sa": 12,
+        "sv": 12,
+        "ga": 0,
+        "svPct": "1.000",
+        "toi": "39:57",
+        "pkChk": 0,
+        "despSv": 0
+      },
+      "awayGoalie": {
+        "name": "jacobndad2008",
+        "result": "L",
+        "sa": 13,
+        "sv": 5,
+        "ga": 8,
+        "svPct": "0.385",
+        "toi": "39:57",
+        "pkChk": 2,
+        "despSv": 0
+      }
+    },
     {
       "id": 31,
       "week": 1,
