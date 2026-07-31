@@ -91,8 +91,20 @@
   ],
   "standings": [
     {
-      "teamId": 16,
+      "teamId": 9,
       "rank": 1,
+      "prevRank": 3,
+      "w": 6,
+      "l": 1,
+      "otl": 0,
+      "pts": 12,
+      "gf": 54,
+      "ga": 27,
+      "streak": "W1"
+    },
+    {
+      "teamId": 16,
+      "rank": 2,
       "prevRank": 2,
       "w": 6,
       "l": 1,
@@ -104,7 +116,7 @@
     },
     {
       "teamId": 18,
-      "rank": 2,
+      "rank": 3,
       "prevRank": 4,
       "w": 5,
       "l": 1,
@@ -113,18 +125,6 @@
       "gf": 42,
       "ga": 31,
       "streak": "W4"
-    },
-    {
-      "teamId": 9,
-      "rank": 3,
-      "prevRank": 1,
-      "w": 5,
-      "l": 1,
-      "otl": 0,
-      "pts": 10,
-      "gf": 51,
-      "ga": 27,
-      "streak": "T2"
     },
     {
       "teamId": 14,
@@ -177,14 +177,14 @@
     {
       "teamId": 12,
       "rank": 8,
-      "prevRank": 7,
+      "prevRank": 8,
       "w": 2,
-      "l": 4,
+      "l": 5,
       "otl": 0,
       "pts": 4,
       "gf": 31,
-      "ga": 46,
-      "streak": "O2"
+      "ga": 49,
+      "streak": "L1"
     },
     {
       "teamId": 19,
@@ -548,9 +548,9 @@
       "slot": "Thu 9:00 PM EST",
       "home": 9,
       "away": 12,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "num": 35,
@@ -5150,6 +5150,37 @@
         "pkChk": 0,
         "despSv": 0
       }
+    },
+    {
+      "id": 34,
+      "week": 1,
+      "home": 9,
+      "away": 12,
+      "homeScore": 3,
+      "awayScore": 0,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 0,
+          "faceoffsWon": 0,
+          "hits": 0,
+          "toa": "0:00",
+          "pim": 0,
+          "passPct": 0
+        },
+        "away": {
+          "shots": 0,
+          "faceoffsWon": 0,
+          "hits": 0,
+          "toa": "0:00",
+          "pim": 0,
+          "passPct": 0
+        }
+      },
+      "homeSkaters": [],
+      "awaySkaters": [],
+      "homeGoalie": null,
+      "awayGoalie": null
     },
     {
       "id": 33,
