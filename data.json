@@ -153,26 +153,26 @@
     {
       "teamId": 13,
       "rank": 6,
-      "prevRank": 4,
+      "prevRank": 6,
       "w": 2,
-      "l": 2,
+      "l": 3,
       "otl": 0,
       "pts": 4,
-      "gf": 24,
-      "ga": 23,
-      "streak": "L2"
+      "gf": 29,
+      "ga": 29,
+      "streak": "L3"
     },
     {
       "teamId": 10,
       "rank": 7,
       "prevRank": 7,
-      "w": 1,
+      "w": 2,
       "l": 3,
       "otl": 0,
-      "pts": 2,
-      "gf": 20,
-      "ga": 31,
-      "streak": "L1"
+      "pts": 4,
+      "gf": 26,
+      "ga": 36,
+      "streak": "W1"
     },
     {
       "teamId": 12,
@@ -438,9 +438,9 @@
       "slot": "Thu 8:00 PM EST",
       "home": 13,
       "away": 10,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 5,
+      "awayScore": 6
     },
     {
       "num": 24,
@@ -2415,42 +2415,6 @@
   ],
   "players": [
     {
-      "id": 229,
-      "name": "MrReSniper",
-      "teamId": 13,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 2,
-      "g": 6,
-      "a": 9,
-      "p": 15,
-      "pim": 0,
-      "hits": 6,
-      "fow": 24,
-      "fol": 11,
-      "ta": 4,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 6,
-          "a": 9,
-          "p": 15,
-          "pim": 0,
-          "hits": 6
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 230,
       "name": "iChels",
       "teamId": 13,
@@ -2475,6 +2439,42 @@
           "p": 14,
           "pim": 0,
           "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 229,
+      "name": "MrReSniper",
+      "teamId": 13,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 3,
+      "g": 7,
+      "a": 12,
+      "p": 19,
+      "pim": 0,
+      "hits": 7,
+      "fow": 39,
+      "fol": 25,
+      "ta": 11,
+      "int": 5,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 7,
+          "a": 12,
+          "p": 19,
+          "pim": 0,
+          "hits": 7
         },
         "playoffs": {
           "gp": 0,
@@ -2947,6 +2947,76 @@
       }
     },
     {
+      "id": 36,
+      "name": "kikass23415",
+      "teamId": 13,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 5,
+      "g": 8,
+      "a": 4,
+      "p": 12,
+      "pim": 2,
+      "hits": 15,
+      "fow": 16,
+      "fol": 30,
+      "ta": 11,
+      "int": 7,
+      "bs": 4,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 8,
+          "a": 4,
+          "p": 12,
+          "pim": 2,
+          "hits": 15
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 250,
+      "name": "Lemieux4Ever",
+      "teamId": 13,
+      "pos": "G",
+      "goalie": true,
+      "gp": 3,
+      "w": 0,
+      "l": 2,
+      "otl": 0,
+      "gaa": 7.5,
+      "svp": 0.741,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "sa": 58,
+          "ga": 15,
+          "sv": 43,
+          "svp": 0.741,
+          "gaa": 7.5,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
       "id": 37,
       "name": "Lil420baguette",
       "teamId": 14,
@@ -2971,6 +3041,42 @@
           "p": 17,
           "pim": 0,
           "hits": 34
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 234,
+      "name": "N0rmy I96I",
+      "teamId": 10,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 5,
+      "g": 2,
+      "a": 9,
+      "p": 11,
+      "pim": 0,
+      "hits": 47,
+      "fow": 0,
+      "fol": 0,
+      "ta": 21,
+      "int": 4,
+      "bs": 3,
+      "split": {
+        "regular": {
+          "gp": 5,
+          "g": 2,
+          "a": 9,
+          "p": 11,
+          "pim": 0,
+          "hits": 47
         },
         "playoffs": {
           "gp": 0,
@@ -3269,78 +3375,6 @@
       }
     },
     {
-      "id": 234,
-      "name": "N0rmy I96I",
-      "teamId": 10,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 4,
-      "g": 2,
-      "a": 8,
-      "p": 10,
-      "pim": 0,
-      "hits": 37,
-      "fow": 0,
-      "fol": 0,
-      "ta": 17,
-      "int": 2,
-      "bs": 3,
-      "split": {
-        "regular": {
-          "gp": 4,
-          "g": 2,
-          "a": 8,
-          "p": 10,
-          "pim": 0,
-          "hits": 37
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 23,
-      "name": "CarteronSteroids",
-      "teamId": 10,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 4,
-      "g": 11,
-      "a": 4,
-      "p": 15,
-      "pim": 0,
-      "hits": 32,
-      "fow": 19,
-      "fol": 31,
-      "ta": 18,
-      "int": 6,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 4,
-          "g": 11,
-          "a": 4,
-          "p": 15,
-          "pim": 0,
-          "hits": 32
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 240,
       "name": "TSNGURR",
       "teamId": 18,
@@ -3447,36 +3481,38 @@
       }
     },
     {
-      "id": 235,
-      "name": "THEWOLF947250",
+      "id": 23,
+      "name": "CarteronSteroids",
       "teamId": 10,
-      "pos": "G",
-      "goalie": true,
-      "gp": 4,
-      "w": 1,
-      "l": 3,
-      "otl": 0,
-      "gaa": 8.25,
-      "svp": 0.659,
-      "so": 0,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 5,
+      "g": 15,
+      "a": 5,
+      "p": 20,
+      "pim": 0,
+      "hits": 41,
+      "fow": 19,
+      "fol": 31,
+      "ta": 22,
+      "int": 8,
+      "bs": 1,
       "split": {
         "regular": {
-          "gp": 4,
-          "sa": 91,
-          "ga": 31,
-          "sv": 60,
-          "svp": 0.659,
-          "gaa": 8.25,
-          "so": 0
+          "gp": 5,
+          "g": 15,
+          "a": 5,
+          "p": 20,
+          "pim": 0,
+          "hits": 41
         },
         "playoffs": {
           "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
         }
       }
     },
@@ -3695,30 +3731,30 @@
       }
     },
     {
-      "id": 36,
-      "name": "kikass23415",
-      "teamId": 13,
+      "id": 235,
+      "name": "THEWOLF947250",
+      "teamId": 10,
       "pos": "CENTER",
       "goalie": false,
-      "gp": 4,
-      "g": 4,
+      "gp": 5,
+      "g": 2,
       "a": 3,
-      "p": 7,
+      "p": 5,
       "pim": 0,
-      "hits": 11,
-      "fow": 16,
-      "fol": 30,
-      "ta": 8,
-      "int": 4,
-      "bs": 4,
+      "hits": 7,
+      "fow": 14,
+      "fol": 15,
+      "ta": 6,
+      "int": 1,
+      "bs": 2,
       "split": {
         "regular": {
-          "gp": 2,
-          "g": 4,
+          "gp": 1,
+          "g": 2,
           "a": 3,
-          "p": 7,
+          "p": 5,
           "pim": 0,
-          "hits": 11
+          "hits": 7
         },
         "playoffs": {
           "gp": 0,
@@ -3797,40 +3833,6 @@
           "p": 0,
           "pim": 0,
           "hits": 0
-        }
-      }
-    },
-    {
-      "id": 250,
-      "name": "Lemieux4Ever",
-      "teamId": 13,
-      "pos": "G",
-      "goalie": true,
-      "gp": 2,
-      "w": 0,
-      "l": 1,
-      "otl": 0,
-      "gaa": 9.0,
-      "svp": 0.735,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 34,
-          "ga": 9,
-          "sv": 25,
-          "svp": 0.735,
-          "gaa": 9.0,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
         }
       }
     },
@@ -4437,9 +4439,252 @@
           "so": 0
         }
       }
+    },
+    {
+      "id": 268,
+      "name": "Mr_Gilligan_",
+      "teamId": 13,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 3,
+      "p": 3,
+      "pim": 0,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 5,
+      "int": 2,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 3,
+          "p": 3,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "Ms Jaleel",
+      "teamId": 10,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "gaa": 5.0,
+      "svp": 0.783,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 23,
+          "ga": 5,
+          "sv": 18,
+          "svp": 0.783,
+          "gaa": 5.0,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 23,
+      "week": 1,
+      "home": 13,
+      "away": 10,
+      "homeScore": 5,
+      "awayScore": 6,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 23,
+          "faceoffsWon": 15,
+          "hits": 6,
+          "toa": "10:08",
+          "pim": 2,
+          "passPct": 73
+        },
+        "away": {
+          "shots": 24,
+          "faceoffsWon": 14,
+          "hits": 26,
+          "toa": "10:09",
+          "pim": 0,
+          "passPct": 76
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "MrReSniper",
+          "pos": "CEN",
+          "g": 1,
+          "a": 3,
+          "p": 4,
+          "pm": 0,
+          "toi": "60:00",
+          "twp": "11:40",
+          "shots": 10,
+          "passPct": 77,
+          "fow": 15,
+          "fol": 14,
+          "hits": 1,
+          "ta": 7,
+          "giveaways": 13,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "kikass23415",
+          "pos": "LEF",
+          "g": 4,
+          "a": 1,
+          "p": 5,
+          "pm": 0,
+          "toi": "60:00",
+          "twp": "4:13",
+          "shots": 9,
+          "passPct": 65,
+          "fow": 0,
+          "fol": 0,
+          "hits": 4,
+          "ta": 3,
+          "giveaways": 15,
+          "bs": 0,
+          "int": 3,
+          "pim": 2
+        },
+        {
+          "name": "Mr_Gilligan_",
+          "pos": "DEF",
+          "g": 0,
+          "a": 3,
+          "p": 3,
+          "pm": 0,
+          "toi": "60:00",
+          "twp": "4:04",
+          "shots": 2,
+          "passPct": 76,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 5,
+          "giveaways": 4,
+          "bs": 2,
+          "int": 2,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "N0rmy I96I",
+          "pos": "DEF",
+          "g": 0,
+          "a": 1,
+          "p": 1,
+          "pm": 0,
+          "toi": "60:00",
+          "twp": "4:16",
+          "shots": 2,
+          "passPct": 86,
+          "fow": 0,
+          "fol": 0,
+          "hits": 10,
+          "ta": 4,
+          "giveaways": 1,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "CarteronSteroids",
+          "pos": "LEF",
+          "g": 4,
+          "a": 1,
+          "p": 5,
+          "pm": 0,
+          "toi": "60:00",
+          "twp": "8:47",
+          "shots": 12,
+          "passPct": 71,
+          "fow": 0,
+          "fol": 0,
+          "hits": 9,
+          "ta": 4,
+          "giveaways": 18,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "THEWOLF947250",
+          "pos": "CEN",
+          "g": 2,
+          "a": 3,
+          "p": 5,
+          "pm": 0,
+          "toi": "60:00",
+          "twp": "6:34",
+          "shots": 5,
+          "passPct": 72,
+          "fow": 14,
+          "fol": 15,
+          "hits": 7,
+          "ta": 6,
+          "giveaways": 17,
+          "bs": 2,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "Lemieux4Ever",
+        "result": "L",
+        "sa": 24,
+        "sv": 18,
+        "ga": 6,
+        "svPct": "0.750",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 2
+      },
+      "awayGoalie": {
+        "name": "Ms Jaleel",
+        "result": "W",
+        "sa": 23,
+        "sv": 18,
+        "ga": 5,
+        "svPct": "0.783",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 0
+      }
+    },
     {
       "id": 22,
       "week": 1,
