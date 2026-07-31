@@ -91,8 +91,20 @@
   ],
   "standings": [
     {
-      "teamId": 16,
+      "teamId": 9,
       "rank": 1,
+      "prevRank": 2,
+      "w": 5,
+      "l": 1,
+      "otl": 0,
+      "pts": 10,
+      "gf": 51,
+      "ga": 27,
+      "streak": "W2"
+    },
+    {
+      "teamId": 16,
+      "rank": 2,
       "prevRank": 1,
       "w": 5,
       "l": 1,
@@ -101,18 +113,6 @@
       "gf": 41,
       "ga": 17,
       "streak": "L1"
-    },
-    {
-      "teamId": 9,
-      "rank": 2,
-      "prevRank": 3,
-      "w": 4,
-      "l": 1,
-      "otl": 0,
-      "pts": 8,
-      "gf": 42,
-      "ga": 26,
-      "streak": "W1"
     },
     {
       "teamId": 14,
@@ -177,14 +177,14 @@
     {
       "teamId": 15,
       "rank": 8,
-      "prevRank": 9,
+      "prevRank": 8,
       "w": 1,
-      "l": 4,
+      "l": 5,
       "otl": 0,
       "pts": 2,
-      "gf": 27,
-      "ga": 35,
-      "streak": "W1"
+      "gf": 28,
+      "ga": 44,
+      "streak": "L1"
     },
     {
       "teamId": 12,
@@ -488,9 +488,9 @@
       "slot": "Thu 8:30 PM EST",
       "home": 15,
       "away": 9,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 1,
+      "awayScore": 9
     },
     {
       "num": 29,
@@ -2415,40 +2415,6 @@
   ],
   "players": [
     {
-      "id": 228,
-      "name": "beanbemird",
-      "teamId": 15,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 1,
-      "l": 1,
-      "otl": 0,
-      "gaa": 6.01,
-      "svp": 0.739,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "sa": 46,
-          "ga": 12,
-          "sv": 34,
-          "svp": 0.739,
-          "gaa": 6.01,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
       "id": 230,
       "name": "iChels",
       "teamId": 13,
@@ -2737,6 +2703,42 @@
       }
     },
     {
+      "id": 227,
+      "name": "andrewgamer5983",
+      "teamId": 15,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 5,
+      "g": 3,
+      "a": 2,
+      "p": 5,
+      "pim": 0,
+      "hits": 6,
+      "fow": 6,
+      "fol": 9,
+      "ta": 4,
+      "int": 2,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 3,
+          "a": 2,
+          "p": 5,
+          "pim": 0,
+          "hits": 6
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 162,
       "name": "Demidxv x 93",
       "teamId": 12,
@@ -2769,6 +2771,40 @@
           "p": 0,
           "pim": 0,
           "hits": 0
+        }
+      }
+    },
+    {
+      "id": 228,
+      "name": "beanbemird",
+      "teamId": 15,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 1,
+      "l": 2,
+      "otl": 0,
+      "gaa": 7.89,
+      "svp": 0.7,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "sa": 70,
+          "ga": 21,
+          "sv": 49,
+          "svp": 0.7,
+          "gaa": 7.89,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
         }
       }
     },
@@ -2829,40 +2865,6 @@
           "sv": 95,
           "svp": 0.674,
           "gaa": 10.2,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
-      "id": 227,
-      "name": "andrewgamer5983",
-      "teamId": 15,
-      "pos": "G",
-      "goalie": true,
-      "gp": 4,
-      "w": 0,
-      "l": 3,
-      "otl": 0,
-      "gaa": 8.95,
-      "svp": 0.716,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "sa": 81,
-          "ga": 23,
-          "sv": 58,
-          "svp": 0.716,
-          "gaa": 8.95,
           "so": 0
         },
         "playoffs": {
@@ -3041,6 +3043,42 @@
           "p": 17,
           "pim": 0,
           "hits": 34
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "BOOST GREECY",
+      "teamId": 9,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 6,
+      "g": 9,
+      "a": 31,
+      "p": 40,
+      "pim": 6,
+      "hits": 22,
+      "fow": 9,
+      "fol": 6,
+      "ta": 25,
+      "int": 9,
+      "bs": 3,
+      "split": {
+        "regular": {
+          "gp": 6,
+          "g": 9,
+          "a": 31,
+          "p": 40,
+          "pim": 6,
+          "hits": 22
         },
         "playoffs": {
           "gp": 0,
@@ -3363,6 +3401,42 @@
           "p": 11,
           "pim": 0,
           "hits": 31
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Bxnenfant",
+      "teamId": 9,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 6,
+      "g": 20,
+      "a": 23,
+      "p": 43,
+      "pim": 2,
+      "hits": 33,
+      "fow": 72,
+      "fol": 54,
+      "ta": 22,
+      "int": 3,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 6,
+          "g": 20,
+          "a": 23,
+          "p": 43,
+          "pim": 2,
+          "hits": 33
         },
         "playoffs": {
           "gp": 0,
@@ -4013,78 +4087,6 @@
       }
     },
     {
-      "id": 26,
-      "name": "BOOST GREECY",
-      "teamId": 9,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 5,
-      "g": 4,
-      "a": 28,
-      "p": 32,
-      "pim": 6,
-      "hits": 19,
-      "fow": 0,
-      "fol": 0,
-      "ta": 24,
-      "int": 9,
-      "bs": 3,
-      "split": {
-        "regular": {
-          "gp": 5,
-          "g": 4,
-          "a": 28,
-          "p": 32,
-          "pim": 6,
-          "hits": 19
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 41,
-      "name": "Bxnenfant",
-      "teamId": 9,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 5,
-      "g": 19,
-      "a": 17,
-      "p": 36,
-      "pim": 2,
-      "hits": 33,
-      "fow": 72,
-      "fol": 54,
-      "ta": 21,
-      "int": 2,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 5,
-          "g": 19,
-          "a": 17,
-          "p": 36,
-          "pim": 2,
-          "hits": 33
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 235,
       "name": "THEWOLF947250",
       "teamId": 10,
@@ -4175,76 +4177,6 @@
           "sv": 30,
           "svp": 0.652,
           "gaa": 8.0,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
-      "id": 267,
-      "name": "MADARA x UCHIWA",
-      "teamId": 9,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 1,
-      "g": 4,
-      "a": 3,
-      "p": 7,
-      "pim": 0,
-      "hits": 11,
-      "fow": 0,
-      "fol": 0,
-      "ta": 3,
-      "int": 1,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 4,
-          "a": 3,
-          "p": 7,
-          "pim": 0,
-          "hits": 11
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 42,
-      "name": "AFK Depuis 1995",
-      "teamId": 9,
-      "pos": "G",
-      "goalie": true,
-      "gp": 1,
-      "w": 1,
-      "l": 0,
-      "otl": 0,
-      "gaa": 5.0,
-      "svp": 0.792,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "sa": 24,
-          "ga": 5,
-          "sv": 19,
-          "svp": 0.792,
-          "gaa": 5.0,
           "so": 0
         },
         "playoffs": {
@@ -4791,9 +4723,324 @@
           "so": 0
         }
       }
+    },
+    {
+      "id": 267,
+      "name": "MADARA x UCHIWA",
+      "teamId": 9,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 2,
+      "g": 7,
+      "a": 7,
+      "p": 14,
+      "pim": 0,
+      "hits": 18,
+      "fow": 0,
+      "fol": 0,
+      "ta": 6,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 7,
+          "a": 7,
+          "p": 14,
+          "pim": 0,
+          "hits": 18
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "AFK Depuis 1995",
+      "teamId": 9,
+      "pos": "G",
+      "goalie": true,
+      "gp": 2,
+      "w": 2,
+      "l": 0,
+      "otl": 0,
+      "gaa": 3.6,
+      "svp": 0.85,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "sa": 40,
+          "ga": 6,
+          "sv": 34,
+          "svp": 0.85,
+          "gaa": 3.6,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 274,
+      "name": "jacobndad2008",
+      "teamId": 15,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 0,
+      "hits": 3,
+      "fow": 0,
+      "fol": 0,
+      "ta": 3,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 3
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 275,
+      "name": "SniperKing0085",
+      "teamId": 15,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 0,
+      "p": 0,
+      "pim": 2,
+      "hits": 1,
+      "fow": 0,
+      "fol": 0,
+      "ta": 5,
+      "int": 1,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 2,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 28,
+      "week": 1,
+      "home": 15,
+      "away": 9,
+      "homeScore": 1,
+      "awayScore": 9,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 16,
+          "faceoffsWon": 6,
+          "hits": 4,
+          "toa": "3:40",
+          "pim": 2,
+          "passPct": 93
+        },
+        "away": {
+          "shots": 24,
+          "faceoffsWon": 9,
+          "hits": 10,
+          "toa": "10:36",
+          "pim": 0,
+          "passPct": 76
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "jacobndad2008",
+          "pos": "LEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -7,
+          "toi": "39:54",
+          "twp": "1:50",
+          "shots": 6,
+          "passPct": 100,
+          "fow": 0,
+          "fol": 0,
+          "hits": 3,
+          "ta": 3,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "andrewgamer5983",
+          "pos": "CEN",
+          "g": 1,
+          "a": 0,
+          "p": 1,
+          "pm": -7,
+          "toi": "39:54",
+          "twp": "5:19",
+          "shots": 8,
+          "passPct": 100,
+          "fow": 6,
+          "fol": 9,
+          "hits": 0,
+          "ta": 2,
+          "giveaways": 0,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        },
+        {
+          "name": "SniperKing0085",
+          "pos": "DEF",
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pm": -7,
+          "toi": "39:54",
+          "twp": "2:17",
+          "shots": 1,
+          "passPct": 78,
+          "fow": 0,
+          "fol": 0,
+          "hits": 1,
+          "ta": 5,
+          "giveaways": 7,
+          "bs": 1,
+          "int": 1,
+          "pim": 2
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "MADARA x UCHIWA",
+          "pos": "LEF",
+          "g": 3,
+          "a": 4,
+          "p": 7,
+          "pm": 7,
+          "toi": "39:54",
+          "twp": "3:36",
+          "shots": 11,
+          "passPct": 83,
+          "fow": 0,
+          "fol": 0,
+          "hits": 7,
+          "ta": 3,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "BOOST GREECY",
+          "pos": "CEN",
+          "g": 5,
+          "a": 3,
+          "p": 8,
+          "pm": 7,
+          "toi": "39:54",
+          "twp": "5:39",
+          "shots": 7,
+          "passPct": 76,
+          "fow": 9,
+          "fol": 6,
+          "hits": 3,
+          "ta": 1,
+          "giveaways": 1,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Bxnenfant",
+          "pos": "DEF",
+          "g": 1,
+          "a": 6,
+          "p": 7,
+          "pm": 7,
+          "toi": "39:54",
+          "twp": "7:06",
+          "shots": 3,
+          "passPct": 70,
+          "fow": 0,
+          "fol": 0,
+          "hits": 0,
+          "ta": 1,
+          "giveaways": 16,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "beanbemird",
+        "result": "L",
+        "sa": 24,
+        "sv": 15,
+        "ga": 9,
+        "svPct": "0.625",
+        "toi": "39:54",
+        "pkChk": 0,
+        "despSv": 1
+      },
+      "awayGoalie": {
+        "name": "AFK Depuis 1995",
+        "result": "W",
+        "sa": 16,
+        "sv": 15,
+        "ga": 1,
+        "svPct": "0.938",
+        "toi": "39:54",
+        "pkChk": 0,
+        "despSv": 1
+      }
+    },
     {
       "id": 27,
       "week": 1,
