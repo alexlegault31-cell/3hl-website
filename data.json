@@ -127,8 +127,20 @@
       "streak": "L1"
     },
     {
-      "teamId": 17,
+      "teamId": 18,
       "rank": 4,
+      "prevRank": 5,
+      "w": 3,
+      "l": 1,
+      "otl": 1,
+      "pts": 7,
+      "gf": 30,
+      "ga": 24,
+      "streak": "W2"
+    },
+    {
+      "teamId": 17,
+      "rank": 5,
       "prevRank": 4,
       "w": 3,
       "l": 2,
@@ -137,18 +149,6 @@
       "gf": 31,
       "ga": 25,
       "streak": "L1"
-    },
-    {
-      "teamId": 18,
-      "rank": 5,
-      "prevRank": 6,
-      "w": 2,
-      "l": 1,
-      "otl": 1,
-      "pts": 5,
-      "gf": 21,
-      "ga": 20,
-      "streak": "W1"
     },
     {
       "teamId": 13,
@@ -189,14 +189,14 @@
     {
       "teamId": 12,
       "rank": 9,
-      "prevRank": 8,
+      "prevRank": 9,
       "w": 1,
-      "l": 3,
+      "l": 4,
       "otl": 0,
       "pts": 2,
-      "gf": 24,
-      "ga": 37,
-      "streak": "W1"
+      "gf": 28,
+      "ga": 46,
+      "streak": "L1"
     },
     {
       "teamId": 19,
@@ -458,9 +458,9 @@
       "slot": "Thu 8:00 PM EST",
       "home": 12,
       "away": 18,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 4,
+      "awayScore": 9
     },
     {
       "num": 26,
@@ -2629,6 +2629,42 @@
       }
     },
     {
+      "id": 223,
+      "name": "F4MoUs RedBUL",
+      "teamId": 12,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 5,
+      "g": 8,
+      "a": 14,
+      "p": 22,
+      "pim": 8,
+      "hits": 2,
+      "fow": 38,
+      "fol": 41,
+      "ta": 15,
+      "int": 3,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 5,
+          "g": 8,
+          "a": 14,
+          "p": 22,
+          "pim": 8,
+          "hits": 2
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 222,
       "name": "BraZeau JR",
       "teamId": 12,
@@ -2701,42 +2737,6 @@
       }
     },
     {
-      "id": 223,
-      "name": "F4MoUs RedBUL",
-      "teamId": 12,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 4,
-      "g": 8,
-      "a": 12,
-      "p": 20,
-      "pim": 8,
-      "hits": 2,
-      "fow": 29,
-      "fol": 34,
-      "ta": 15,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 4,
-          "g": 8,
-          "a": 12,
-          "p": 20,
-          "pim": 8,
-          "hits": 2
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 162,
       "name": "Demidxv x 93",
       "teamId": 12,
@@ -2773,40 +2773,6 @@
       }
     },
     {
-      "id": 224,
-      "name": "I KYLzee I",
-      "teamId": 12,
-      "pos": "G",
-      "goalie": true,
-      "gp": 4,
-      "w": 1,
-      "l": 3,
-      "otl": 0,
-      "gaa": 9.25,
-      "svp": 0.694,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 4,
-          "sa": 121,
-          "ga": 37,
-          "sv": 84,
-          "svp": 0.694,
-          "gaa": 9.25,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
       "id": 225,
       "name": "Jam-16-Mac",
       "teamId": 15,
@@ -2839,6 +2805,40 @@
           "p": 0,
           "pim": 0,
           "hits": 0
+        }
+      }
+    },
+    {
+      "id": 224,
+      "name": "I KYLzee I",
+      "teamId": 12,
+      "pos": "G",
+      "goalie": true,
+      "gp": 5,
+      "w": 1,
+      "l": 4,
+      "otl": 0,
+      "gaa": 10.2,
+      "svp": 0.674,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 5,
+          "sa": 141,
+          "ga": 46,
+          "sv": 95,
+          "svp": 0.674,
+          "gaa": 10.2,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
         }
       }
     },
@@ -2907,42 +2907,6 @@
           "svp": 0.0,
           "gaa": 0.0,
           "so": 0
-        }
-      }
-    },
-    {
-      "id": 242,
-      "name": "B-E-A-N-S-2",
-      "teamId": 18,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 1,
-      "g": 0,
-      "a": 5,
-      "p": 5,
-      "pim": 0,
-      "hits": 2,
-      "fow": 0,
-      "fol": 0,
-      "ta": 11,
-      "int": 3,
-      "bs": 1,
-      "split": {
-        "regular": {
-          "gp": 1,
-          "g": 0,
-          "a": 5,
-          "p": 5,
-          "pim": 0,
-          "hits": 2
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
         }
       }
     },
@@ -3375,42 +3339,6 @@
       }
     },
     {
-      "id": 255,
-      "name": "vuftr",
-      "teamId": 15,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 3,
-      "g": 7,
-      "a": 7,
-      "p": 14,
-      "pim": 4,
-      "hits": 24,
-      "fow": 34,
-      "fol": 19,
-      "ta": 8,
-      "int": 4,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 7,
-          "a": 7,
-          "p": 14,
-          "pim": 4,
-          "hits": 24
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
       "id": 23,
       "name": "CarteronSteroids",
       "teamId": 19,
@@ -3539,6 +3467,40 @@
           "sv": 48,
           "svp": 0.686,
           "gaa": 5.5,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 255,
+      "name": "vuftr",
+      "teamId": 15,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 1,
+      "l": 0,
+      "otl": 1,
+      "gaa": 4.61,
+      "svp": 0.771,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "sa": 35,
+          "ga": 8,
+          "sv": 27,
+          "svp": 0.771,
+          "gaa": 4.61,
           "so": 0
         },
         "playoffs": {
@@ -3755,6 +3717,42 @@
           "p": 5,
           "pim": 0,
           "hits": 7
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 242,
+      "name": "B-E-A-N-S-2",
+      "teamId": 18,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 2,
+      "g": 1,
+      "a": 10,
+      "p": 11,
+      "pim": 0,
+      "hits": 4,
+      "fow": 0,
+      "fol": 0,
+      "ta": 12,
+      "int": 4,
+      "bs": 2,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 1,
+          "a": 10,
+          "p": 11,
+          "pim": 0,
+          "hits": 4
         },
         "playoffs": {
           "gp": 0,
@@ -4111,42 +4109,6 @@
           "p": 36,
           "pim": 2,
           "hits": 33
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 33,
-      "name": "SussyAidan5937",
-      "teamId": 18,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 2,
-      "g": 7,
-      "a": 0,
-      "p": 7,
-      "pim": 2,
-      "hits": 16,
-      "fow": 0,
-      "fol": 0,
-      "ta": 12,
-      "int": 1,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 2,
-          "g": 7,
-          "a": 0,
-          "p": 7,
-          "pim": 2,
-          "hits": 16
         },
         "playoffs": {
           "gp": 0,
@@ -4651,9 +4613,326 @@
           "hits": 0
         }
       }
+    },
+    {
+      "id": 204,
+      "name": "N0TCUTPOW3R",
+      "teamId": 12,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 4,
+      "p": 4,
+      "pim": 0,
+      "hits": 2,
+      "fow": 0,
+      "fol": 0,
+      "ta": 1,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 4,
+          "p": 4,
+          "pim": 0,
+          "hits": 2
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 272,
+      "name": "JonathanQC9392",
+      "teamId": 12,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 4,
+      "a": 0,
+      "p": 4,
+      "pim": 0,
+      "hits": 0,
+      "fow": 0,
+      "fol": 0,
+      "ta": 3,
+      "int": 0,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 4,
+          "a": 0,
+          "p": 4,
+          "pim": 0,
+          "hits": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 50,
+      "name": "horse_dinkk",
+      "teamId": 18,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 3,
+      "a": 4,
+      "p": 7,
+      "pim": 0,
+      "hits": 2,
+      "fow": 7,
+      "fol": 9,
+      "ta": 3,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 3,
+          "a": 4,
+          "p": 7,
+          "pim": 0,
+          "hits": 2
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "SussyAidan5937",
+      "teamId": 18,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 3,
+      "g": 12,
+      "a": 1,
+      "p": 13,
+      "pim": 2,
+      "hits": 19,
+      "fow": 0,
+      "fol": 0,
+      "ta": 14,
+      "int": 3,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 3,
+          "g": 12,
+          "a": 1,
+          "p": 13,
+          "pim": 2,
+          "hits": 19
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 25,
+      "week": 1,
+      "home": 12,
+      "away": 18,
+      "homeScore": 4,
+      "awayScore": 9,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 12,
+          "faceoffsWon": 9,
+          "hits": 2,
+          "toa": "6:05",
+          "pim": 0,
+          "passPct": 79
+        },
+        "away": {
+          "shots": 20,
+          "faceoffsWon": 7,
+          "hits": 7,
+          "toa": "6:18",
+          "pim": 0,
+          "passPct": 86
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "N0TCUTPOW3R",
+          "pos": "DEF",
+          "g": 0,
+          "a": 4,
+          "p": 4,
+          "pm": -5,
+          "toi": "30:28",
+          "twp": "2:50",
+          "shots": 0,
+          "passPct": 84,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 1,
+          "giveaways": 3,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "F4MoUs RedBUL",
+          "pos": "CEN",
+          "g": 0,
+          "a": 2,
+          "p": 2,
+          "pm": -5,
+          "toi": "30:28",
+          "twp": "1:52",
+          "shots": 6,
+          "passPct": 86,
+          "fow": 9,
+          "fol": 7,
+          "hits": 0,
+          "ta": 0,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "JonathanQC9392",
+          "pos": "LEF",
+          "g": 4,
+          "a": 0,
+          "p": 4,
+          "pm": -5,
+          "toi": "30:12",
+          "twp": "6:31",
+          "shots": 6,
+          "passPct": 67,
+          "fow": 0,
+          "fol": 0,
+          "hits": 0,
+          "ta": 3,
+          "giveaways": 9,
+          "bs": 0,
+          "int": 0,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "horse_dinkk",
+          "pos": "CEN",
+          "g": 3,
+          "a": 4,
+          "p": 7,
+          "pm": 5,
+          "toi": "30:28",
+          "twp": "4:30",
+          "shots": 8,
+          "passPct": 67,
+          "fow": 7,
+          "fol": 9,
+          "hits": 2,
+          "ta": 3,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        },
+        {
+          "name": "SussyAidan5937",
+          "pos": "LEF",
+          "g": 5,
+          "a": 1,
+          "p": 6,
+          "pm": 5,
+          "toi": "30:28",
+          "twp": "3:05",
+          "shots": 8,
+          "passPct": 92,
+          "fow": 0,
+          "fol": 0,
+          "hits": 3,
+          "ta": 2,
+          "giveaways": 0,
+          "bs": 0,
+          "int": 2,
+          "pim": 0
+        },
+        {
+          "name": "B-E-A-N-S-2",
+          "pos": "DEF",
+          "g": 1,
+          "a": 5,
+          "p": 6,
+          "pm": 5,
+          "toi": "30:28",
+          "twp": "3:12",
+          "shots": 3,
+          "passPct": 100,
+          "fow": 0,
+          "fol": 0,
+          "hits": 2,
+          "ta": 1,
+          "giveaways": 5,
+          "bs": 1,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "I KYLzee I",
+        "result": "L",
+        "sa": 20,
+        "sv": 11,
+        "ga": 9,
+        "svPct": "0.550",
+        "toi": "30:28",
+        "pkChk": 0,
+        "despSv": 0
+      },
+      "awayGoalie": {
+        "name": "vuftr",
+        "result": "W",
+        "sa": 12,
+        "sv": 8,
+        "ga": 4,
+        "svPct": "0.667",
+        "toi": "30:28",
+        "pkChk": 0,
+        "despSv": 0
+      }
+    },
     {
       "id": 24,
       "week": 1,
