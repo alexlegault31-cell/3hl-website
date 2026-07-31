@@ -94,13 +94,13 @@
       "teamId": 16,
       "rank": 1,
       "prevRank": 1,
-      "w": 4,
+      "w": 5,
       "l": 0,
       "otl": 0,
-      "pts": 8,
-      "gf": 31,
-      "ga": 10,
-      "streak": "W4"
+      "pts": 10,
+      "gf": 38,
+      "ga": 14,
+      "streak": "W5"
     },
     {
       "teamId": 14,
@@ -129,14 +129,14 @@
     {
       "teamId": 17,
       "rank": 4,
-      "prevRank": 5,
+      "prevRank": 4,
       "w": 3,
-      "l": 1,
+      "l": 2,
       "otl": 0,
       "pts": 6,
-      "gf": 27,
-      "ga": 18,
-      "streak": "W3"
+      "gf": 31,
+      "ga": 25,
+      "streak": "L1"
     },
     {
       "teamId": 18,
@@ -418,9 +418,9 @@
       "slot": "Thu 8:00 PM EST",
       "home": 16,
       "away": 17,
-      "played": false,
-      "homeScore": null,
-      "awayScore": null
+      "played": true,
+      "homeScore": 7,
+      "awayScore": 4
     },
     {
       "num": 22,
@@ -3521,6 +3521,40 @@
       }
     },
     {
+      "id": 246,
+      "name": "TTVSwueemthesal",
+      "teamId": 17,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 3,
+      "l": 1,
+      "otl": 0,
+      "gaa": 5.5,
+      "svp": 0.686,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "sa": 70,
+          "ga": 22,
+          "sv": 48,
+          "svp": 0.686,
+          "gaa": 5.5,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
       "id": 26,
       "name": "BOOST GREECY",
       "teamId": 9,
@@ -3615,6 +3649,42 @@
           "p": 6,
           "pim": 0,
           "hits": 13
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 247,
+      "name": "Reflex658897",
+      "teamId": 17,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 4,
+      "g": 8,
+      "a": 15,
+      "p": 23,
+      "pim": 0,
+      "hits": 30,
+      "fow": 1,
+      "fol": 0,
+      "ta": 17,
+      "int": 9,
+      "bs": 3,
+      "split": {
+        "regular": {
+          "gp": 4,
+          "g": 8,
+          "a": 15,
+          "p": 23,
+          "pim": 0,
+          "hits": 30
         },
         "playoffs": {
           "gp": 0,
@@ -3986,24 +4056,24 @@
       "teamId": 17,
       "pos": "DEFENSEMEN",
       "goalie": false,
-      "gp": 3,
-      "g": 7,
-      "a": 11,
-      "p": 18,
-      "pim": 4,
+      "gp": 4,
+      "g": 9,
+      "a": 12,
+      "p": 21,
+      "pim": 6,
       "hits": 16,
       "fow": 0,
       "fol": 0,
-      "ta": 19,
+      "ta": 21,
       "int": 2,
       "bs": 3,
       "split": {
         "regular": {
-          "gp": 3,
-          "g": 7,
-          "a": 11,
-          "p": 18,
-          "pim": 4,
+          "gp": 4,
+          "g": 9,
+          "a": 12,
+          "p": 21,
+          "pim": 6,
           "hits": 16
         },
         "playoffs": {
@@ -4022,95 +4092,25 @@
       "teamId": 17,
       "pos": "CENTER",
       "goalie": false,
-      "gp": 3,
-      "g": 13,
-      "a": 7,
-      "p": 20,
+      "gp": 4,
+      "g": 14,
+      "a": 10,
+      "p": 24,
       "pim": 0,
-      "hits": 34,
-      "fow": 34,
-      "fol": 48,
-      "ta": 20,
-      "int": 5,
-      "bs": 2,
+      "hits": 40,
+      "fow": 39,
+      "fol": 66,
+      "ta": 25,
+      "int": 6,
+      "bs": 4,
       "split": {
         "regular": {
-          "gp": 3,
-          "g": 13,
-          "a": 7,
-          "p": 20,
+          "gp": 4,
+          "g": 14,
+          "a": 10,
+          "p": 24,
           "pim": 0,
-          "hits": 34
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 246,
-      "name": "TTVSwueemthesal",
-      "teamId": 17,
-      "pos": "G",
-      "goalie": true,
-      "gp": 3,
-      "w": 3,
-      "l": 0,
-      "otl": 0,
-      "gaa": 5.0,
-      "svp": 0.694,
-      "so": 0,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "sa": 49,
-          "ga": 15,
-          "sv": 34,
-          "svp": 0.694,
-          "gaa": 5.0,
-          "so": 0
-        },
-        "playoffs": {
-          "gp": 0,
-          "sa": 0,
-          "ga": 0,
-          "sv": 0,
-          "svp": 0.0,
-          "gaa": 0.0,
-          "so": 0
-        }
-      }
-    },
-    {
-      "id": 247,
-      "name": "Reflex658897",
-      "teamId": 17,
-      "pos": "LEFTWING",
-      "goalie": false,
-      "gp": 3,
-      "g": 7,
-      "a": 13,
-      "p": 20,
-      "pim": 0,
-      "hits": 23,
-      "fow": 0,
-      "fol": 0,
-      "ta": 11,
-      "int": 7,
-      "bs": 2,
-      "split": {
-        "regular": {
-          "gp": 3,
-          "g": 7,
-          "a": 13,
-          "p": 20,
-          "pim": 0,
-          "hits": 23
+          "hits": 40
         },
         "playoffs": {
           "gp": 0,
@@ -4191,9 +4191,324 @@
           "so": 0
         }
       }
+    },
+    {
+      "id": 262,
+      "name": "ItzWxllz",
+      "teamId": 16,
+      "pos": "DEFENSEMEN",
+      "goalie": false,
+      "gp": 1,
+      "g": 0,
+      "a": 5,
+      "p": 5,
+      "pim": 0,
+      "hits": 0,
+      "fow": 0,
+      "fol": 0,
+      "ta": 5,
+      "int": 1,
+      "bs": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 0,
+          "a": 5,
+          "p": 5,
+          "pim": 0,
+          "hits": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 263,
+      "name": "ScreenShoww",
+      "teamId": 16,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 1,
+      "g": 3,
+      "a": 3,
+      "p": 6,
+      "pim": 0,
+      "hits": 1,
+      "fow": 18,
+      "fol": 6,
+      "ta": 2,
+      "int": 0,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 3,
+          "a": 3,
+          "p": 6,
+          "pim": 0,
+          "hits": 1
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
+      "id": 264,
+      "name": "Bedzy l98l",
+      "teamId": 16,
+      "pos": "G",
+      "goalie": true,
+      "gp": 1,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "gaa": 4.0,
+      "svp": 0.75,
+      "so": 0,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "sa": 16,
+          "ga": 4,
+          "sv": 12,
+          "svp": 0.75,
+          "gaa": 4.0,
+          "so": 0
+        },
+        "playoffs": {
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
+        }
+      }
+    },
+    {
+      "id": 265,
+      "name": "Fleury x 299631",
+      "teamId": 16,
+      "pos": "LEFTWING",
+      "goalie": false,
+      "gp": 1,
+      "g": 4,
+      "a": 3,
+      "p": 7,
+      "pim": 0,
+      "hits": 7,
+      "fow": 0,
+      "fol": 0,
+      "ta": 5,
+      "int": 1,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 1,
+          "g": 4,
+          "a": 3,
+          "p": 7,
+          "pim": 0,
+          "hits": 7
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
     }
   ],
   "gameResults": [
+    {
+      "id": 21,
+      "week": 1,
+      "home": 16,
+      "away": 17,
+      "homeScore": 7,
+      "awayScore": 4,
+      "mode": "4v4",
+      "teamStats": {
+        "home": {
+          "shots": 21,
+          "faceoffsWon": 18,
+          "hits": 8,
+          "toa": "13:42",
+          "pim": 0,
+          "passPct": 75
+        },
+        "away": {
+          "shots": 16,
+          "faceoffsWon": 6,
+          "hits": 13,
+          "toa": "10:12",
+          "pim": 2,
+          "passPct": 87
+        }
+      },
+      "homeSkaters": [
+        {
+          "name": "ItzWxllz",
+          "pos": "DEF",
+          "g": 0,
+          "a": 5,
+          "p": 5,
+          "pm": 3,
+          "toi": "60:00",
+          "twp": "4:43",
+          "shots": 1,
+          "passPct": 85,
+          "fow": 0,
+          "fol": 0,
+          "hits": 0,
+          "ta": 5,
+          "giveaways": 4,
+          "bs": 0,
+          "int": 1,
+          "pim": 0
+        },
+        {
+          "name": "ScreenShoww",
+          "pos": "CEN",
+          "g": 3,
+          "a": 3,
+          "p": 6,
+          "pm": 3,
+          "toi": "60:00",
+          "twp": "4:23",
+          "shots": 10,
+          "passPct": 75,
+          "fow": 18,
+          "fol": 6,
+          "hits": 1,
+          "ta": 2,
+          "giveaways": 3,
+          "bs": 1,
+          "int": 0,
+          "pim": 0
+        },
+        {
+          "name": "Fleury x 299631",
+          "pos": "LEF",
+          "g": 4,
+          "a": 3,
+          "p": 7,
+          "pm": 3,
+          "toi": "60:00",
+          "twp": "13:42",
+          "shots": 10,
+          "passPct": 64,
+          "fow": 0,
+          "fol": 0,
+          "hits": 7,
+          "ta": 5,
+          "giveaways": 18,
+          "bs": 1,
+          "int": 1,
+          "pim": 0
+        }
+      ],
+      "awaySkaters": [
+        {
+          "name": "Absanity9970",
+          "pos": "DEF",
+          "g": 2,
+          "a": 1,
+          "p": 3,
+          "pm": -3,
+          "toi": "60:00",
+          "twp": "9:42",
+          "shots": 5,
+          "passPct": 78,
+          "fow": 0,
+          "fol": 0,
+          "hits": 0,
+          "ta": 2,
+          "giveaways": 11,
+          "bs": 0,
+          "int": 0,
+          "pim": 2
+        },
+        {
+          "name": "MrBubskies",
+          "pos": "CEN",
+          "g": 1,
+          "a": 3,
+          "p": 4,
+          "pm": -3,
+          "toi": "60:00",
+          "twp": "3:46",
+          "shots": 5,
+          "passPct": 93,
+          "fow": 5,
+          "fol": 18,
+          "hits": 6,
+          "ta": 5,
+          "giveaways": 6,
+          "bs": 2,
+          "int": 1,
+          "pim": 0
+        },
+        {
+          "name": "Reflex658897",
+          "pos": "LEF",
+          "g": 1,
+          "a": 2,
+          "p": 3,
+          "pm": -3,
+          "toi": "60:00",
+          "twp": "4:10",
+          "shots": 6,
+          "passPct": 90,
+          "fow": 1,
+          "fol": 0,
+          "hits": 7,
+          "ta": 6,
+          "giveaways": 8,
+          "bs": 1,
+          "int": 2,
+          "pim": 0
+        }
+      ],
+      "homeGoalie": {
+        "name": "Bedzy l98l",
+        "result": "W",
+        "sa": 16,
+        "sv": 12,
+        "ga": 4,
+        "svPct": "0.750",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 3
+      },
+      "awayGoalie": {
+        "name": "TTVSwueemthesal",
+        "result": "L",
+        "sa": 21,
+        "sv": 14,
+        "ga": 7,
+        "svPct": "0.667",
+        "toi": "60:00",
+        "pkChk": 0,
+        "despSv": 0
+      }
+    },
     {
       "id": 20,
       "week": 1,
