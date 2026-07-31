@@ -9,6 +9,14 @@
   },
   "teams": [
     {
+      "id": 19,
+      "name": "Toronto Maple Leafs",
+      "abbr": "AFS",
+      "color": "#58A6FF",
+      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-ad77199a-ef24-41ce-bcb9-6f639ee8e012.png",
+      "gameCode": "3HLPIT"
+    },
+    {
       "id": 16,
       "name": "Buffalo Sabres",
       "abbr": "RES",
@@ -71,14 +79,6 @@
       "color": "#58A6FF",
       "logoUrl": "https://cdn.phototourl.com/free/2026-07-25-0bf04289-9fb4-4d44-b697-e3663512fc69.png",
       "gameCode": "3HLOTT"
-    },
-    {
-      "id": 19,
-      "name": "Pittsburgh Penguins",
-      "abbr": "INS",
-      "color": "#58A6FF",
-      "logoUrl": "https://cdn.phototourl.com/member/2026-07-25-ad77199a-ef24-41ce-bcb9-6f639ee8e012.png",
-      "gameCode": "3HLPIT"
     },
     {
       "id": 12,
@@ -3240,7 +3240,7 @@
       "id": 233,
       "name": "II Antho II6454",
       "teamId": 10,
-      "pos": "CENTER",
+      "pos": "DEFENSEMEN",
       "goalie": false,
       "gp": 4,
       "g": 7,
@@ -4270,7 +4270,7 @@
       "id": 278,
       "name": "l0l CLUTCH l9l",
       "teamId": 17,
-      "pos": "CENTER",
+      "pos": "DEFENSEMEN",
       "goalie": false,
       "gp": 2,
       "g": 2,
