@@ -95,11 +95,11 @@
       "rank": 1,
       "prevRank": 1,
       "w": 7,
-      "l": 0,
+      "l": -1,
       "otl": 0,
       "pts": 14,
-      "gf": 54,
-      "ga": 19,
+      "gf": 51,
+      "ga": 16,
       "streak": "W2"
     },
     {
@@ -131,11 +131,11 @@
       "rank": 4,
       "prevRank": 4,
       "w": 6,
-      "l": 1,
+      "l": 0,
       "otl": 0,
       "pts": 12,
-      "gf": 39,
-      "ga": 14,
+      "gf": 36,
+      "ga": 11,
       "streak": "W2"
     },
     {
@@ -3165,38 +3165,36 @@
       }
     },
     {
-      "id": 56,
-      "name": "LuceCannon37",
+      "id": 253,
+      "name": "ShIfTy8989",
       "teamId": 14,
-      "pos": "DEFENSEMEN",
-      "goalie": false,
-      "gp": 2,
-      "g": 0,
-      "a": 7,
-      "p": 7,
-      "pim": 0,
-      "hits": 17,
-      "fow": 0,
-      "fol": 0,
-      "ta": 9,
-      "int": 3,
-      "bs": 1,
+      "pos": "G",
+      "goalie": true,
+      "gp": 4,
+      "w": 0,
+      "l": 0,
+      "otl": 0,
+      "gaa": 0.0,
+      "svp": 0.0,
+      "so": 0,
       "split": {
         "regular": {
-          "gp": 2,
-          "g": 0,
-          "a": 7,
-          "p": 7,
-          "pim": 0,
-          "hits": 17
+          "gp": 0,
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
         },
         "playoffs": {
           "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
         }
       }
     },
@@ -3276,7 +3274,7 @@
       "id": 233,
       "name": "II Antho II6454",
       "teamId": 10,
-      "pos": "CENTER",
+      "pos": "DEFENSEMEN",
       "goalie": false,
       "gp": 4,
       "g": 7,
@@ -3369,42 +3367,6 @@
           "p": 17,
           "pim": 0,
           "hits": 17
-        },
-        "playoffs": {
-          "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
-        }
-      }
-    },
-    {
-      "id": 253,
-      "name": "ShIfTy8989",
-      "teamId": 14,
-      "pos": "CENTER",
-      "goalie": false,
-      "gp": 4,
-      "g": 6,
-      "a": 11,
-      "p": 17,
-      "pim": 4,
-      "hits": 33,
-      "fow": 48,
-      "fol": 40,
-      "ta": 16,
-      "int": 1,
-      "bs": 0,
-      "split": {
-        "regular": {
-          "gp": 4,
-          "g": 6,
-          "a": 11,
-          "p": 17,
-          "pim": 4,
-          "hits": 33
         },
         "playoffs": {
           "gp": 0,
@@ -4019,6 +3981,42 @@
       }
     },
     {
+      "id": 54,
+      "name": "Beaudreeez",
+      "teamId": 14,
+      "pos": "CENTER",
+      "goalie": false,
+      "gp": 3,
+      "g": 8,
+      "a": 8,
+      "p": 16,
+      "pim": 2,
+      "hits": 15,
+      "fow": 22,
+      "fol": 7,
+      "ta": 9,
+      "int": 2,
+      "bs": 1,
+      "split": {
+        "regular": {
+          "gp": 2,
+          "g": 8,
+          "a": 8,
+          "p": 16,
+          "pim": 2,
+          "hits": 15
+        },
+        "playoffs": {
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "p": 0,
+          "pim": 0,
+          "hits": 0
+        }
+      }
+    },
+    {
       "id": 242,
       "name": "B-E-A-N-S-2",
       "teamId": 18,
@@ -4091,30 +4089,30 @@
       }
     },
     {
-      "id": 54,
-      "name": "Beaudreeez",
+      "id": 56,
+      "name": "LuceCannon37",
       "teamId": 14,
-      "pos": "CENTER",
+      "pos": "DEFENSEMEN",
       "goalie": false,
-      "gp": 3,
-      "g": 8,
-      "a": 8,
-      "p": 16,
-      "pim": 2,
-      "hits": 15,
-      "fow": 22,
-      "fol": 7,
+      "gp": 2,
+      "g": 0,
+      "a": 7,
+      "p": 7,
+      "pim": 0,
+      "hits": 17,
+      "fow": 0,
+      "fol": 0,
       "ta": 9,
-      "int": 2,
+      "int": 3,
       "bs": 1,
       "split": {
         "regular": {
           "gp": 2,
-          "g": 8,
-          "a": 8,
-          "p": 16,
-          "pim": 2,
-          "hits": 15
+          "g": 0,
+          "a": 7,
+          "p": 7,
+          "pim": 0,
+          "hits": 17
         },
         "playoffs": {
           "gp": 0,
@@ -4236,7 +4234,7 @@
       "id": 278,
       "name": "l0l CLUTCH l9l",
       "teamId": 17,
-      "pos": "CENTER",
+      "pos": "DEFENSEMEN",
       "goalie": false,
       "gp": 2,
       "g": 2,
@@ -5054,35 +5052,33 @@
       "id": 264,
       "name": "Bedzy l98l",
       "teamId": 16,
-      "pos": "LEFTWING",
-      "goalie": false,
+      "pos": "G",
+      "goalie": true,
       "gp": 3,
-      "g": 7,
-      "a": 5,
-      "p": 12,
-      "pim": 0,
-      "hits": 8,
-      "fow": 0,
-      "fol": 0,
-      "ta": 3,
-      "int": 3,
-      "bs": 2,
+      "w": 1,
+      "l": 0,
+      "otl": 0,
+      "gaa": 4.0,
+      "svp": 0.75,
+      "so": 0,
       "split": {
         "regular": {
-          "gp": 2,
-          "g": 7,
-          "a": 5,
-          "p": 12,
-          "pim": 0,
-          "hits": 8
+          "gp": 1,
+          "sa": 16,
+          "ga": 4,
+          "sv": 12,
+          "svp": 0.75,
+          "gaa": 4.0,
+          "so": 0
         },
         "playoffs": {
           "gp": 0,
-          "g": 0,
-          "a": 0,
-          "p": 0,
-          "pim": 0,
-          "hits": 0
+          "sa": 0,
+          "ga": 0,
+          "sv": 0,
+          "svp": 0.0,
+          "gaa": 0.0,
+          "so": 0
         }
       }
     }
